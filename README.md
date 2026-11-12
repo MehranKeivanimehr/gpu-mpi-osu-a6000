@@ -513,8 +513,11 @@ Build scripts: `scripts/build_ucx.sh`, `scripts/build_mvapich.sh`, `scripts/buil
 
 ## 8. Limitations (read before quoting any number)
 
-1. **Single node, no network.** All traffic is intra-node. There is no InfiniBand/RoCE NIC (`NET/IB : No device found` in NCCL logs;
-   no verbs headers), so nothing here says anything about GPUDirect RDMA, inter-node MPI, MVAPICH's IB designs or NCCL's NET transports.
+1. **Single node, no working network link.** All traffic is intra-node. The node *does* have a dual-port Mellanox ConnectX-6
+   InfiniBand card (`<pci>`/`<pci>`, `mlx5_0`/`mlx5_1`, NUMA node 1), but both ports are `DOWN` / `Disabled` (MEASURED,
+   `env/ib_nic.txt`). NCCL therefore reports `NET/IB : No device found` and uses sockets on loopback, and UCX was built
+   `--without-verbs`. So nothing here says anything about GPUDirect RDMA, inter-node MPI, MVAPICH's IB designs or NCCL's NET
+   transports. *Correction (2026-11-12): an earlier version of this item wrongly said the node has no InfiniBand NIC.*
 2. **Shared machine.** GPUs 0–1 ran another user's training jobs at 75–100 % utilisation during every measurement, sharing the CPU socket,
    memory controllers and PCIe root complex with GPUs 2–3. Host-staged numbers (which use host memory bandwidth) may be lower than
    on an idle node. Medians of 5 interleaved runs reduce, but do not remove, that effect.

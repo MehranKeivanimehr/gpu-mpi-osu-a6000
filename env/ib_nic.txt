@@ -1,0 +1,20 @@
+# date: 2026-11-12 14:31:50 EST
+## lspci (network-class devices)
+<pci> Infiniband controller: Mellanox Technologies MT28908 Family [ConnectX-6]
+<pci> Infiniband controller: Mellanox Technologies MT28908 Family [ConnectX-6]
+<pci> Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+<pci> Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+
+## /sys/class/infiniband ports
+mlx5_0 port 1: state=1: DOWN phys_state=3: Disabled rate=10 Gb/sec (4X SDR) link_layer=InfiniBand
+mlx5_1 port 1: state=1: DOWN phys_state=3: Disabled rate=10 Gb/sec (4X SDR) link_layer=InfiniBand
+
+## PCI NUMA node and driver
+<pci> numa_node=1 driver=mlx5_core
+<pci> numa_node=1 driver=mlx5_core
+
+## /dev/infiniband
+by-ibdev
+by-path
+uverbs0
+uverbs1

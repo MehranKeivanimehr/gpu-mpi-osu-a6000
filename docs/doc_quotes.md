@@ -41,3 +41,10 @@ Raw text extract made with curl + html-strip: docs/_nccl_extract.txt
 ## nccl-tests (github.com/NVIDIA/nccl-tests, doc/PERFORMANCE.md)
 * busbw factors: AllReduce 2(n-1)/n, ReduceScatter (n-1)/n, AllGather (n-1)/n; algbw = S/t.
 * `-c, --check <n>`: "perform count iterations, checking correctness of results on each iteration".
+
+## NVIDIA GPUDirect RDMA guide, section "IOMMUs" (fetched 2026-11-12)
+URL: https://docs.nvidia.com/cuda/gpudirect-rdma/index.html
+
+> GPUDirect RDMA currently relies upon all physical addresses being the same from the different PCI devices' point of view.
+> This makes it incompatible with IOMMUs performing any form of translation other than 1:1, hence they must be disabled or
+> configured for pass-through translation for GPUDirect RDMA to work.

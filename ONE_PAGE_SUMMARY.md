@@ -28,7 +28,8 @@ the same NVLink pair, same-socket 5↔6, cross-socket 3↔6) levels off at about
 
 **Three honest limits**
 
-1. **Single node, no InfiniBand.** Nothing here covers GPUDirect RDMA or inter-node MPI. And this is open-source MVAPICH 4.1, whose
+1. **Single node, no working InfiniBand link.** A ConnectX-6 card is installed, but both ports are down (`env/ib_nic.txt`), so
+   nothing here covers GPUDirect RDMA or inter-node MPI. And this is open-source MVAPICH 4.1, whose
    changelog calls its GPU support "basic", not MVAPICH-Plus/-GDR.
 2. **Cross-pair GPUs were only measured with host staging.** PCIe P2P corrupts data here, so MVAPICH's default GPU path and NCCL's
    default P2P were not run across pairs. The 4-GPU set is one NVLink pair plus two unbridged GPUs (2,3,5,6), not two NVLink pairs.
