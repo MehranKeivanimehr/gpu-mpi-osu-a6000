@@ -407,3 +407,4 @@
 [2026-11-12 05:13:55 EST] NOTE: README.md assembled: prose + tables spliced programmatically from results/tables.md and results/ucx_protocol_selection.md; ONE_PAGE_SUMMARY.md written; updated with end-of-session GPU 4 state.
 [2026-11-12 05:14:01 EST] (cwd=~/mpi-osu-a6000) git commit -q -F -
 [2026-11-12 05:14:06 EST] NOTE: git add commands.log && git commit --amend --no-edit   (folds this log's final lines into the single local commit; nothing pushed)
+[2026-11-12 13:21:08 EST] NOTE: Cleanup: stopped 3 leftover wait loops (pgrep -f build_openmpi.sh / scripts/build_mvapich.sh loops never exited because pgrep matched their own command line). ps shows no build/campaign/mpiexec/benchmark/sampler processes left; the only localhost listeners are from other user-level tools, not from this project.
