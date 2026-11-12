@@ -1,0 +1,45 @@
+# config_id: osu_bw__node56__ucxnoipc__L
+# rep: 5
+# order: 44/90 seed=20261112
+# start: 2026-11-12 04:17:39 EST
+# gpus: [5, 6]
+# cmd: GPU_LIST=5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bw -d cuda -m 8388608:1073741824 -i 10 -x 3 -W 8 D D
+# meta.kind: omb
+# meta.bench: osu_bw
+# meta.path: node56
+# meta.mode: ucxnoipc
+# meta.range: L
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 94, 11704
+#   1, 98, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Bandwidth Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+8388608             23509.20
+16777216            22217.72
+33554432            22718.89
+67108864            22084.14
+134217728           22259.14
+268435456           21942.21
+536870912           21821.33
+1073741824          21634.21
+
+# end: 2026-11-12 04:18:08 EST
+# exit: 0
+# wall_s: 28.87
+# status: OK

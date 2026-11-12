@@ -1,0 +1,1599 @@
+# config_id: all_reduce_perf__g2_nv23__p2pdefault
+# rep: 1
+# order: 11/30 seed=20261112
+# start: 2026-11-12 04:45:57 EST
+# gpus: [2, 3]
+# cmd: GPU_BIND_MODE=all GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/nccl-2.21.5-pipwheel/lib:~/opt/mvapich-4.1-cuda/lib:~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_ENABLE_GPU=0 NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=INIT,TUNING NCCL_SOCKET_IFNAME=lo UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/nccl-tests-2.21.1-mvapich-4.1/build/all_reduce_perf -b 8 -e 1G -f 2 -g 1 -n 20 -w 5 -c 1
+# meta.kind: nccl
+# meta.bench: all_reduce_perf
+# meta.set: g2_nv23
+# meta.p2p_level: default
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 98, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+# nccl-tests version 2.21.1 (unknown) nccl-headers=22105 nccl-library=22105
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 1 minBytes 8 maxBytes 1073741824 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid 223245 on node device  0 [<pci:gpu2>] NVIDIA RTX A6000
+#  Rank  1 Group  0 Pid 223246 on node device  1 [<pci:gpu3>] NVIDIA RTX A6000
+node:223245:223245 [0] NCCL INFO Bootstrap : Using lo:127.0.0.1<0>
+node:223245:223245 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+node:223245:223245 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+node:223245:223245 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+node:223245:223245 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda12.4
+node:223246:223246 [1] NCCL INFO cudaDriverVersion 13000
+node:223246:223246 [1] NCCL INFO Bootstrap : Using lo:127.0.0.1<0>
+node:223246:223246 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+node:223246:223246 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+node:223246:223246 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+node:223245:223271 [0] NCCL INFO NET/IB : No device found.
+node:223245:223271 [0] NCCL INFO NET/Socket : Using [0]lo:127.0.0.1<0>
+node:223245:223271 [0] NCCL INFO Using non-device net plugin version 0
+node:223245:223271 [0] NCCL INFO Using network Socket
+node:223246:223272 [1] NCCL INFO NET/IB : No device found.
+node:223246:223272 [1] NCCL INFO NET/Socket : Using [0]lo:127.0.0.1<0>
+node:223246:223272 [1] NCCL INFO Using non-device net plugin version 0
+node:223246:223272 [1] NCCL INFO Using network Socket
+node:223245:223271 [0] NCCL INFO ncclCommInitRank comm 0x5bccbc5dc3f0 rank 0 nranks 2 cudaDev 0 nvmlDev 2 busId <pci:gpu2> commId 0x2682ed3bb0e2280b - Init START
+node:223246:223272 [1] NCCL INFO ncclCommInitRank comm 0x59602afc4010 rank 1 nranks 2 cudaDev 1 nvmlDev 3 busId <pci:gpu3> commId 0x2682ed3bb0e2280b - Init START
+node:223246:223272 [1] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffffffff,00000000,00000000,ffffffff,ffffffff
+node:223245:223271 [0] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffffffff,00000000,00000000,ffffffff,ffffffff
+node:223245:223271 [0] NCCL INFO comm 0x5bccbc5dc3f0 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+node:223245:223271 [0] NCCL INFO Channel 00/04 :    0   1
+node:223245:223271 [0] NCCL INFO Channel 01/04 :    0   1
+node:223245:223271 [0] NCCL INFO Channel 02/04 :    0   1
+node:223245:223271 [0] NCCL INFO Channel 03/04 :    0   1
+node:223245:223271 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1 [2] 1/-1/-1->0->-1 [3] -1/-1/-1->0->1
+node:223245:223271 [0] NCCL INFO P2P Chunksize set to 524288
+node:223246:223272 [1] NCCL INFO comm 0x59602afc4010 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+node:223246:223272 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1 [2] -1/-1/-1->1->0 [3] 0/-1/-1->1->-1
+node:223246:223272 [1] NCCL INFO P2P Chunksize set to 524288
+node:223246:223272 [1] NCCL INFO Channel 00/0 : 1[3] -> 0[2] via P2P/CUMEM
+node:223245:223271 [0] NCCL INFO Channel 00/0 : 0[2] -> 1[3] via P2P/CUMEM
+node:223245:223271 [0] NCCL INFO Channel 01/0 : 0[2] -> 1[3] via P2P/CUMEM
+node:223246:223272 [1] NCCL INFO Channel 01/0 : 1[3] -> 0[2] via P2P/CUMEM
+node:223245:223271 [0] NCCL INFO Channel 02/0 : 0[2] -> 1[3] via P2P/CUMEM
+node:223246:223272 [1] NCCL INFO Channel 02/0 : 1[3] -> 0[2] via P2P/CUMEM
+node:223245:223271 [0] NCCL INFO Channel 03/0 : 0[2] -> 1[3] via P2P/CUMEM
+node:223246:223272 [1] NCCL INFO Channel 03/0 : 1[3] -> 0[2] via P2P/CUMEM
+node:223245:223271 [0] NCCL INFO Connected all rings
+node:223245:223271 [0] NCCL INFO Connected all trees
+node:223245:223271 [0] NCCL INFO   Algorithm   |                            Tree                  |                            Ring                  |                   CollNetDirect                  |
+node:223245:223271 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+node:223245:223271 [0] NCCL INFO  Max NThreads |            512 |            640 |            512 |            512 |            640 |            512 |              0 |              0 |            640 |
+node:223245:223271 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     7.2/  20.0 |    15.9/   0.0 |    11.8/  40.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     7.2/  20.0 |    15.9/   0.0 |    11.8/  40.0 |     0.0/   0.0 node:223246:223272 [1] NCCL INFO Connected all rings
+node:223246:223272 [1] NCCL INFO Connected all trees
+node:223246:223272 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+node:223246:223272 [1] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+|     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     7.2/  40.0 |    15.9/   0.0 |    11.8/  80.0 |     0.8/   0.0 |     0.8/   0.0 |    39.2/   0.0 |
+node:223245:223271 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     7.2/  40.0 |    15.9/   0.0 |    11.8/  80.0 |     0.8/   0.0 |     0.8/   0.0 |    39.2/   0.0 |
+node:223245:223271 [0] NCCL INFO     AllReduce |     8.0/   6.3 |    16.5/   0.0 |    56.0/  24.0 |     7.8/  20.0 |    17.8/   0.0 |    15.2/  40.0 |     0.8/   0.0 |     0.8/   0.0 |    39.2/   0.0 |
+node:223245:223271 [0] NCCL INFO   Algorithm   |                    CollNetChain                  |                            NVLS                  |                        NVLSTree                  |
+node:223245:223271 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+node:223245:223271 [0] NCCL INFO  Max NThreads |              0 |              0 |            640 |              0 |              0 |            640 |              0 |              0 |            640 |
+node:223245:223271 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO     AllReduce |     0.0/   0.0 |     0.0/   0.0 |    35.6/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+node:223245:223271 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+node:223245:223271 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+node:223245:223271 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+node:223245:223271 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+node:223245:223271 [0] NCCL INFO ncclCommInitRank comm 0x5bccbc5dc3f0 rank 0 nranks 2 cudaDev 0 nvmlDev 2 busId <pci:gpu2> commId 0x2682ed3bb0e2280b - Init COMPLETE
+node:223246:223272 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+node:223246:223272 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+node:223246:223272 [1] NCCL INFO ncclCommInitRank comm 0x59602afc4010 rank 1 nranks 2 cudaDev 1 nvmlDev 3 busId <pci:gpu3> commId 0x2682ed3bb0e2280b - Init COMPLETE
+#
+#                                                              out-of-place                       in-place
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)        
+           8             2     float     sum      -1node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+     7.34    0.00    0.00       0node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+node:223245:223245 [0] NCCL INFO 8 Bytes -> Algo 1 proto 0 time 7.800400
+     6.63    0.00    0.00       0
+          16             4     float     sum      -1node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+     6.61    0.00    0.00       0node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+node:223245:223245 [0] NCCL INFO 16 Bytes -> Algo 1 proto 0 time 7.800800
+     6.74    0.00    0.00       0
+          32             8     float     sum      -1node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+     6.58    0.00    0.00       0node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+node:223245:223245 [0] NCCL INFO 32 Bytes -> Algo 1 proto 0 time 7.801600
+     7.20    0.00    0.00       0
+          64            16     float     sum      -1node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+     9.30    0.01    0.01       0node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+node:223245:223245 [0] NCCL INFO 64 Bytes -> Algo 1 proto 0 time 7.803200
+     9.26    0.01    0.01       0
+         128            32     float     sum      -1node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+     9.96    0.01    0.01       0node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+node:223245:223245 [0] NCCL INFO 128 Bytes -> Algo 1 proto 0 time 7.806400
+     9.38    0.01    0.01       0
+         256            64     float     sum      -1node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+     9.22    0.03    0.03       0node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+node:223245:223245 [0] NCCL INFO 256 Bytes -> Algo 1 proto 0 time 7.812800
+     9.83    0.03    0.03       0
+         512           128     float     sum      -1node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+     9.26    0.06    0.06       0node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+node:223245:223245 [0] NCCL INFO 512 Bytes -> Algo 1 proto 0 time 7.825600
+     9.34    0.05    0.05       0
+        1024           256     float     sum      -1node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+    10.13    0.10    0.10       0node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+node:223245:223245 [0] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 7.851200
+     9.32    0.11    0.11       0
+        2048           512     float     sum      -1node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+     9.47    0.22    0.22       0node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+node:223245:223245 [0] NCCL INFO 2048 Bytes -> Algo 1 proto 0 time 7.902400
+     9.91    0.21    0.21       0
+        4096          1024     float     sum      -1node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+     9.49    0.43    0.43       0node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+node:223245:223245 [0] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 8.004800
+     9.54    0.43    0.43       0
+        8192          2048     float     sum      -1node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+     9.94    0.82    0.82       0node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+node:223245:223245 [0] NCCL INFO 8192 Bytes -> Algo 1 proto 0 time 8.209600
+     9.52    0.86    0.86       0
+       16384          4096     float     sum      -1node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+     9.67    1.69    1.69       0node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+node:223245:223245 [0] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 8.619200
+     9.80    1.67    1.67       0
+       32768          8192     float     sum      -1node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+     9.78    3.35    3.35       0node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+node:223245:223245 [0] NCCL INFO 32768 Bytes -> Algo 1 proto 0 time 9.438400
+    10.32    3.18    3.18       0
+       65536         16384     float     sum      -1node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+    10.19    6.43    6.43       0node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+node:223245:223245 [0] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 11.076800
+    10.00    6.56    6.56       0
+      131072         32768     float     sum      -1node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+    12.31   10.65   10.65       0node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+node:223245:223245 [0] NCCL INFO 131072 Bytes -> Algo 1 proto 0 time 14.353600
+    12.11   10.82   10.82       0
+      262144         65536     float     sum      -1node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+    18.79   13.95   13.95       0node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+node:223245:223245 [0] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.907200
+    18.67   14.04   14.04       0
+      524288        131072     float     sum      -1node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+    39.42   13.30   13.30       0node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+node:223245:223245 [0] NCCL INFO 524288 Bytes -> Algo 1 proto 2 time 28.307199
+    39.11   13.41   13.41       0
+     1048576        262144     float     sum      -1node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+    52.35   20.03   20.03       0node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+node:223245:223245 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.414398
+    61.33   17.10   17.10       0
+     2097152        524288     float     sum      -1node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+    77.56   27.04   27.04       0node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+node:223245:223245 [0] NCCL INFO 2097152 Bytes -> Algo 1 proto 2 time 67.628799
+    76.92   27.26   27.26       0
+     4194304       1048576     float     sum      -1node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+   130.39   32.17   32.17       0node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+node:223245:223245 [0] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 120.057594
+   129.16   32.47   32.47       0
+     8388608       2097152     float     sum      -1node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+   235.61   35.60   35.60       0node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+node:223245:223245 [0] NCCL INFO 8388608 Bytes -> Algo 1 proto 2 time 224.915192
+   234.20   35.82   35.82       0
+    16777216       4194304     float     sum      -1node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+   439.21   38.20   38.20       0node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+node:223245:223245 [0] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 434.630402
+   439.27   38.19   38.19       0
+    33554432       8388608     float     sum      -1node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+   858.45   39.09   39.09       0node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+node:223245:223245 [0] NCCL INFO 33554432 Bytes -> Algo 1 proto 2 time 854.060791
+   846.35   39.65   39.65       0
+    67108864      16777216     float     sum      -1node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+  1633.00   41.10   41.10       0node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+node:223245:223245 [0] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+  1643.37   40.84   40.84       0
+   134217728      33554432     float     sum      -1node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+  3152.88   42.57   42.57       0node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+node:223245:223245 [0] NCCL INFO 134217728 Bytes -> Algo 1 proto 2 time 3370.643066
+  3174.52   42.28   42.28       0
+   268435456      67108864     float     sum      -1node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+  6138.57   43.73   43.73       0node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+node:223245:223245 [0] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 6726.086426
+  6113.28   43.91   43.91       0
+   536870912     134217728     float     sum      -1node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+  12106.6   44.35   44.35       0node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+node:223245:223245 [0] NCCL INFO 536870912 Bytes -> Algo 1 proto 2 time 13436.972656
+  12105.6   44.35   44.35       0
+  1073741824     268435456     float     sum      -1node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+  23883.4   44.96   44.96       0node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+node:223245:223245 [0] NCCL INFO 1073741824 Bytes -> Algo 1 proto 2 time 26858.744141
+  23877.4   44.97   44.97       0
+node:223246:223246 [1] NCCL INFO comm 0x59602afc4010 rank 1 nranks 2 cudaDev 1 busId <pci:gpu3> - Destroy COMPLETE
+node:223245:223245 [0] NCCL INFO comm 0x5bccbc5dc3f0 rank 0 nranks 2 cudaDev 0 busId <pci:gpu2> - Destroy COMPLETE
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 16.3948 
+#
+# Collective test concluded: all_reduce_perf
+#
+
+
+# end: 2026-11-12 04:46:05 EST
+# exit: 0
+# wall_s: 7.89
+# status: OK

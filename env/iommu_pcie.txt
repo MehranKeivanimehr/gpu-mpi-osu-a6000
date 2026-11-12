@@ -1,0 +1,20 @@
+## /proc/cmdline
+<kernel command line removed; it has no iommu=, amd_iommu= or iommu.passthrough= parameter>
+## iommu groups
+141
+ivhd0
+ivhd1
+ivhd2
+ivhd3
+ivhd4
+ivhd5
+ivhd6
+ivhd7
+GPU 0 iommu_group=68 domain_type=DMA-FQ
+GPU 1 iommu_group=47 domain_type=DMA-FQ
+GPU 2 iommu_group=27 domain_type=DMA-FQ
+GPU 3 iommu_group=11 domain_type=DMA-FQ
+GPU 4 iommu_group=136 domain_type=DMA-FQ
+GPU 5 iommu_group=120 domain_type=DMA-FQ
+GPU 6 iommu_group=103 domain_type=DMA-FQ
+GPU 7 iommu_group=85 domain_type=DMA-FQ

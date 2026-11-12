@@ -1,0 +1,13 @@
+config_id,algo,proto,size_from,size_to
+all_gather_perf__g2_nv23__p2pdefault,Ring,LL,32,262144
+all_gather_perf__g2_nv23__p2pdefault,Ring,Simple,524288,1073741824
+all_gather_perf__g4_nv23_5_6__p2pNVL,Ring,LL,64,262144
+all_gather_perf__g4_nv23_5_6__p2pNVL,Ring,Simple,524288,1073741824
+all_reduce_perf__g2_nv23__p2pdefault,Ring,LL,8,262144
+all_reduce_perf__g2_nv23__p2pdefault,Ring,Simple,524288,1073741824
+all_reduce_perf__g4_nv23_5_6__p2pNVL,Ring,LL,8,262144
+all_reduce_perf__g4_nv23_5_6__p2pNVL,Ring,Simple,524288,1073741824
+reduce_scatter_perf__g2_nv23__p2pdefault,Ring,LL,32,262144
+reduce_scatter_perf__g2_nv23__p2pdefault,Ring,Simple,524288,1073741824
+reduce_scatter_perf__g4_nv23_5_6__p2pNVL,Ring,LL,64,262144
+reduce_scatter_perf__g4_nv23_5_6__p2pNVL,Ring,Simple,524288,1073741824

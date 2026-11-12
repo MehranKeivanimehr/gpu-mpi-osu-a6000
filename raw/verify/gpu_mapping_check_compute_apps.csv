@@ -1,0 +1,5 @@
+gpu_bus_id, pid, process_name, used_gpu_memory [MiB]
+<pci:gpu0>, <pid>, <other user's process>, 11694 MiB
+<pci:gpu1>, <pid>, <other user's process>, 12454 MiB
+<pci:gpu3>, 199067, ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bw, 2310 MiB
+<pci:gpu4>, 199068, ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bw, 2310 MiB

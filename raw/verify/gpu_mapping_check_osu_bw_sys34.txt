@@ -1,0 +1,13 @@
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Bandwidth Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[0]0:Return code = 0, signaled with Terminated
+[0]1:Return code = 0, signaled with Terminated
+100% util, GPU3 0%

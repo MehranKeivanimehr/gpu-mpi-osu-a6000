@@ -1,0 +1,51 @@
+# config_id: osu_allgather__g4_nv23_5_6__ucxnoipc__L
+# rep: 1
+# order: 6/60 seed=20261112
+# start: 2026-11-12 04:30:56 EST
+# gpus: [2, 3, 5, 6]
+# cmd: GPU_LIST=2,3,5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 4 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/collective/osu_allgather -d cuda -m 8388608:1073741824 -i 10 -x 3 -f
+# meta.kind: omb
+# meta.bench: osu_allgather
+# meta.path: g4_nv23_5_6
+# meta.mode: ucxnoipc
+# meta.range: L
+# meta.validate: False
+# meta.n: 4
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 84, 11704
+#   1, 39, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Allgather Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)   Min Latency(us)   Max Latency(us)  Iterations
+8388608              2535.08           2187.74           2920.56          10
+16777216             5386.54           4617.86           6226.15          10
+33554432            10285.40           9046.64          11814.90          10
+67108864            21116.89          18597.65          24240.89          10
+134217728           42998.70          38048.14          49320.64          10
+268435456           85374.48          77381.84          97350.20          10
+536870912          172473.39         152573.25         198647.53          10
+1073741824         370415.99         340418.85         393476.91          10
+
+# end: 2026-11-12 04:31:14 EST
+# exit: 0
+# wall_s: 17.85
+# status: OK

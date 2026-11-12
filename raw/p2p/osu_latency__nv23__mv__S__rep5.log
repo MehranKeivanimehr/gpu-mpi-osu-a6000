@@ -1,0 +1,60 @@
+# config_id: osu_latency__nv23__mv__S
+# rep: 5
+# order: 46/90 seed=20261112
+# start: 2026-11-12 04:18:48 EST
+# gpus: [2, 3]
+# cmd: GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_latency -d cuda -m 1:4194304 D D
+# meta.kind: omb
+# meta.bench: osu_latency
+# meta.path: nv23
+# meta.mode: mv
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 88, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       7.24
+2                       7.40
+4                       7.37
+8                       7.06
+16                      7.38
+32                      7.64
+64                      7.53
+128                     7.33
+256                     7.63
+512                     7.22
+1024                    7.75
+2048                    7.37
+4096                    7.48
+8192                    7.34
+16384                   6.99
+32768                   7.15
+65536                   8.02
+131072                  9.85
+262144                 13.97
+524288                 16.89
+1048576                26.96
+2097152                46.93
+4194304                87.36
+
+# end: 2026-11-12 04:18:55 EST
+# exit: 0
+# wall_s: 6.88
+# status: OK

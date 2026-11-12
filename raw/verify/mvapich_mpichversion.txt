@@ -1,0 +1,11 @@
+MVAPICH Version:        4.1
+MVAPICH Release date:   18 Sep 2025
+MVAPICH ABI:            0:0:0
+MVAPICH Device:         ch4:ucx
+MVAPICH configure:      --prefix=~/opt/mvapich-4.1-cuda --with-device=ch4:ucx --with-ucx=~/opt/ucx-1.22.0 --with-cuda=/usr/local/cuda-12.4 --with-cuda-sm=86 --with-pm=gforker --disable-fortran --enable-fast=O3 LDFLAGS=-L/usr/local/cuda-12.4/lib64 -Wl,-rpath,/usr/local/cuda-12.4/lib64 -L/usr/local/cuda-12.4/lib64/stubs
+MVAPICH CC:             gcc     -O3
+MVAPICH CXX:            g++   -O3
+MVAPICH F77:              
+MVAPICH FC:               
+MVAPICH features:       threadcomm
+

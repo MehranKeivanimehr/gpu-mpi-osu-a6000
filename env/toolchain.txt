@@ -1,0 +1,39 @@
+/usr/bin/gcc
+/bin/gcc
+/usr/bin/g++
+/bin/g++
+/usr/bin/cc
+/bin/cc
+/usr/bin/make
+/bin/make
+/usr/bin/cmake
+/bin/cmake
+/usr/bin/perl
+/bin/perl
+/usr/bin/python3
+/bin/python3
+/usr/bin/git
+/bin/git
+/usr/bin/wget
+/bin/wget
+/usr/bin/curl
+/bin/curl
+/usr/bin/numactl
+/bin/numactl
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+bash: line 1: gfortran: command not found
+cmake version 3.28.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+bash: line 1: autoconf: command not found
+bash: line 1: automake: command not found
+bash: line 1: libtool: command not found

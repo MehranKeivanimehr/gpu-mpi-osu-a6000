@@ -1,0 +1,60 @@
+# config_id: osu_bw__nv23__ucxipc__S
+# rep: 4
+# order: 23/40 seed=20261112
+# start: 2026-11-12 05:04:32 EST
+# gpus: [2, 3]
+# cmd: GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy,cuda_ipc UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bw -d cuda -m 1:4194304 D D
+# meta.kind: omb
+# meta.bench: osu_bw
+# meta.path: nv23
+# meta.mode: ucxipc
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 94, 11704
+#   1, 81, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Bandwidth Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+1                       0.30
+2                       0.60
+4                       1.23
+8                       2.76
+16                      5.55
+32                     10.04
+64                     19.30
+128                    29.28
+256                    73.32
+512                   146.55
+1024                  287.54
+2048                  562.16
+4096                 1313.78
+8192                 2642.12
+16384                5281.14
+32768               10570.43
+65536               20755.66
+131072              29676.87
+262144              38730.07
+524288              43474.38
+1048576             48360.12
+2097152             50499.07
+4194304             51296.76
+
+# end: 2026-11-12 05:04:37 EST
+# exit: 0
+# wall_s: 4.87
+# status: OK

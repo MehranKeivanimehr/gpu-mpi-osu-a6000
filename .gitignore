@@ -1,0 +1,6 @@
+# compiled probes (sources are in src/*.c, src/*.cu)
+src/cuda_aware_check
+src/init_sleep
+src/p2p_probe
+__pycache__/
+scripts/__pycache__/

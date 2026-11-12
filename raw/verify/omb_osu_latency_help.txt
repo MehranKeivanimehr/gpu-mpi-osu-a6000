@@ -1,0 +1,10 @@
+Usage: osu_latency [options] [SRC DST]
+
+SRC and DST are buffer types for the source and destination
+SRC and DST may be `D', `H', 'MD'or 'MH' which specifies whether
+the buffer is allocated on the accelerator device memory, host
+memory or using CUDA Unified Memory allocated on device or host respectively for each mpi rank
+
+*** buffer overflow detected ***: terminated
+[0]0:Return code = 0, signaled with Aborted
+[0]1:Return code = 0, signaled with Interrupt

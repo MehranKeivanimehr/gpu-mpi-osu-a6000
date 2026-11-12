@@ -1,0 +1,60 @@
+# config_id: osu_latency__node56__ucxnoipc__S
+# rep: 2
+# order: 86/90 seed=20261112
+# start: 2026-11-12 04:28:07 EST
+# gpus: [5, 6]
+# cmd: GPU_LIST=5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_latency -d cuda -m 1:4194304 D D
+# meta.kind: omb
+# meta.bench: osu_latency
+# meta.path: node56
+# meta.mode: ucxnoipc
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 90, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      12.27
+2                      11.73
+4                      11.98
+8                      11.68
+16                     11.54
+32                     11.92
+64                     11.67
+128                    11.69
+256                    11.85
+512                    11.62
+1024                   11.76
+2048                   11.91
+4096                   11.48
+8192                   11.86
+16384                  13.45
+32768                  13.55
+65536                  15.83
+131072                 20.89
+262144                 31.09
+524288                 52.19
+1048576                73.38
+2097152               119.61
+4194304               209.12
+
+# end: 2026-11-12 04:28:16 EST
+# exit: 0
+# wall_s: 8.84
+# status: OK

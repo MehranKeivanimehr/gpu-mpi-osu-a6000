@@ -1,0 +1,313 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc accepts -g... yes
+checking for ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc option to accept ISO C89... none needed
+checking whether ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc understands -c and -o together... yes
+checking dependency style of ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc supports -fno-rtti -fno-exceptions... no
+checking for ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc option to produce PIC... -fPIC -DPIC
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc PIC flag -fPIC -DPIC works... yes
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc static flag -static works... no
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc supports -c -o file.o... yes
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc supports -c -o file.o... (cached) yes
+checking whether the ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for MPI_Session_init... yes
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc accepts -g... (cached) yes
+checking for ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc option to accept ISO C89... (cached) none needed
+checking whether ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc understands -c and -o together... (cached) yes
+checking dependency style of ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc... (cached) gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx accepts -g... yes
+checking dependency style of ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx... gcc3
+checking how to run the C++ preprocessor... ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx -E
+checking for ld used by ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx option to produce PIC... -fPIC -DPIC
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx PIC flag -fPIC -DPIC works... yes
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx static flag -static works... no
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx supports -c -o file.o... yes
+checking if ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx supports -c -o file.o... (cached) yes
+checking whether the ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for library containing sqrt... -lm
+checking for library containing pthread_join... none required
+checking for library containing clock_gettime... none required
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking for inline... inline
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for sqrt... yes
+checking for MPI_Init... yes
+checking for MPI_Accumulate... yes
+checking for MPI_Get_accumulate... yes
+checking for shmem_barrier_all... no
+checking for upc_memput... no
+checking whether upcxx_alltoall is declared... no
+checking for shmem_finalize... no
+checking for MPI_Session_init... (cached) yes
+checking for MPI_Psend_init... yes
+checking for library containing cuPointerGetAttribute... -lcuda
+checking for library containing cudaFree... -lcudart
+checking cuda.h usability... yes
+checking cuda.h presence... yes
+checking for cuda.h... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating c/Makefile
+config.status: creating c/mpi/Makefile
+config.status: creating c/mpi/pt2pt/Makefile
+config.status: creating c/mpi/startup/Makefile
+config.status: creating c/mpi/one-sided/Makefile
+config.status: creating c/mpi/collective/Makefile
+config.status: creating c/openshmem/Makefile
+config.status: creating c/xccl/collective/Makefile
+config.status: creating c/xccl/pt2pt/Makefile
+config.status: creating c/xccl/Makefile
+config.status: creating c/upc/Makefile
+config.status: creating c/upcxx/Makefile
+config.status: creating c/mpi/pt2pt/standard/Makefile
+config.status: creating c/mpi/pt2pt/persistent/Makefile
+config.status: creating c/mpi/collective/blocking/Makefile
+config.status: creating c/mpi/collective/non_blocking/Makefile
+config.status: creating c/mpi/collective/neighborhood/Makefile
+config.status: creating c/mpi/collective/persistent/Makefile
+config.status: creating c/mpi/pt2pt/congestion/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making all in c
+make[1]: Entering directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c'
+Making all in mpi
+make[2]: Entering directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c/mpi'
+Making all in pt2pt
+make[3]: Entering directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c/mpi/pt2pt'
+Making all in standard
+make[4]: Entering directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c/mpi/pt2pt/standard'
+depbase=`echo osu_bibw.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.5.3\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.5.3\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.5.3\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -D_ENABLE_MPI4_=1 -DHAVE_CUDA_H=1 -D_ENABLE_CUDA_=1 -D_ENABLE_CUDA_KERNEL_=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.   -I/usr/local/cuda-12.4/include  -I../../../../c/util  -g -O2 -MT osu_bibw.o -MD -MP -MF $depbase.Tpo -c -o osu_bibw.o osu_bibw.c &&\
+mv -f $depbase.Tpo $depbase.Po
+nvcc -cuda -maxrregcount 32 -ccbin ~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicxx   -I/usr/local/cuda-12.4/include  --output-file ../../../util/kernel.cpp.ii ../../../util/kernel.cu
+depbase=`echo osu_bw.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.5.3\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.5.3\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.5.3\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -D_ENABLE_MPI4_=1 -DHAVE_CUDA_H=1 -D_ENABLE_CUDA_=1 -D_ENABLE_CUDA_KERNEL_=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.   -I/usr/local/cuda-12.4/include  -I../../../../c/util  -g -O2 -MT osu_bw.o -MD -MP -MF $depbase.Tpo -c -o osu_bw.o osu_bw.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo osu_latency.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.5.3\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.5.3\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.5.3\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -D_ENABLE_MPI4_=1 -DHAVE_CUDA_H=1 -D_ENABLE_CUDA_=1 -D_ENABLE_CUDA_KERNEL_=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.   -I/usr/local/cuda-12.4/include  -I../../../../c/util  -g -O2 -MT osu_latency.o -MD -MP -MF $depbase.Tpo -c -o osu_latency.o osu_latency.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo osu_mbw_mr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.5.3\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.5.3\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.5.3\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -D_ENABLE_MPI4_=1 -DHAVE_CUDA_H=1 -D_ENABLE_CUDA_=1 -D_ENABLE_CUDA_KERNEL_=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.   -I/usr/local/cuda-12.4/include  -I../../../../c/util  -g -O2 -MT osu_mbw_mr.o -MD -MP -MF $depbase.Tpo -c -o osu_mbw_mr.o osu_mbw_mr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash: line 1: nvcc: command not found
+depbase=`echo osu_multi_lat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+~/opt/openmpi-5.0.11-ucx-cuda/bin/mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.5.3\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.5.3\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.5.3\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -D_ENABLE_MPI4_=1 -DHAVE_CUDA_H=1 -D_ENABLE_CUDA_=1 -D_ENABLE_CUDA_KERNEL_=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.   -I/usr/local/cuda-12.4/include  -I../../../../c/util  -g -O2 -MT osu_multi_lat.o -MD -MP -MF $depbase.Tpo -c -o osu_multi_lat.o osu_multi_lat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+make[4]: *** [Makefile:917: ../../../util/kernel.cpp] Error 127
+make[4]: *** Waiting for unfinished jobs....
+osu_bibw.c: In function ‘main’:
+osu_mbw_mr.c: In function ‘main’:
+osu_mbw_mr.c:201:47: warning: field width specifier ‘*’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  201 |                             fprintf(stdout, "%*sP%d Tail BW(MB/s)",
+      |                                              ~^~
+      |                                               |
+      |                                               int
+osu_bibw.c:416:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  416 |                 fprintf(stdout, "%-*d", 10, size);
+      |                                  ~~~^       ~~~~
+      |                                     |       |
+      |                                     int     size_t {aka long unsigned int}
+      |                                  %-*ld
+osu_mbw_mr.c:263:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  263 |                     fprintf(stdout, "%-7d", curr_size);
+      |                                      ~~~^   ~~~~~~~~~
+      |                                         |   |
+      |                                         int size_t {aka long unsigned int}
+      |                                      %-7ld
+osu_bibw.c:477:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  477 |                 "DATA VALIDATION ERROR: %s exited with status %d on"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  478 |                 " message size %d.\n",
+  479 |                 argv[0], EXIT_FAILURE, size);
+      |                                        ~~~~
+      |                                        |
+      |                                        size_t {aka long unsigned int}
+osu_bibw.c:478:33: note: format string is defined here
+  478 |                 " message size %d.\n",
+      |                                ~^
+      |                                 |
+      |                                 int
+      |                                %ld
+osu_mbw_mr.c:311:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  311 |                     fprintf(stdout, "%-7d", curr_size);
+      |                                      ~~~^   ~~~~~~~~~
+      |                                         |   |
+      |                                         int size_t {aka long unsigned int}
+      |                                      %-7ld
+osu_latency.c: In function ‘main’:
+osu_latency.c:277:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  277 |                 fprintf(stdout, "%-*d", 10, size);
+      |                                  ~~~^       ~~~~
+      |                                     |       |
+      |                                     int     size_t {aka long unsigned int}
+      |                                  %-*ld
+osu_mbw_mr.c:366:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  366 |                             fprintf(stdout, "%-*d%*.*f%*.*f%*s", 10, curr_size,
+      |                                              ~~~^                    ~~~~~~~~~
+      |                                                 |                    |
+      |                                                 int                  size_t {aka long unsigned int}
+      |                                              %-*ld
+osu_mbw_mr.c:372:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  372 |                             fprintf(stdout, "%-*d%*.*f%*.*f", 10, curr_size,
+      |                                              ~~~^                 ~~~~~~~~~
+      |                                                 |                 |
+      |                                                 int               size_t {aka long unsigned int}
+      |                                              %-*ld
+osu_latency.c:332:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  332 |                 "DATA VALIDATION ERROR: %s exited with status %d on"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  333 |                 " message size %d.\n",
+  334 |                 argv[0], EXIT_FAILURE, size);
+      |                                        ~~~~
+      |                                        |
+      |                                        size_t {aka long unsigned int}
+osu_latency.c:333:33: note: format string is defined here
+  333 |                 " message size %d.\n",
+      |                                ~^
+      |                                 |
+      |                                 int
+      |                                %ld
+osu_mbw_mr.c:380:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  380 |                             fprintf(stdout, "%-*d%*.*f%*s", 10, curr_size,
+      |                                              ~~~^               ~~~~~~~~~
+      |                                                 |               |
+      |                                                 int             size_t {aka long unsigned int}
+      |                                              %-*ld
+osu_mbw_mr.c:385:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  385 |                             fprintf(stdout, "%-*d%*.*f", 10, curr_size,
+      |                                              ~~~^            ~~~~~~~~~
+      |                                                 |            |
+      |                                                 int          size_t {aka long unsigned int}
+      |                                              %-*ld
+osu_mbw_mr.c:437:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  437 |                 "DATA VALIDATION ERROR: %s exited with status %d on"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  438 |                 " message size %d.\n",
+  439 |                 argv[0], EXIT_FAILURE, curr_size);
+      |                                        ~~~~~~~~~
+      |                                        |
+      |                                        size_t {aka long unsigned int}
+osu_mbw_mr.c:438:33: note: format string is defined here
+  438 |                 " message size %d.\n",
+      |                                ~^
+      |                                 |
+      |                                 int
+      |                                %ld
+osu_bw.c: In function ‘main’:
+osu_bw.c:369:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  369 |                 fprintf(stdout, "%-*d", 10, size);
+      |                                  ~~~^       ~~~~
+      |                                     |       |
+      |                                     int     size_t {aka long unsigned int}
+      |                                  %-*ld
+osu_multi_lat.c: In function ‘multi_latency’:
+osu_bw.c:430:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  430 |                 "DATA VALIDATION ERROR: %s exited with status %d on"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  431 |                 " message size %d.\n",
+  432 |                 argv[0], EXIT_FAILURE, size);
+      |                                        ~~~~
+      |                                        |
+      |                                        size_t {aka long unsigned int}
+osu_multi_lat.c:320:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  320 |                 fprintf(stdout, "%-*d", 10, size);
+      |                                  ~~~^       ~~~~
+      |                                     |       |
+      |                                     int     size_t {aka long unsigned int}
+      |                                  %-*ld
+osu_bw.c:431:33: note: format string is defined here
+  431 |                 " message size %d.\n",
+      |                                ~^
+      |                                 |
+      |                                 int
+      |                                %ld
+make[4]: Leaving directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c/mpi/pt2pt/standard'
+make[3]: *** [Makefile:354: all-recursive] Error 1
+make[3]: Leaving directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c/mpi/pt2pt'
+make[2]: *** [Makefile:355: all-recursive] Error 1
+make[2]: Leaving directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c/mpi'
+make[1]: *** [Makefile:430: all-recursive] Error 1
+make[1]: Leaving directory '~/opt/build/omb-7.5.3-ompi-5.0.11/c'
+make: *** [Makefile:383: all-recursive] Error 1

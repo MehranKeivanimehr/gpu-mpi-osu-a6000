@@ -1,0 +1,60 @@
+# config_id: osu_bibw__node56__ucxnoipc__S
+# rep: 4
+# order: 31/90 seed=20261112
+# start: 2026-11-12 04:15:32 EST
+# gpus: [5, 6]
+# cmd: GPU_LIST=5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bibw -d cuda -m 1:4194304 D D
+# meta.kind: omb
+# meta.bench: osu_bibw
+# meta.path: node56
+# meta.mode: ucxnoipc
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 100, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Bi-Directional Bandwidth Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+1                       0.37
+2                       0.66
+4                       1.40
+8                       2.59
+16                      5.23
+32                     10.71
+64                     22.74
+128                    42.06
+256                    83.33
+512                   169.43
+1024                  381.15
+2048                  776.29
+4096                 1428.56
+8192                 2689.61
+16384                4966.29
+32768                9386.73
+65536               17791.95
+131072              21594.15
+262144              28421.06
+524288              28555.77
+1048576             27731.36
+2097152             26661.66
+4194304             26761.08
+
+# end: 2026-11-12 04:15:38 EST
+# exit: 0
+# wall_s: 5.88
+# status: OK

@@ -1,0 +1,12 @@
+index, name, pci.bus_id, fan.speed [%], pstate, power.draw [W], utilization.gpu [%], memory.used [MiB], clocks_event_reasons.active
+0, NVIDIA RTX A6000, <pci:gpu0>, 40 %, P2, 273.64 W, 100 %, 11704 MiB, 0x0000000000000004
+1, NVIDIA RTX A6000, <pci:gpu1>, 38 %, P2, 267.06 W, 96 %, 12464 MiB, 0x0000000000000004
+2, NVIDIA RTX A6000, <pci:gpu2>, 30 %, P8, 23.50 W, 0 %, 1 MiB, 0x0000000000000004
+3, NVIDIA RTX A6000, <pci:gpu3>, 30 %, P8, 22.62 W, 0 %, 1 MiB, 0x0000000000000001
+4, NVIDIA RTX A6000, <pci:gpu4>, [System is not in ready state], P2, 97.69 W, 35 %, 1 MiB, 0x0000000000000000
+5, NVIDIA RTX A6000, <pci:gpu5>, 30 %, P8, 21.23 W, 0 %, 1 MiB, 0x0000000000000001
+6, NVIDIA RTX A6000, <pci:gpu6>, 30 %, P8, 25.68 W, 0 %, 1 MiB, 0x0000000000000001
+7, NVIDIA RTX A6000, <pci:gpu7>, 30 %, P8, 21.20 W, 0 %, 1 MiB, 0x0000000000000001
+gpu_bus_id, pid, process_name
+<pci:gpu0>, <pid>, <other user's process>
+<pci:gpu1>, <pid>, <other user's process>

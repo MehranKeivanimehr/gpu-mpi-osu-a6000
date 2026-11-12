@@ -1,0 +1,560 @@
+# started 2026-11-12 04:08:59 EST; format: timestamp | ss -ltnup lines for osu_/nccl-tests/mpiexec/numactl processes (empty = none)
+04:08:59 bench_procs=3 | none
+04:09:15 bench_procs=3 | none
+04:09:30 bench_procs=3 | none
+04:09:45 bench_procs=3 | none
+04:10:01 bench_procs=1 | none
+04:10:16 bench_procs=3 | none
+04:10:31 bench_procs=3 | none
+04:10:47 bench_procs=3 | none
+04:11:02 bench_procs=3 | none
+04:11:17 bench_procs=3 | none
+04:11:33 bench_procs=2 | none
+04:11:48 bench_procs=3 | none
+04:12:03 bench_procs=3 | none
+04:12:19 bench_procs=3 | none
+04:12:34 bench_procs=3 | none
+04:12:49 bench_procs=3 | none
+04:13:05 bench_procs=3 | none
+04:13:20 bench_procs=3 | none
+04:13:35 bench_procs=3 | none
+04:13:51 bench_procs=3 | none
+04:14:06 bench_procs=3 | none
+04:14:21 bench_procs=3 | none
+04:14:37 bench_procs=3 | none
+04:14:52 bench_procs=3 | none
+04:15:07 bench_procs=3 | none
+04:15:23 bench_procs=3 | none
+04:15:38 bench_procs=3 | none
+04:15:53 bench_procs=3 | none
+04:16:09 bench_procs=0 | none
+04:16:24 bench_procs=3 | none
+04:16:39 bench_procs=3 | none
+04:16:55 bench_procs=3 | none
+04:17:10 bench_procs=3 | none
+04:17:25 bench_procs=3 | none
+04:17:41 bench_procs=3 | none
+04:17:56 bench_procs=3 | none
+04:18:11 bench_procs=3 | none
+04:18:27 bench_procs=3 | none
+04:18:42 bench_procs=3 | none
+04:18:57 bench_procs=3 | none
+04:19:13 bench_procs=3 | none
+04:19:28 bench_procs=1 | none
+04:19:43 bench_procs=3 | none
+04:19:59 bench_procs=3 | none
+04:20:14 bench_procs=3 | none
+04:20:29 bench_procs=3 | none
+04:20:45 bench_procs=3 | none
+04:21:00 bench_procs=3 | none
+04:21:15 bench_procs=3 | none
+04:21:31 bench_procs=1 | none
+04:21:46 bench_procs=3 | none
+04:22:01 bench_procs=3 | none
+04:22:17 bench_procs=1 | none
+04:22:32 bench_procs=1 | none
+04:22:47 bench_procs=3 | none
+04:23:03 bench_procs=3 | none
+04:23:18 bench_procs=3 | none
+04:23:33 bench_procs=3 | none
+04:23:49 bench_procs=3 | none
+04:24:04 bench_procs=3 | none
+04:24:19 bench_procs=1 | none
+04:24:35 bench_procs=3 | none
+04:24:50 bench_procs=3 | none
+04:25:06 bench_procs=3 | none
+04:25:21 bench_procs=3 | none
+04:25:36 bench_procs=3 | none
+04:25:52 bench_procs=3 | none
+04:26:07 bench_procs=3 | none
+04:26:22 bench_procs=3 | none
+04:26:38 bench_procs=3 | none
+04:26:53 bench_procs=3 | none
+04:27:08 bench_procs=3 | none
+04:27:24 bench_procs=3 | none
+04:27:39 bench_procs=3 | none
+04:27:54 bench_procs=3 | none
+04:28:10 bench_procs=3 | none
+04:28:25 bench_procs=3 | none
+04:28:40 bench_procs=2 | none
+04:28:56 bench_procs=3 | none
+04:29:11 bench_procs=3 | none
+04:29:26 bench_procs=3 | none
+04:29:42 bench_procs=1 | none
+04:29:57 bench_procs=3 | none
+04:30:12 bench_procs=3 | none
+04:30:28 bench_procs=5 | none
+04:30:43 bench_procs=5 | none
+04:30:58 bench_procs=5 | none
+04:31:14 bench_procs=3 | none
+04:31:29 bench_procs=1 | none
+04:31:44 bench_procs=5 | none
+04:32:00 bench_procs=3 | none
+04:32:15 bench_procs=3 | none
+04:32:30 bench_procs=1 | none
+04:32:46 bench_procs=3 | none
+04:33:01 bench_procs=1 | none
+04:33:17 bench_procs=5 | none
+04:33:32 bench_procs=3 | none
+04:33:47 bench_procs=5 | none
+04:34:03 bench_procs=3 | none
+04:34:18 bench_procs=5 | none
+04:34:33 bench_procs=5 | none
+04:34:49 bench_procs=0 | none
+04:35:04 bench_procs=3 | none
+04:35:19 bench_procs=5 | none
+04:35:35 bench_procs=5 | none
+04:35:50 bench_procs=5 | none
+04:36:05 bench_procs=5 | none
+04:36:21 bench_procs=3 | none
+04:36:36 bench_procs=3 | none
+04:36:51 bench_procs=5 | none
+04:37:07 bench_procs=5 | none
+04:37:22 bench_procs=5 | none
+04:37:37 bench_procs=1 | none
+04:37:53 bench_procs=5 | none
+04:38:08 bench_procs=5 | none
+04:38:23 bench_procs=3 | none
+04:38:39 bench_procs=0 | none
+04:38:54 bench_procs=5 | none
+04:39:09 bench_procs=3 | none
+04:39:25 bench_procs=5 | none
+04:39:40 bench_procs=1 | none
+04:39:55 bench_procs=5 | none
+04:40:11 bench_procs=3 | none
+04:40:26 bench_procs=5 | none
+04:40:42 bench_procs=5 | none
+04:40:57 bench_procs=1 | none
+04:41:12 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60537      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52469      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:56735      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42167      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:48965      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33019      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:38989      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:37611      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=92)) 
+04:41:28 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60537      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52469      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:56735      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42167      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:48965      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33019      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:38989      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:37611      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=92)) 
+04:41:43 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60537      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52469      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:56735      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42167      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:48965      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33019      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:38989      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:37611      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=92)) 
+04:41:58 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60537      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52469      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:56735      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42167      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:48965      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33019      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:38989      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:37611      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=92)) 
+04:42:14 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60537      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52469      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:56735      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42167      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:48965      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33019      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:38989      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:37611      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=92)) 
+04:42:29 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60537      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52469      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:56735      0.0.0.0:*    users:(("all_reduce_perf",pid=222043,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42167      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:48965      0.0.0.0:*    users:(("all_reduce_perf",pid=222046,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33019      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:38989      0.0.0.0:*    users:(("all_reduce_perf",pid=222044,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:37611      0.0.0.0:*    users:(("all_reduce_perf",pid=222045,fd=92)) 
+04:42:44 bench_procs=1 | none
+04:43:00 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60685      0.0.0.0:*    users:(("all_gather_perf",pid=222523,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:58463      0.0.0.0:*    users:(("all_gather_perf",pid=222525,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:52795      0.0.0.0:*    users:(("all_gather_perf",pid=222526,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:49793      0.0.0.0:*    users:(("all_gather_perf",pid=222524,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:50753      0.0.0.0:*    users:(("all_gather_perf",pid=222526,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:55947      0.0.0.0:*    users:(("all_gather_perf",pid=222525,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:53737      0.0.0.0:*    users:(("all_gather_perf",pid=222524,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:44879      0.0.0.0:*    users:(("all_gather_perf",pid=222523,fd=92)) 
+04:43:15 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60685      0.0.0.0:*    users:(("all_gather_perf",pid=222523,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:58463      0.0.0.0:*    users:(("all_gather_perf",pid=222525,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:52795      0.0.0.0:*    users:(("all_gather_perf",pid=222526,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:49793      0.0.0.0:*    users:(("all_gather_perf",pid=222524,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:50753      0.0.0.0:*    users:(("all_gather_perf",pid=222526,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:55947      0.0.0.0:*    users:(("all_gather_perf",pid=222525,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:53737      0.0.0.0:*    users:(("all_gather_perf",pid=222524,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:44879      0.0.0.0:*    users:(("all_gather_perf",pid=222523,fd=92)) 
+04:43:30 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60685      0.0.0.0:*    users:(("all_gather_perf",pid=222523,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:58463      0.0.0.0:*    users:(("all_gather_perf",pid=222525,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:52795      0.0.0.0:*    users:(("all_gather_perf",pid=222526,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:49793      0.0.0.0:*    users:(("all_gather_perf",pid=222524,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:50753      0.0.0.0:*    users:(("all_gather_perf",pid=222526,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:55947      0.0.0.0:*    users:(("all_gather_perf",pid=222525,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:53737      0.0.0.0:*    users:(("all_gather_perf",pid=222524,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:44879      0.0.0.0:*    users:(("all_gather_perf",pid=222523,fd=92)) 
+04:43:46 bench_procs=1 | none
+04:44:01 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60933      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50393      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:54869      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:43879      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36817      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:36649      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:38965      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:40047      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=92)) 
+04:44:16 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60933      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50393      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:54869      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:43879      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36817      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:36649      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:38965      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:40047      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=92)) 
+04:44:32 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60933      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50393      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:54869      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:43879      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36817      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:36649      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:38965      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:40047      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=92)) 
+04:44:47 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60933      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50393      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:54869      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:43879      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36817      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:36649      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:38965      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:40047      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=92)) 
+04:45:02 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60933      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50393      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:54869      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:43879      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36817      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:36649      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:38965      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:40047      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=92)) 
+04:45:18 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:60933      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50393      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:54869      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:43879      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36817      0.0.0.0:*    users:(("all_reduce_perf",pid=222734,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:36649      0.0.0.0:*    users:(("all_reduce_perf",pid=222731,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:38965      0.0.0.0:*    users:(("all_reduce_perf",pid=222732,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:40047      0.0.0.0:*    users:(("all_reduce_perf",pid=222733,fd=92)) 
+04:45:33 bench_procs=1 | none
+04:45:48 bench_procs=3 | tcp   LISTEN 0      4096       127.0.0.1:49185      0.0.0.0:*    users:(("all_reduce_perf",pid=223152,fd=86)) 
+tcp   LISTEN 0      4096       127.0.0.1:54185      0.0.0.0:*    users:(("all_reduce_perf",pid=223152,fd=83)) 
+tcp   LISTEN 0      4096       127.0.0.1:43745      0.0.0.0:*    users:(("all_reduce_perf",pid=223151,fd=49)) 
+tcp   LISTEN 0      4096       127.0.0.1:37407      0.0.0.0:*    users:(("all_reduce_perf",pid=223151,fd=84)) 
+04:46:04 bench_procs=1 | none
+04:46:19 bench_procs=5 | none
+04:46:34 bench_procs=5 | none
+04:46:50 bench_procs=5 | none
+04:47:05 bench_procs=5 | none
+04:47:20 bench_procs=5 | none
+04:47:36 bench_procs=5 | none
+04:47:51 bench_procs=5 | none
+04:48:06 bench_procs=5 | none
+04:48:22 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59539      0.0.0.0:*    users:(("all_gather_perf",pid=223765,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:58341      0.0.0.0:*    users:(("all_gather_perf",pid=223764,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49943      0.0.0.0:*    users:(("all_gather_perf",pid=223765,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50285      0.0.0.0:*    users:(("all_gather_perf",pid=223763,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:56239      0.0.0.0:*    users:(("all_gather_perf",pid=223764,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:47913      0.0.0.0:*    users:(("all_gather_perf",pid=223762,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:48935      0.0.0.0:*    users:(("all_gather_perf",pid=223762,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:46161      0.0.0.0:*    users:(("all_gather_perf",pid=223763,fd=91)) 
+04:48:37 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59539      0.0.0.0:*    users:(("all_gather_perf",pid=223765,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:58341      0.0.0.0:*    users:(("all_gather_perf",pid=223764,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49943      0.0.0.0:*    users:(("all_gather_perf",pid=223765,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50285      0.0.0.0:*    users:(("all_gather_perf",pid=223763,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:56239      0.0.0.0:*    users:(("all_gather_perf",pid=223764,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:47913      0.0.0.0:*    users:(("all_gather_perf",pid=223762,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:48935      0.0.0.0:*    users:(("all_gather_perf",pid=223762,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:46161      0.0.0.0:*    users:(("all_gather_perf",pid=223763,fd=91)) 
+04:48:52 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59539      0.0.0.0:*    users:(("all_gather_perf",pid=223765,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:58341      0.0.0.0:*    users:(("all_gather_perf",pid=223764,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49943      0.0.0.0:*    users:(("all_gather_perf",pid=223765,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:50285      0.0.0.0:*    users:(("all_gather_perf",pid=223763,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:56239      0.0.0.0:*    users:(("all_gather_perf",pid=223764,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:47913      0.0.0.0:*    users:(("all_gather_perf",pid=223762,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:48935      0.0.0.0:*    users:(("all_gather_perf",pid=223762,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:46161      0.0.0.0:*    users:(("all_gather_perf",pid=223763,fd=91)) 
+04:49:08 bench_procs=5 | none
+04:49:23 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:49713      0.0.0.0:*    users:(("all_gather_perf",pid=223976,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:50663      0.0.0.0:*    users:(("all_gather_perf",pid=223973,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:54389      0.0.0.0:*    users:(("all_gather_perf",pid=223974,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:42649      0.0.0.0:*    users:(("all_gather_perf",pid=223975,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:49081      0.0.0.0:*    users:(("all_gather_perf",pid=223973,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:45087      0.0.0.0:*    users:(("all_gather_perf",pid=223976,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:45101      0.0.0.0:*    users:(("all_gather_perf",pid=223974,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38487      0.0.0.0:*    users:(("all_gather_perf",pid=223975,fd=92)) 
+04:49:38 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:49713      0.0.0.0:*    users:(("all_gather_perf",pid=223976,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:50663      0.0.0.0:*    users:(("all_gather_perf",pid=223973,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:54389      0.0.0.0:*    users:(("all_gather_perf",pid=223974,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:42649      0.0.0.0:*    users:(("all_gather_perf",pid=223975,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:49081      0.0.0.0:*    users:(("all_gather_perf",pid=223973,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:45087      0.0.0.0:*    users:(("all_gather_perf",pid=223976,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:45101      0.0.0.0:*    users:(("all_gather_perf",pid=223974,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38487      0.0.0.0:*    users:(("all_gather_perf",pid=223975,fd=92)) 
+04:49:54 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:49713      0.0.0.0:*    users:(("all_gather_perf",pid=223976,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:50663      0.0.0.0:*    users:(("all_gather_perf",pid=223973,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:54389      0.0.0.0:*    users:(("all_gather_perf",pid=223974,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:42649      0.0.0.0:*    users:(("all_gather_perf",pid=223975,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:49081      0.0.0.0:*    users:(("all_gather_perf",pid=223973,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:45087      0.0.0.0:*    users:(("all_gather_perf",pid=223976,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:45101      0.0.0.0:*    users:(("all_gather_perf",pid=223974,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38487      0.0.0.0:*    users:(("all_gather_perf",pid=223975,fd=92)) 
+04:50:09 bench_procs=5 | none
+04:50:24 bench_procs=5 | none
+04:50:40 bench_procs=5 | none
+04:50:55 bench_procs=5 | none
+04:51:10 bench_procs=5 | none
+04:51:26 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59703      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49343      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:50303      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:40431      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:37627      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:38439      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38697      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:37891      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=94)) 
+04:51:41 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59703      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49343      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:50303      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:40431      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:37627      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:38439      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38697      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:37891      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=94)) 
+04:51:56 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59703      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49343      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:50303      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:40431      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:37627      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:38439      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38697      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:37891      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=94)) 
+04:52:12 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59703      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49343      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:50303      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:40431      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:37627      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:38439      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38697      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:37891      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=94)) 
+04:52:27 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59703      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49343      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:50303      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:40431      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:37627      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:38439      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38697      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:37891      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=94)) 
+04:52:42 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59703      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:49343      0.0.0.0:*    users:(("all_reduce_perf",pid=224403,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:50303      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:40431      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:37627      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:38439      0.0.0.0:*    users:(("all_reduce_perf",pid=224401,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:38697      0.0.0.0:*    users:(("all_reduce_perf",pid=224404,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:37891      0.0.0.0:*    users:(("all_reduce_perf",pid=224402,fd=94)) 
+04:52:58 bench_procs=3 | none
+04:53:13 bench_procs=5 | none
+04:53:28 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59643      0.0.0.0:*    users:(("all_gather_perf",pid=224888,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:52417      0.0.0.0:*    users:(("all_gather_perf",pid=224887,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52659      0.0.0.0:*    users:(("all_gather_perf",pid=224887,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:53735      0.0.0.0:*    users:(("all_gather_perf",pid=224888,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44281      0.0.0.0:*    users:(("all_gather_perf",pid=224886,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42541      0.0.0.0:*    users:(("all_gather_perf",pid=224886,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:48283      0.0.0.0:*    users:(("all_gather_perf",pid=224889,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:45249      0.0.0.0:*    users:(("all_gather_perf",pid=224889,fd=96)) 
+04:53:44 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59643      0.0.0.0:*    users:(("all_gather_perf",pid=224888,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:52417      0.0.0.0:*    users:(("all_gather_perf",pid=224887,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52659      0.0.0.0:*    users:(("all_gather_perf",pid=224887,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:53735      0.0.0.0:*    users:(("all_gather_perf",pid=224888,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44281      0.0.0.0:*    users:(("all_gather_perf",pid=224886,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42541      0.0.0.0:*    users:(("all_gather_perf",pid=224886,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:48283      0.0.0.0:*    users:(("all_gather_perf",pid=224889,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:45249      0.0.0.0:*    users:(("all_gather_perf",pid=224889,fd=96)) 
+04:53:59 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:59643      0.0.0.0:*    users:(("all_gather_perf",pid=224888,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:52417      0.0.0.0:*    users:(("all_gather_perf",pid=224887,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:52659      0.0.0.0:*    users:(("all_gather_perf",pid=224887,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:53735      0.0.0.0:*    users:(("all_gather_perf",pid=224888,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44281      0.0.0.0:*    users:(("all_gather_perf",pid=224886,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:42541      0.0.0.0:*    users:(("all_gather_perf",pid=224886,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:48283      0.0.0.0:*    users:(("all_gather_perf",pid=224889,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:45249      0.0.0.0:*    users:(("all_gather_perf",pid=224889,fd=96)) 
+04:54:14 bench_procs=5 | none
+04:54:30 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:57181      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:54121      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:55209      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:41361      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:46067      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:35705      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36295      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33989      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=57)) 
+04:54:45 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:57181      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:54121      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:55209      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:41361      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:46067      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:35705      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36295      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33989      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=57)) 
+04:55:01 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:57181      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:54121      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:55209      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:41361      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:46067      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:35705      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36295      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33989      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=57)) 
+04:55:16 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:57181      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:54121      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:55209      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:41361      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:46067      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:35705      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36295      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33989      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=57)) 
+04:55:31 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:57181      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:54121      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:55209      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:41361      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:46067      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:35705      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36295      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33989      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=57)) 
+04:55:47 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:57181      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:54121      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:55209      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:41361      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:46067      0.0.0.0:*    users:(("all_reduce_perf",pid=225143,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:35705      0.0.0.0:*    users:(("all_reduce_perf",pid=225144,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:36295      0.0.0.0:*    users:(("all_reduce_perf",pid=225145,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:33989      0.0.0.0:*    users:(("all_reduce_perf",pid=225142,fd=57)) 
+04:56:02 bench_procs=3 | tcp   LISTEN 0      4096       127.0.0.1:57861      0.0.0.0:*    users:(("all_gather_perf",pid=225517,fd=83)) 
+tcp   LISTEN 0      4096       127.0.0.1:44143      0.0.0.0:*    users:(("all_gather_perf",pid=225516,fd=85)) 
+tcp   LISTEN 0      4096       127.0.0.1:44337      0.0.0.0:*    users:(("all_gather_perf",pid=225517,fd=86)) 
+tcp   LISTEN 0      4096       127.0.0.1:38183      0.0.0.0:*    users:(("all_gather_perf",pid=225516,fd=84)) 
+04:56:17 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:58021      0.0.0.0:*    users:(("all_gather_perf",pid=225592,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:50969      0.0.0.0:*    users:(("all_gather_perf",pid=225594,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:44475      0.0.0.0:*    users:(("all_gather_perf",pid=225594,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:40979      0.0.0.0:*    users:(("all_gather_perf",pid=225593,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:45561      0.0.0.0:*    users:(("all_gather_perf",pid=225592,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:34425      0.0.0.0:*    users:(("all_gather_perf",pid=225591,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:34567      0.0.0.0:*    users:(("all_gather_perf",pid=225593,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:38483      0.0.0.0:*    users:(("all_gather_perf",pid=225591,fd=92)) 
+04:56:33 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:58021      0.0.0.0:*    users:(("all_gather_perf",pid=225592,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:50969      0.0.0.0:*    users:(("all_gather_perf",pid=225594,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:44475      0.0.0.0:*    users:(("all_gather_perf",pid=225594,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:40979      0.0.0.0:*    users:(("all_gather_perf",pid=225593,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:45561      0.0.0.0:*    users:(("all_gather_perf",pid=225592,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:34425      0.0.0.0:*    users:(("all_gather_perf",pid=225591,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:34567      0.0.0.0:*    users:(("all_gather_perf",pid=225593,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:38483      0.0.0.0:*    users:(("all_gather_perf",pid=225591,fd=92)) 
+04:56:48 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:58021      0.0.0.0:*    users:(("all_gather_perf",pid=225592,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:50969      0.0.0.0:*    users:(("all_gather_perf",pid=225594,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:44475      0.0.0.0:*    users:(("all_gather_perf",pid=225594,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:40979      0.0.0.0:*    users:(("all_gather_perf",pid=225593,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:45561      0.0.0.0:*    users:(("all_gather_perf",pid=225592,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:34425      0.0.0.0:*    users:(("all_gather_perf",pid=225591,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:34567      0.0.0.0:*    users:(("all_gather_perf",pid=225593,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:38483      0.0.0.0:*    users:(("all_gather_perf",pid=225591,fd=92)) 
+04:57:03 bench_procs=3 | none
+04:57:19 bench_procs=5 | none
+04:57:34 bench_procs=5 | none
+04:57:49 bench_procs=5 | none
+04:58:05 bench_procs=5 | none
+04:58:20 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+04:58:35 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+04:58:51 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+04:59:06 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+04:59:21 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+04:59:37 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+04:59:52 bench_procs=5 | tcp   LISTEN 0      4096       127.0.0.1:53473      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=94)) 
+tcp   LISTEN 0      4096       127.0.0.1:43615      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=95)) 
+tcp   LISTEN 0      4096       127.0.0.1:44459      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=96)) 
+tcp   LISTEN 0      4096       127.0.0.1:41341      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=57)) 
+tcp   LISTEN 0      4096       127.0.0.1:45717      0.0.0.0:*    users:(("all_reduce_perf",pid=226067,fd=92)) 
+tcp   LISTEN 0      4096       127.0.0.1:46005      0.0.0.0:*    users:(("all_reduce_perf",pid=226070,fd=93)) 
+tcp   LISTEN 0      4096       127.0.0.1:35385      0.0.0.0:*    users:(("all_reduce_perf",pid=226068,fd=91)) 
+tcp   LISTEN 0      4096       127.0.0.1:36017      0.0.0.0:*    users:(("all_reduce_perf",pid=226069,fd=92)) 
+05:00:07 bench_procs=5 | none
+05:00:23 bench_procs=5 | none
+05:00:38 bench_procs=5 | none
+05:00:53 bench_procs=5 | none
+05:01:09 bench_procs=1 | none
+05:01:24 bench_procs=1 | none
+05:01:39 bench_procs=1 | none
+05:01:55 bench_procs=3 | none
+05:02:10 bench_procs=3 | none
+05:02:25 bench_procs=2 | none
+05:02:41 bench_procs=3 | none
+05:02:56 bench_procs=3 | none
+05:03:11 bench_procs=3 | none
+05:03:27 bench_procs=3 | none
+05:03:42 bench_procs=3 | none
+05:03:58 bench_procs=0 | none
+05:04:13 bench_procs=3 | none
+05:04:28 bench_procs=3 | none
+05:04:44 bench_procs=3 | none
+05:04:59 bench_procs=3 | none
+05:05:14 bench_procs=3 | none
+05:05:30 bench_procs=3 | none
+05:05:45 bench_procs=3 | none
+05:06:00 bench_procs=3 | none
+05:06:16 bench_procs=3 | none
+05:06:31 bench_procs=2 | none
+05:06:46 bench_procs=3 | none
+05:07:02 bench_procs=3 | none
+05:07:17 bench_procs=3 | none
+05:07:32 bench_procs=3 | none
+# stopped 2026-11-12 05:07:48 EST

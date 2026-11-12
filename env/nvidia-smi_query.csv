@@ -1,0 +1,9 @@
+index, name, pci.bus_id, memory.total [MiB], driver_version, utilization.gpu [%], memory.used [MiB]
+0, NVIDIA RTX A6000, <pci:gpu0>, 49140 MiB, 580.178.04, 100 %, 11704 MiB
+1, NVIDIA RTX A6000, <pci:gpu1>, 49140 MiB, 580.178.04, 91 %, 12464 MiB
+2, NVIDIA RTX A6000, <pci:gpu2>, 49140 MiB, 580.178.04, 0 %, 1 MiB
+3, NVIDIA RTX A6000, <pci:gpu3>, 49140 MiB, 580.178.04, 0 %, 1 MiB
+4, NVIDIA RTX A6000, <pci:gpu4>, 49140 MiB, 580.178.04, 0 %, 1 MiB
+5, NVIDIA RTX A6000, <pci:gpu5>, 49140 MiB, 580.178.04, 0 %, 1 MiB
+6, NVIDIA RTX A6000, <pci:gpu6>, 49140 MiB, 580.178.04, 0 %, 1 MiB
+7, NVIDIA RTX A6000, <pci:gpu7>, 49140 MiB, 580.178.04, 0 %, 1 MiB

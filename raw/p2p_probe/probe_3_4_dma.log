@@ -1,0 +1,22 @@
+# start: 2026-11-12 03:19:05 EST
+# CUDA_VISIBLE_DEVICES=3,4 ./src/p2p_probe 0 1 
+#   0, 98 %, 11704 MiB
+#   1, 84 %, 12464 MiB
+#   2, 0 %, 1 MiB
+#   3, 8 %, 1 MiB
+#   4, 0 %, 1 MiB
+#   5, 0 %, 1 MiB
+#   6, 0 %, 1 MiB
+#   7, 0 %, 1 MiB
+part1 canAccessPeer 0->1=1 1->0=1
+part1 memcpyPeer peer_access=0 bytes=4096 event_ms=0.034 wall_ms=0.046 GB/s=0.12 bad_words=0
+part1 memcpyPeer peer_access=0 bytes=1048576 event_ms=0.249 wall_ms=0.258 GB/s=4.21 bad_words=0
+part1 memcpyPeer peer_access=0 bytes=67108864 event_ms=7.844 wall_ms=7.852 GB/s=8.56 bad_words=0
+part1 enablePeerAccess both ways: no error / no error  3.455 ms
+part1 memcpyPeer peer_access=1 bytes=4096 event_ms=49.219 wall_ms=49.236 GB/s=0.00 bad_words=1024
+part1 kernelP2Pread bytes=4096 wall_ms=98.435 bad_words=1024
+part1 memcpyPeer peer_access=1 bytes=1048576 event_ms=49.253 wall_ms=49.262 GB/s=0.02 bad_words=262144
+part1 kernelP2Pread bytes=1048576 wall_ms=1132.312 bad_words=262144
+part1 memcpyPeer peer_access=1 bytes=67108864 event_ms=52.870 wall_ms=52.881 GB/s=1.27 bad_words=16777216
+CUDA error cudaDeviceSynchronize() at src/p2p_probe.cu:43: unspecified launch failure
+# exit: 3 wall_s: 71.033392463

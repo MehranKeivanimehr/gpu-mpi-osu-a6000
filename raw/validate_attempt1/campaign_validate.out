@@ -1,0 +1,4 @@
+[2026-11-12 03:28:03 EST] phase=validate configs=21 runs=42 seed=20261112
+[2026-11-12 03:28:03 EST] (1/42) osu_bibw__nv23__ucxipc__V__val rep1
+    -> OK rc=0 146.6s
+[2026-11-12 03:30:30 EST] (2/42) osu_latency__node56__ucxnoipc__V__val rep2

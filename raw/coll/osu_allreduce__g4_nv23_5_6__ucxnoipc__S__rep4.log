@@ -1,0 +1,64 @@
+# config_id: osu_allreduce__g4_nv23_5_6__ucxnoipc__S
+# rep: 4
+# order: 37/60 seed=20261112
+# start: 2026-11-12 04:36:40 EST
+# gpus: [2, 3, 5, 6]
+# cmd: GPU_LIST=2,3,5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 4 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/collective/osu_allreduce -d cuda -m 1:4194304 -f
+# meta.kind: omb
+# meta.bench: osu_allreduce
+# meta.path: g4_nv23_5_6
+# meta.mode: ucxnoipc
+# meta.range: S
+# meta.validate: False
+# meta.n: 4
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 98, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5.3
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)   Min Latency(us)   Max Latency(us)  Iterations
+4                      15.70             15.60             15.79        1000
+8                      15.56             15.42             15.69        1000
+16                     15.62             15.47             15.70        1000
+32                     15.88             15.71             16.00        1000
+64                     15.10             14.83             15.36        1000
+128                    17.78             17.69             17.86        1000
+256                    18.97             18.60             19.24        1000
+512                    18.44             18.02             18.86        1000
+1024                   22.42             22.36             22.49        1000
+2048                   18.12             17.98             18.19        1000
+4096                   20.09             19.97             20.15        1000
+8192                   31.68             31.41             31.86        1000
+16384                  40.04             39.45             40.61         100
+32768                  52.84             52.56             53.11         100
+65536                 127.53            126.07            129.11         100
+131072                206.42            204.23            208.94         100
+262144                250.73            248.44            252.07         100
+524288                427.68            423.28            430.93         100
+1048576               819.04            810.64            825.81         100
+2097152              1124.49           1123.77           1125.09         100
+4194304              1923.78           1906.35           1938.68         100
+
+# end: 2026-11-12 04:36:46 EST
+# exit: 0
+# wall_s: 5.88
+# status: OK

@@ -1,0 +1,60 @@
+# config_id: osu_allgather__g2_nv23__mv__S
+# rep: 2
+# order: 46/60 seed=20261112
+# start: 2026-11-12 04:38:14 EST
+# gpus: [2, 3]
+# cmd: GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/collective/osu_allgather -d cuda -m 1:4194304 -f
+# meta.kind: omb
+# meta.bench: osu_allgather
+# meta.path: g2_nv23
+# meta.mode: mv
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 90, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Allgather Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)   Min Latency(us)   Max Latency(us)  Iterations
+1                      17.16             17.07             17.25        1000
+2                      16.50             16.42             16.58        1000
+4                      16.19             16.11             16.27        1000
+8                      15.23             15.16             15.30        1000
+16                     14.87             14.79             14.94        1000
+32                     14.92             14.84             14.99        1000
+64                     15.65             15.58             15.72        1000
+128                    15.92             15.85             15.99        1000
+256                    16.71             16.64             16.78        1000
+512                    15.94             15.87             16.00        1000
+1024                   17.17             17.09             17.25        1000
+2048                   17.59             17.51             17.67        1000
+4096                   17.52             17.43             17.60        1000
+8192                   15.74             15.69             15.80        1000
+16384                  15.86             15.79             15.93         100
+32768                  18.72             18.66             18.78         100
+65536                  17.16             17.09             17.23         100
+131072                 18.43             18.38             18.48         100
+262144                 21.30             21.24             21.36         100
+524288                 27.10             27.04             27.16         100
+1048576                37.73             37.67             37.79         100
+2097152                59.22             59.16             59.29         100
+4194304               112.96            112.90            113.02         100
+
+# end: 2026-11-12 04:38:18 EST
+# exit: 0
+# wall_s: 3.87
+# status: OK

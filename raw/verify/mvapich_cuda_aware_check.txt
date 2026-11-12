@@ -1,0 +1,3 @@
+gpu_bind: host=node local_rank=0(from PMI_RANK) gpu=2 bus=<pci:gpu2> numa=0 CUDA_VISIBLE_DEVICES=2
+gpu_bind: host=node local_rank=1(from PMI_RANK) gpu=3 bus=<pci:gpu3> numa=0 CUDA_VISIBLE_DEVICES=3
+MPIX_GPU_query_support(CUDA)=1  MPIX_Query_cuda_support()=1

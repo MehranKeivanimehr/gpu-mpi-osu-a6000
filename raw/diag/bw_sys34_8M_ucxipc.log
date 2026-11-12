@@ -1,0 +1,16 @@
+# case: bw_sys34_8M_ucxipc
+# start: 2026-11-12 03:13:34 EST
+# cmd: env MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy,cuda_ipc GPU_LIST=3,4 timeout 40 ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bw -d cuda -m 8388608:8388608 -i 10 -x 3 -W 8 D D
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Bandwidth Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[0]0:Return code = 0, signaled with Terminated
+[0]1:Return code = 0, signaled with Terminated
+# exit: 124  wall_s: 72.650544766

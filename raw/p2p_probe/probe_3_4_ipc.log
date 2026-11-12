@@ -1,0 +1,12 @@
+# start: 2026-11-12 03:20:16 EST
+# CUDA_VISIBLE_DEVICES=3,4 ./src/p2p_probe 0 1 ipc
+#   0, 97 %, 11704 MiB
+#   1, 92 %, 12464 MiB
+#   2, 0 %, 1 MiB
+#   3, 23 %, 1 MiB
+#   4, 35 %, 1 MiB
+#   5, 0 %, 1 MiB
+#   6, 0 %, 1 MiB
+#   7, 0 %, 1 MiB
+CUDA error cudaSetDevice(b) at src/p2p_probe.cu:118: CUDA-capable device(s) is/are busy or unavailable
+# exit: 124 wall_s: 90.010243245

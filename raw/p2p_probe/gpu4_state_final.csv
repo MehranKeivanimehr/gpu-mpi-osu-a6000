@@ -1,0 +1,2 @@
+index, fan.speed [%], pstate, power.draw [W], utilization.gpu [%], memory.used [MiB]
+4, [System is not in ready state], P2, 97.69 W, 35 %, 1 MiB

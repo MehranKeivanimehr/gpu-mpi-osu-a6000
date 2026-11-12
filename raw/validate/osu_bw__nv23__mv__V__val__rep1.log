@@ -1,0 +1,68 @@
+# config_id: osu_bw__nv23__mv__V__val
+# rep: 1
+# order: 30/42 seed=20261112
+# start: 2026-11-12 04:04:59 EST
+# gpus: [2, 3]
+# cmd: GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_bw -d cuda -m 1:1073741824 -i 3 -x 1 -W 2 -c D D
+# meta.kind: omb
+# meta.bench: osu_bw
+# meta.path: nv23
+# meta.mode: mv
+# meta.range: V
+# meta.validate: True
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 97, 11704
+#   1, 86, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Bandwidth Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)        Validation
+1                       0.09              Pass
+2                       0.19              Pass
+4                       0.36              Pass
+8                       0.86              Pass
+16                      1.53              Pass
+32                      3.26              Pass
+64                      8.52              Pass
+128                    16.19              Pass
+256                    22.89              Pass
+512                    58.68              Pass
+1024                  125.85              Pass
+2048                  208.55              Pass
+4096                  468.30              Pass
+8192                 1063.21              Pass
+16384                2192.33              Pass
+32768                4164.54              Pass
+65536                7756.20              Pass
+131072               5710.00              Pass
+262144              20616.91              Pass
+524288              29753.03              Pass
+1048576             37183.77              Pass
+2097152             43568.43              Pass
+4194304             48358.15              Pass
+8388608             49705.75              Pass
+16777216            51537.02              Pass
+33554432            52126.67              Pass
+67108864            52582.40              Pass
+134217728           52763.66              Pass
+268435456           52831.72              Pass
+536870912           52801.16              Pass
+1073741824          52866.83              Pass
+
+# end: 2026-11-12 04:06:26 EST
+# exit: 0
+# wall_s: 86.84
+# status: OK

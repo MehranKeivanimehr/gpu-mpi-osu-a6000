@@ -1,0 +1,22 @@
+order,config_id,rep,start,end,wall_s,exit,status,log
+1,osu_bibw__nv23__ucxipc__V__val,1,2026-11-12 03:31:12 EST,2026-11-12 03:32:33 EST,80.62,0,OK,raw/validate/osu_bibw__nv23__ucxipc__V__val__rep1.log
+2,osu_latency__node56__ucxnoipc__V__val,2,2026-11-12 03:32:33 EST,2026-11-12 03:33:58 EST,84.86,0,OK,raw/validate/osu_latency__node56__ucxnoipc__V__val__rep2.log
+3,osu_allreduce__g2_nv23__mv__V__val,2,2026-11-12 03:33:58 EST,2026-11-12 03:35:01 EST,62.87,0,OK,raw/validate/osu_allreduce__g2_nv23__mv__V__val__rep2.log
+4,osu_latency__nv23__mv__V__val,2,2026-11-12 03:35:52 EST,2026-11-12 03:37:11 EST,78.12,0,OK,raw/validate/osu_latency__nv23__mv__V__val__rep2.log
+5,osu_bw__node56__ucxnoipc__V__val,2,2026-11-12 03:37:11 EST,2026-11-12 03:38:47 EST,95.86,0,OK,raw/validate/osu_bw__node56__ucxnoipc__V__val__rep2.log
+6,osu_latency__sys36__ucxnoipc__V__val,2,2026-11-12 03:38:47 EST,2026-11-12 03:40:14 EST,86.82,0,OK,raw/validate/osu_latency__sys36__ucxnoipc__V__val__rep2.log
+7,osu_bibw__nv23__mv__V__val,1,2026-11-12 03:40:14 EST,2026-11-12 03:41:34 EST,79.89,0,OK,raw/validate/osu_bibw__nv23__mv__V__val__rep1.log
+8,osu_bw__nv23__ucxipc__V__val,1,2026-11-12 03:41:34 EST,2026-11-12 03:43:01 EST,86.85,0,OK,raw/validate/osu_bw__nv23__ucxipc__V__val__rep1.log
+10,osu_latency__nv23__ucxnoipc__V__val,1,2026-11-12 03:43:01 EST,2026-11-12 03:44:24 EST,82.87,0,OK,raw/validate/osu_latency__nv23__ucxnoipc__V__val__rep1.log
+11,osu_reduce_scatter__g4_nv23_5_6__ucxnoipc__V__val,1,2026-11-12 03:44:24 EST,2026-11-12 03:45:14 EST,49.86,0,OK,raw/validate/osu_reduce_scatter__g4_nv23_5_6__ucxnoipc__V__val__rep1.log
+12,osu_bibw__sys36__ucxnoipc__V__val,2,2026-11-12 03:45:14 EST,2026-11-12 03:46:49 EST,94.87,0,OK,raw/validate/osu_bibw__sys36__ucxnoipc__V__val__rep2.log
+13,osu_allgather__g2_nv23__mv__V__val,1,2026-11-12 03:46:49 EST,2026-11-12 03:50:23 EST,213.83,0,OK,raw/validate/osu_allgather__g2_nv23__mv__V__val__rep1.log
+15,osu_allreduce__g4_nv23_5_6__ucxnoipc__V__val,2,2026-11-12 03:50:23 EST,2026-11-12 03:51:38 EST,74.88,0,OK,raw/validate/osu_allreduce__g4_nv23_5_6__ucxnoipc__V__val__rep2.log
+17,osu_reduce_scatter__g2_nv23__mv__V__val,1,2026-11-12 03:51:38 EST,2026-11-12 03:52:31 EST,52.88,0,OK,raw/validate/osu_reduce_scatter__g2_nv23__mv__V__val__rep1.log
+18,osu_bw__nv23__ucxnoipc__V__val,1,2026-11-12 03:52:31 EST,2026-11-12 03:54:04 EST,92.82,0,OK,raw/validate/osu_bw__nv23__ucxnoipc__V__val__rep1.log
+19,osu_latency__nv23__ucxipc__V__val,2,2026-11-12 03:54:04 EST,2026-11-12 03:55:23 EST,78.89,0,OK,raw/validate/osu_latency__nv23__ucxipc__V__val__rep2.log
+21,osu_bibw__node56__ucxnoipc__V__val,2,2026-11-12 03:55:23 EST,2026-11-12 03:56:55 EST,91.86,0,OK,raw/validate/osu_bibw__node56__ucxnoipc__V__val__rep2.log
+24,osu_bibw__nv23__ucxnoipc__V__val,1,2026-11-12 03:56:55 EST,2026-11-12 03:58:24 EST,88.86,0,OK,raw/validate/osu_bibw__nv23__ucxnoipc__V__val__rep1.log
+26,osu_bw__sys36__ucxnoipc__V__val,1,2026-11-12 03:58:24 EST,2026-11-12 04:00:00 EST,95.89,0,OK,raw/validate/osu_bw__sys36__ucxnoipc__V__val__rep1.log
+29,osu_allgather__g4_nv23_5_6__ucxnoipc__V__val,1,2026-11-12 04:00:00 EST,2026-11-12 04:04:59 EST,298.84,0,OK,raw/validate/osu_allgather__g4_nv23_5_6__ucxnoipc__V__val__rep1.log
+30,osu_bw__nv23__mv__V__val,1,2026-11-12 04:04:59 EST,2026-11-12 04:06:26 EST,86.84,0,OK,raw/validate/osu_bw__nv23__mv__V__val__rep1.log

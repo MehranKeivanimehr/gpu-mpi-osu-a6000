@@ -1,0 +1,9 @@
+index, fan.speed [%], pstate, power.draw [W], utilization.gpu [%], memory.used [MiB]
+0, 41 %, P2, 273.89 W, 99 %, 11704 MiB
+1, 39 %, P2, 265.86 W, 95 %, 12464 MiB
+2, 30 %, P8, 24.29 W, 0 %, 1 MiB
+3, 30 %, P8, 22.64 W, 0 %, 1 MiB
+4, [System is not in ready state], P2, 97.69 W, 35 %, 1 MiB
+5, 30 %, P8, 21.21 W, 0 %, 1 MiB
+6, 30 %, P8, 25.50 W, 0 %, 1 MiB
+7, 30 %, P8, 21.19 W, 0 %, 1 MiB

@@ -1,0 +1,51 @@
+# config_id: osu_allreduce__g4_nv23_5_6__ucxnoipc__L
+# rep: 1
+# order: 25/60 seed=20261112
+# start: 2026-11-12 04:34:15 EST
+# gpus: [2, 3, 5, 6]
+# cmd: GPU_LIST=2,3,5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 4 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/collective/osu_allreduce -d cuda -m 8388608:1073741824 -i 10 -x 3 -f
+# meta.kind: omb
+# meta.bench: osu_allreduce
+# meta.path: g4_nv23_5_6
+# meta.mode: ucxnoipc
+# meta.range: L
+# meta.validate: False
+# meta.n: 4
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 100, 11704
+#   1, 94, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5.3
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)   Min Latency(us)   Max Latency(us)  Iterations
+8388608              4054.06           4015.15           4092.40          10
+16777216             7428.19           7344.94           7513.48          10
+33554432            15391.97          15161.35          15643.38          10
+67108864            46961.95          46311.76          47592.79          10
+134217728           83356.51          82235.48          84568.16          10
+268435456          161429.98         159432.75         163367.55          10
+536870912          312610.30         309362.70         315361.33          10
+1073741824         600679.25         591131.50         608404.72          10
+
+# end: 2026-11-12 04:34:39 EST
+# exit: 0
+# wall_s: 23.87
+# status: OK

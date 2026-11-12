@@ -1,0 +1,1 @@
+~/miniconda3/envs/MK | torch: __version__ = '2.6.0+cu124' | nccl wheel: nvidia_nccl_cu12-2.21.5.dist-info 

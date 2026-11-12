@@ -1,0 +1,60 @@
+# config_id: osu_latency__node56__ucxnoipc__S
+# rep: 3
+# order: 19/90 seed=20261112
+# start: 2026-11-12 04:12:34 EST
+# gpus: [5, 6]
+# cmd: GPU_LIST=5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_latency -d cuda -m 1:4194304 D D
+# meta.kind: omb
+# meta.bench: osu_latency
+# meta.path: node56
+# meta.mode: ucxnoipc
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 75, 11704
+#   1, 99, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      11.53
+2                      11.70
+4                      14.30
+8                      11.75
+16                     11.70
+32                     11.87
+64                     11.62
+128                    11.86
+256                    11.67
+512                    11.58
+1024                   11.72
+2048                   11.21
+4096                   11.33
+8192                   12.01
+16384                  13.31
+32768                  13.81
+65536                  16.20
+131072                 22.04
+262144                 31.21
+524288                 58.37
+1048576                74.33
+2097152               117.35
+4194304               205.08
+
+# end: 2026-11-12 04:12:43 EST
+# exit: 0
+# wall_s: 8.88
+# status: OK

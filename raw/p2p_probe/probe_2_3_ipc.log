@@ -1,0 +1,15 @@
+# start: 2026-11-12 03:19:04 EST
+# CUDA_VISIBLE_DEVICES=2,3 ./src/p2p_probe 0 1 ipc
+#   0, 100 %, 11704 MiB
+#   1, 80 %, 12464 MiB
+#   2, 6 %, 1 MiB
+#   3, 7 %, 1 MiB
+#   4, 0 %, 1 MiB
+#   5, 0 %, 1 MiB
+#   6, 0 %, 1 MiB
+#   7, 0 %, 1 MiB
+part2 ipc it=0 open_ms=0.664 copy64MiB_ms=0.021 GB/s=3182.19 close_ms=0.149 bad_words=0
+part2 ipc it=1 open_ms=0.534 copy64MiB_ms=0.006 GB/s=11316.47 close_ms=0.144 bad_words=0
+part2 ipc it=2 open_ms=0.509 copy64MiB_ms=0.005 GB/s=12782.97 close_ms=0.143 bad_words=0
+part2 exit codes exporter=0 importer=0
+# exit: 0 wall_s: .980799142

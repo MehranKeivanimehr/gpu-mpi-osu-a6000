@@ -1,0 +1,68 @@
+# config_id: osu_latency__nv23__mv__V__val
+# rep: 2
+# order: 4/42 seed=20261112
+# start: 2026-11-12 03:35:52 EST
+# gpus: [2, 3]
+# cmd: GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_latency -d cuda -m 1:1073741824 -i 3 -x 1 -c D D
+# meta.kind: omb
+# meta.bench: osu_latency
+# meta.path: nv23
+# meta.mode: mv
+# meta.range: V
+# meta.validate: True
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 86, 11704
+#   1, 79, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)        Validation
+1                       8.87              Pass
+2                       8.61              Pass
+4                       9.48              Pass
+8                       8.89              Pass
+16                      8.20              Pass
+32                      6.88              Pass
+64                      6.81              Pass
+128                     8.44              Pass
+256                     6.84              Pass
+512                     7.13              Pass
+1024                    6.97              Pass
+2048                    6.86              Pass
+4096                    7.01              Pass
+8192                    7.14              Pass
+16384                   9.73              Pass
+32768                   7.73              Pass
+65536                   8.28              Pass
+131072                  9.57              Pass
+262144                 12.04              Pass
+524288                 17.08              Pass
+1048576                26.98              Pass
+2097152                46.75              Pass
+4194304                86.19              Pass
+8388608               167.13              Pass
+16777216              325.44              Pass
+33554432              654.04              Pass
+67108864             1276.52              Pass
+134217728            2546.65              Pass
+268435456            5080.00              Pass
+536870912           10151.73              Pass
+1073741824          20294.17              Pass
+
+# end: 2026-11-12 03:37:11 EST
+# exit: 0
+# wall_s: 78.12
+# status: OK

@@ -1,0 +1,60 @@
+# config_id: osu_latency__node56__ucxnoipc__S
+# rep: 5
+# order: 8/90 seed=20261112
+# start: 2026-11-12 04:09:54 EST
+# gpus: [5, 6]
+# cmd: GPU_LIST=5,6 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 MPIR_CVAR_NOLOCAL=1 UCX_TLS=self,sm,cuda_copy UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt/osu_latency -d cuda -m 1:4194304 D D
+# meta.kind: omb
+# meta.bench: osu_latency
+# meta.path: node56
+# meta.mode: ucxnoipc
+# meta.range: S
+# meta.validate: False
+# meta.n: 2
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 78, 11704
+#   1, 99, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+Warning: OMB could not identify the local rank of the process.
+         This can lead to multiple processes using the same GPU.
+         Please use the get_local_rank script in the OMB repo for this.
+
+# OSU MPI-CUDA Latency Test v7.5.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      11.85
+2                      11.86
+4                      11.86
+8                      11.71
+16                     11.68
+32                     11.99
+64                     11.71
+128                    11.75
+256                    12.02
+512                    11.87
+1024                   11.96
+2048                   11.53
+4096                   11.61
+8192                   12.05
+16384                  13.54
+32768                  14.11
+65536                  16.35
+131072                 21.74
+262144                 31.96
+524288                 50.97
+1048576                74.27
+2097152               119.77
+4194304               213.51
+
+# end: 2026-11-12 04:10:03 EST
+# exit: 0
+# wall_s: 8.88
+# status: OK

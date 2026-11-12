@@ -1,0 +1,2 @@
+LISTEN 0      4096         0.0.0.0:33447      0.0.0.0:*    users:(("prterun",pid=54688,fd=56))          
+LISTEN 0      4096       127.0.0.1:59353      0.0.0.0:*    users:(("prterun",pid=54688,fd=55))          
