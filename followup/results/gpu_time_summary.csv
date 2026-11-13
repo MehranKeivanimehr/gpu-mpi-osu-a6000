@@ -1,0 +1,9 @@
+phase,runs,wall_s,gpu_s
+smoke,2,9.8,19.6
+sweep,10,137.3,274.5
+knobs,25,238.9,477.8
+algo,80,566.4,1132.5
+nsys,2,56.6,113.1
+glibc,30,212.8,425.5
+TOTAL,149,1221.7,2443.0
+TOTAL_GPU_hours,,,0.679

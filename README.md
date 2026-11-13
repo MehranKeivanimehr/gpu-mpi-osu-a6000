@@ -13,6 +13,11 @@ in random order (fixed seed). Correctness was checked (OMB `-c`, nccl-tests `#wr
 > GPU 4 stuck. It needs an administrator reset. The main finding below is the reason: **on this node, PCIe P2P between GPUs that are not
 > NVLink-bridged is broken.**
 
+> **Follow-up (2026-11-12, later that night): see `followup/README.md` and `ONE_PAGE_SUMMARY_v2.md`.**
+> * The allreduce cliff in finding 6 starts between 32 and 36 MiB. It is not an algorithm switch, and it moves with
+>   `MPIR_CVAR_LMEM_POOL_SIZE` (`followup/ALLREDUCE_CLIFF.md`).
+> * The IOMMU evidence is collected in `followup/IOMMU_EVIDENCE.md`.
+
 ## 1. Findings in one screen
 
 | # | finding | label | evidence |

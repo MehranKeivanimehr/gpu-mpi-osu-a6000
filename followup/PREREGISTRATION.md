@@ -1,6 +1,8 @@
 # Pre-registration: Item C (the MVAPICH 4.1 allreduce cliff)
 
-Written 2026-11-12 23:20 EST and committed to git **before** the sweep, algorithm and knob runs. The only runs done before this
+Committed to git at 2026-11-12 23:18:16 EST (commit `e09b4d0`), **before** the sweep, algorithm and knob runs. The sweep started at
+23:18:22. *(Correction made after that commit: an earlier version of this line said "Written 23:20 EST", which was a guess. The commit
+time is the real one; nothing else in this file changed.)* The only runs done before this
 were two smoke runs that checked the tool works (`raw/smoke/`, 3 timed iterations each). Their numbers are not used for any
 conclusion.
 

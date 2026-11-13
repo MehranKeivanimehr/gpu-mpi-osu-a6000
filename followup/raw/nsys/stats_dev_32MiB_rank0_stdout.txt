@@ -1,0 +1,11 @@
+Generating SQLite file dev_32MiB_rank0.sqlite from dev_32MiB_rank0.nsys-rep
+Processing [dev_32MiB_rank0.sqlite] with [/usr/local/cuda-12.4/nsight-systems-2023.4.4/host-linux-x64/reports/cuda_api_sum.py] to [stats_dev_32MiB_rank0_cuda_api_sum.csv]... PROCESSED
+
+Processing [dev_32MiB_rank0.sqlite] with [/usr/local/cuda-12.4/nsight-systems-2023.4.4/host-linux-x64/reports/cuda_gpu_kern_sum.py] to [stats_dev_32MiB_rank0_cuda_gpu_kern_sum.csv]... PROCESSED
+
+Processing [dev_32MiB_rank0.sqlite] with [/usr/local/cuda-12.4/nsight-systems-2023.4.4/host-linux-x64/reports/cuda_gpu_mem_size_sum.py] to [stats_dev_32MiB_rank0_cuda_gpu_mem_size_sum.csv]... PROCESSED
+
+Processing [dev_32MiB_rank0.sqlite] with [/usr/local/cuda-12.4/nsight-systems-2023.4.4/host-linux-x64/reports/cuda_gpu_mem_time_sum.py] to [stats_dev_32MiB_rank0_cuda_gpu_mem_time_sum.csv]... PROCESSED
+
+Processing [dev_32MiB_rank0.sqlite] with [/usr/local/cuda-12.4/nsight-systems-2023.4.4/host-linux-x64/reports/osrt_sum.py] to [stats_dev_32MiB_rank0_osrt_sum.csv]... PROCESSED
+

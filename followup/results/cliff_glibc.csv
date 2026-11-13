@@ -1,0 +1,7 @@
+phase,config,sizes_tested,cliff_from_mib,cliff_to_mib,busbw_ratio,verdict
+glibc,dev_default,28 32 36 64 128,32,36,0.294,cliff between 32 and 36 MiB
+glibc,dev_glibc_mmapmax0,28 32 36 64 128,36,64,0.319,cliff between 36 and 64 MiB
+glibc,dev_glibc_mmapmax0_toppad32M,28 32 36 64 128,36,64,0.34,cliff between 36 and 64 MiB
+glibc,dev_glibc_mmapmax0_trim1G,28 32 36 64 128,,,,no cliff (no >40% drop)
+glibc,host_glibc_mmapmax0,28 32 36 64 128,,,,no cliff (no >40% drop)
+glibc,host_glibc_mmapmax0_trim1G,28 32 36 64 128,,,,no cliff (no >40% drop)

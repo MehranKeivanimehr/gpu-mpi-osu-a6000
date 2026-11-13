@@ -1,0 +1,31 @@
+== phase sweep
+-- dev_default
+    24 MiB  t=   3071.37 us [3018.96-3122.73]  busbw= 8.194 GB/s  n=5 bad=0 
+    28 MiB  t=   3534.82 us [2678.35-3701.51]  busbw= 8.306 GB/s  n=5 bad=0 
+    32 MiB  t=   4079.89 us [3989.65-4214.01]  busbw= 8.224 GB/s  n=5 bad=0 
+    36 MiB  t=  15784.26 us [14536.07-16656.04]  busbw= 2.392 GB/s  n=5 bad=0 
+    40 MiB  t=  18156.03 us [15454.54-18779.03]  busbw= 2.310 GB/s  n=5 bad=0 
+    44 MiB  t=  20163.45 us [17838.06-20280.64]  busbw= 2.288 GB/s  n=5 bad=0 
+    48 MiB  t=  20108.37 us [19688.92-21312.93]  busbw= 2.503 GB/s  n=5 bad=0 
+    52 MiB  t=  22969.19 us [21486.30-23080.61]  busbw= 2.374 GB/s  n=5 bad=0 
+    56 MiB  t=  23477.49 us [22505.34-24722.42]  busbw= 2.501 GB/s  n=5 bad=0 
+    60 MiB  t=  26484.84 us [24052.40-26573.43]  busbw= 2.375 GB/s  n=5 bad=0 
+    64 MiB  t=  28100.53 us [26880.76-28370.33]  busbw= 2.388 GB/s  n=5 bad=0 
+    96 MiB  t=  42619.11 us [41646.21-44708.23]  busbw= 2.362 GB/s  n=5 bad=0 
+   128 MiB  t=  57107.19 us [55093.32-59457.23]  busbw= 2.350 GB/s  n=5 bad=0 
+-- host_default
+    24 MiB  t=   8458.70 us [8280.04-8491.22]  busbw= 2.975 GB/s  n=5 bad=0 
+    28 MiB  t=   9521.67 us [9068.40-9659.41]  busbw= 3.084 GB/s  n=5 bad=0 
+    32 MiB  t=  10811.59 us [10462.79-10977.94]  busbw= 3.104 GB/s  n=5 bad=0 
+    36 MiB  t=  23023.76 us [22448.12-23463.97]  busbw= 1.640 GB/s  n=5 bad=0 
+    40 MiB  t=  25887.75 us [24510.16-26317.53]  busbw= 1.620 GB/s  n=5 bad=0 
+    44 MiB  t=  28894.72 us [28646.60-29198.01]  busbw= 1.597 GB/s  n=5 bad=0 
+    48 MiB  t=  31506.70 us [29305.01-31835.23]  busbw= 1.597 GB/s  n=5 bad=0 
+    52 MiB  t=  34253.18 us [33338.60-34591.58]  busbw= 1.592 GB/s  n=5 bad=0 
+    56 MiB  t=  35848.12 us [35504.64-37326.97]  busbw= 1.638 GB/s  n=5 bad=0 
+    60 MiB  t=  39850.55 us [37886.98-40151.26]  busbw= 1.579 GB/s  n=5 bad=0 
+    64 MiB  t=  43549.17 us [40948.62-44255.16]  busbw= 1.541 GB/s  n=5 bad=0 
+    96 MiB  t=  65616.80 us [64467.68-67174.72]  busbw= 1.534 GB/s  n=5 bad=0 
+   128 MiB  t=  90069.74 us [87687.91-90310.51]  busbw= 1.490 GB/s  n=5 bad=0 
+CLIFF dev_default: cliff between 32 and 36 MiB (ratio 0.291)
+CLIFF host_default: cliff between 32 and 36 MiB (ratio 0.528)

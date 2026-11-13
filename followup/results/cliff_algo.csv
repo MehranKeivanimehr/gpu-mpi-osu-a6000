@@ -1,0 +1,17 @@
+phase,config,sizes_tested,cliff_from_mib,cliff_to_mib,busbw_ratio,verdict
+algo,dev_comp1,28 32 36 48 64,28,32,0.459,cliff between 28 and 32 MiB
+algo,dev_comp2,28 32 36 48 64,32,36,0.306,cliff between 32 and 36 MiB
+algo,dev_comp3,28 32 36 48 64,32,36,0.29,cliff between 32 and 36 MiB
+algo,dev_dcnone_auto,28 32 36 48 64,32,36,0.293,cliff between 32 and 36 MiB
+algo,dev_dcnone_k_reduce_scatter_allgather,28 32 36 48 64,28,32,0.286,cliff between 28 and 32 MiB
+algo,dev_dcnone_nb,28 32 36 48 64,28,32,0.293,cliff between 28 and 32 MiB
+algo,dev_dcnone_recexch,28 32 36 48 64,36,48,0.336,cliff between 36 and 48 MiB
+algo,dev_dcnone_recursive_doubling,28 32 36 48 64,32,36,0.257,cliff between 32 and 36 MiB
+algo,dev_dcnone_recursive_multiplying,28 32 36 48 64,28,32,0.341,cliff between 28 and 32 MiB
+algo,dev_dcnone_reduce_scatter_allgather,28 32 36 48 64,32,36,0.297,cliff between 32 and 36 MiB
+algo,dev_dcnone_ring,28 32 36 48 64,28,32,0.454,cliff between 28 and 32 MiB
+algo,dev_dcnone_smp,28 32 36 48 64,28,32,0.474,cliff between 28 and 32 MiB
+algo,dev_dcnone_tree,28 32 36 48 64,28,32,0.195,cliff between 28 and 32 MiB
+algo,dev_default,28 32 36 48 64,32,36,0.287,cliff between 32 and 36 MiB
+algo,dev_posix_mpir,28 32 36 48 64,32,36,0.302,cliff between 32 and 36 MiB
+algo,dev_posix_release_gather,28 32 36 48 64,32,36,0.29,cliff between 32 and 36 MiB

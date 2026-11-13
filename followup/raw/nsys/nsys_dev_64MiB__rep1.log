@@ -1,0 +1,34 @@
+# config_id: nsys_dev_64MiB
+# rep: 1
+# order: 1/2 seed=20261113
+# start: 2026-11-12 23:36:14 EST
+# gpus: [2, 3]
+# size_order_mib: [64]
+# cmd: GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh /usr/local/cuda-12.4/nsight-systems-2023.4.4/bin/nsys profile --sample=none --cpuctxsw=none --trace=cuda,mpi,osrt --mpi-impl=mpich --force-overwrite=true -o '~/mpi-osu-a6000/followup/raw/nsys/dev_64MiB_rank%q{PMI_RANK}' ~/mpi-osu-a6000/followup/build/allreduce_sizes -m dev -s 64 -w 3 -n 10
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 83, 11704
+#   1, 95, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+RANKINFO rank=0 nranks=2 host=node cuda_visible_devices=2 gpu_busid=<pci:gpu2> mem=dev
+CONFIG mpi_library="MVAPICH Version:        4.1" warmup=3 iters=10 stride=997 sizes_mib=64 datatype=MPI_FLOAT op=MPI_SUM
+RANKINFO rank=1 nranks=2 host=node cuda_visible_devices=3 gpu_busid=<pci:gpu3> mem=dev
+RESULT size_mib=64 bytes=67108864 mem=dev iters=10 median_us=27665.58 min_us=26330.92 max_us=28289.34 mean_us=27568.47 busbw_GBps_at_median=2.426 n_checked=48992 n_bad=0
+ITERS size_mib=64 t_us=27415.41,26330.92,27057.54,27649.04,27682.13,28289.34,27294.07,28114.31,28080.28,27771.72
+Generating '/tmp/nsys-report-e3c7.qdstrm'
+[1/1] [0%                          ] dev_64MiB_rank1.nsys-repGenerating '/tmp/nsys-report-af4f.qdstrm'
+[1/1] [0%                          ] dev_64MiB_rank0.nsys-rep[1/1] [0%                          ] dev_64MiB_rank0.nsys-rep[1/1] [0%                          ] dev_64MiB_rank1.nsys-rep[1/1] [6%                          ] dev_64MiB_rank1.nsys-rep[1/1] [8%                          ] dev_64MiB_rank1.nsys-rep[1/1] [5%                          ] dev_64MiB_rank0.nsys-rep[1/1] [8%                          ] dev_64MiB_rank0.nsys-rep[1/1] [10%                         ] dev_64MiB_rank1.nsys-rep[1/1] [10%                         ] dev_64MiB_rank0.nsys-rep[1/1] [=========43%                ] dev_64MiB_rank1.nsys-rep[1/1] [=========44%                ] dev_64MiB_rank0.nsys-rep[1/1] [==================75%       ] dev_64MiB_rank1.nsys-rep[1/1] [========================98% ] dev_64MiB_rank1.nsys-rep[1/1] [========================100%] dev_64MiB_rank1.nsys-rep[1/1] [==================76%       ] dev_64MiB_rank0.nsys-rep[1/1] [========================98% ] dev_64MiB_rank0.nsys-rep[1/1] [========================100%] dev_64MiB_rank0.nsys-rep[1/1] [========================100%] dev_64MiB_rank1.nsys-rep
+Generated:
+    ~/mpi-osu-a6000/followup/raw/nsys/dev_64MiB_rank1.nsys-rep
+[1/1] [========================100%] dev_64MiB_rank0.nsys-rep
+Generated:
+    ~/mpi-osu-a6000/followup/raw/nsys/dev_64MiB_rank0.nsys-rep
+
+# end: 2026-11-12 23:36:44 EST
+# exit: 0
+# wall_s: 29.33
+# status: OK

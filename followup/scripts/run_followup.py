@@ -77,6 +77,25 @@ def phase_knobs():
     ]
 
 
+def phase_glibc():
+    """EXPLORATORY (not in PREREGISTRATION.md; added after the knobs/nsys results). glibc malloc tunables,
+    documented at https://sourceware.org/glibc/manual/2.39/html_node/Memory-Allocation-Tunables.html .
+    mmap_max=0 disables mmap for large allocations, so freed blocks stay on the heap free list for reuse.
+    mmap_max=0 + top_pad=32 MiB mirrors what MVAPICH 4.1 applies with mallopt() in its OFI netmod init
+    (src/mpid/ch4/netmod/ofi/ofi_init.c), which this ch4:ucx build does not run."""
+    s = [28, 32, 36, 64, 128]
+    return [cfg("dev_default", "dev", s),
+            cfg("dev_glibc_mmapmax0", "dev", s, {"GLIBC_TUNABLES": "glibc.malloc.mmap_max=0"}),
+            cfg("dev_glibc_mmapmax0_toppad32M", "dev", s,
+                {"GLIBC_TUNABLES": "glibc.malloc.mmap_max=0:glibc.malloc.top_pad=33554432"}),
+            cfg("host_glibc_mmapmax0", "host", s, {"GLIBC_TUNABLES": "glibc.malloc.mmap_max=0"}),
+            # second exploratory step (added after the four configs above had run): also never trim the heap top
+            cfg("dev_glibc_mmapmax0_trim1G", "dev", s,
+                {"GLIBC_TUNABLES": "glibc.malloc.mmap_max=0:glibc.malloc.trim_threshold=1073741824"}),
+            cfg("host_glibc_mmapmax0_trim1G", "host", s,
+                {"GLIBC_TUNABLES": "glibc.malloc.mmap_max=0:glibc.malloc.trim_threshold=1073741824"})]
+
+
 def phase_nsys():
     out = f"{FREPO}/raw/nsys"
     return [cfg(f"nsys_dev_{s}MiB", "dev", [s], warm=3, iters=10, nsys=f"{out}/dev_{s}MiB_rank%q{{PMI_RANK}}")
@@ -84,7 +103,7 @@ def phase_nsys():
 
 
 PHASES = {"smoke": phase_smoke, "sweep": phase_sweep, "algo": phase_algo, "knobs": phase_knobs,
-          "nsys": phase_nsys}
+          "nsys": phase_nsys, "glibc": phase_glibc}
 
 
 def check_safe(c):

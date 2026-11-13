@@ -1,0 +1,5 @@
+[2026-11-12 23:36:14 EST] phase=nsys configs=2 runs=2 seed=20261113 gpu_s_used_so_far=1904.4
+[2026-11-12 23:36:14 EST] (1/2) nsys_dev_64MiB rep1 sizes=[64]
+    -> OK rc=0 29.3s (GPU-s used now 1963)
+[2026-11-12 23:36:44 EST] (2/2) nsys_dev_32MiB rep1 sizes=[32]
+    -> OK rc=0 27.2s (GPU-s used now 2018)

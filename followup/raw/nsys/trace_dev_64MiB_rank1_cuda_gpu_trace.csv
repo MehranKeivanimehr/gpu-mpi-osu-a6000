@@ -1,0 +1,1073 @@
+Start (ns),Duration (ns),CorrId,GrdX,GrdY,GrdZ,BlkX,BlkY,BlkZ,Reg/Trd,StcSMem (MB),DymSMem (MB),Bytes (MB),Throughput (MB/s),SrcMemKd,DstMemKd,Device,Ctx,GreenCtx,Strm,Name
+2580676882,5176214,234,,,,,,,,,,67.109,12952.011,Pageable,Device,NVIDIA RTX A6000 (0),1,,7,[CUDA memcpy Host-to-Device]
+2585868809,94912,235,,,,,,,,,,67.109,707058.991,Device,,NVIDIA RTX A6000 (0),1,,7,[CUDA memset]
+2586134794,198400,244,,,,,,,,,,67.109,338228.675,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2609044201,112609,489,,,,,,,,,,4.194,37245.420,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609156874,82847,496,,,,,,,,,,4.194,50625.249,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609239722,81920,503,,,,,,,,,,4.194,51199.869,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609273867,1403430,811,,,,,,,,,,4.194,2986.344,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2609321643,82559,510,,,,,,,,,,4.194,50801.410,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609404203,82464,517,,,,,,,,,,4.194,50860.130,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609486668,81823,524,,,,,,,,,,4.194,51258.589,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609568555,81824,531,,,,,,,,,,4.194,51258.589,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2609650380,81824,538,,,,,,,,,,4.194,51258.589,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2612145398,1494663,820,,,,,,,,,,4.194,2805.989,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2614905346,1623367,829,,,,,,,,,,4.194,2583.691,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2617777582,1380742,838,,,,,,,,,,4.194,3036.676,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2620439065,1612647,847,,,,,,,,,,4.194,2600.468,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2623340550,1384805,856,,,,,,,,,,4.194,3028.287,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2625948944,1471591,865,,,,,,,,,,4.194,2847.932,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2628647516,1361189,874,,,,,,,,,,4.194,3078.619,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2639900139,55008,891,,,,,,,,,,1.049,19062.063,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2661716390,292897,895,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2661958407,1759,0,,,,,,,,,,0.004,2328.592,Unknown,Unknown,NVIDIA RTX A6000 (0),0,,0,[CUDA memcpy Unified Host-to-Device]
+2661960167,3648,0,,,,,,,,,,0.061,16842.056,Unknown,Unknown,NVIDIA RTX A6000 (0),0,,0,[CUDA memcpy Unified Host-to-Device]
+2662015175,41760,903,,,,,,,,,,1.049,25109.201,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2662062823,5889,906,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2664201201,46272,914,,,,,,,,,,1.049,22660.776,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2664255921,6144,917,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2664360657,47841,925,,,,,,,,,,1.049,21917.336,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2664413938,5472,928,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2666557882,44129,936,,,,,,,,,,1.049,23760.732,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2666610106,5857,939,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2666713691,49056,947,,,,,,,,,,1.049,21374.173,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2666771739,5696,950,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2668942276,45952,958,,,,,,,,,,1.049,22818.062,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2668997061,6080,961,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2669108869,57601,969,,,,,,,,,,1.049,18203.279,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2669176230,5631,972,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2671271982,48672,980,,,,,,,,,,1.049,21542.994,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2671329743,6208,983,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2671440431,64640,991,,,,,,,,,,1.049,16221.471,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2671514991,5472,994,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2673669336,53153,1002,,,,,,,,,,1.049,19726.860,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2673728952,6048,1005,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2673815897,47040,1013,,,,,,,,,,1.049,22290.629,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2673868569,5600,1016,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2676003234,48288,1024,,,,,,,,,,1.049,21714.960,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2676059586,6144,1027,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2676099907,51680,1035,,,,,,,,,,1.049,20288.897,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2676155715,5536,1038,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2678172523,51488,1046,,,,,,,,,,1.049,20365.443,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2678234603,6240,1049,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2678300140,99744,1057,,,,,,,,,,1.049,10511.974,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2678409548,5664,1060,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2678464365,89280,1096,,,,,,,,,,1.049,11744.051,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2678562125,5280,1099,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2678586413,96672,1104,,,,,,,,,,1.049,10846.470,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2678690157,5504,1107,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2678724110,99040,1112,,,,,,,,,,1.049,10586.423,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2678831566,5568,1115,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2678884622,107617,1120,,,,,,,,,,1.049,9743.368,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2678998831,5727,1123,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679036623,85024,1128,,,,,,,,,,1.049,12332.302,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2679129231,5536,1131,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679191440,59328,1136,,,,,,,,,,1.049,17673.748,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2679253520,5568,1139,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679334000,60064,1144,,,,,,,,,,1.049,17456.693,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2679398769,5439,1147,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679488561,60832,1152,,,,,,,,,,1.049,17236.492,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2679558385,5856,1155,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679651441,85152,1160,,,,,,,,,,1.049,12313.428,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2679742898,5536,1163,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679819890,76928,1168,,,,,,,,,,1.049,13630.439,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2679905746,5665,1171,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2679987795,74496,1176,,,,,,,,,,1.049,14075.036,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2680068531,5760,1179,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2680168244,94336,1184,,,,,,,,,,1.049,11114.906,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2680269780,5728,1187,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2680348148,94913,1192,,,,,,,,,,1.049,11046.748,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2680446421,5600,1195,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2680552821,139201,1200,,,,,,,,,,1.049,7531.921,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2680703318,5472,1203,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2680763606,88832,1208,,,,,,,,,,1.049,11803.820,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2680855062,5376,1211,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2680912503,65440,1247,,,,,,,,,,1.049,16023.290,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2680980887,5536,1250,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2681733946,703683,1366,,,,,,,,,,33.554,47680.848,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686157997,196480,2728,,,,,,,,,,67.109,341517.009,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2686386830,85279,2737,,,,,,,,,,4.194,49182.409,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686472110,86399,2744,,,,,,,,,,4.194,48544.874,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686495822,1326790,2882,,,,,,,,,,4.194,3158.311,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2686558510,87584,2751,,,,,,,,,,4.194,47886.369,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686646095,86432,2758,,,,,,,,,,4.194,48523.903,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686732559,86175,2765,,,,,,,,,,4.194,48670.704,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686818735,85984,2772,,,,,,,,,,4.194,48779.756,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686904720,86015,2779,,,,,,,,,,4.194,48758.784,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2686990736,86016,2786,,,,,,,,,,4.194,48758.784,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2689070201,1356677,2891,,,,,,,,,,4.194,3091.202,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2691882596,1369446,2900,,,,,,,,,,4.194,3061.842,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2694507023,1391846,2909,,,,,,,,,,4.194,3011.510,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2697298875,1361574,2918,,,,,,,,,,4.194,3078.619,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2699909670,1345094,2927,,,,,,,,,,4.194,3116.368,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2702531473,1396550,2936,,,,,,,,,,4.194,3003.122,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2705161084,1366086,2945,,,,,,,,,,4.194,3070.231,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2707887688,84576,2959,,,,,,,,,,1.049,12397.314,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708024200,5984,2962,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2708149289,75488,2967,,,,,,,,,,1.049,13890.486,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708233673,5824,2970,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2708286441,79649,2975,,,,,,,,,,1.049,13164.872,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708372938,5472,2978,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2708426250,63584,2983,,,,,,,,,,1.049,16490.955,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708497834,5600,2986,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2708574794,55585,2991,,,,,,,,,,1.049,18863.882,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708640203,5408,2994,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2708721611,57120,2999,,,,,,,,,,1.049,18357.420,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708785067,5568,3002,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2708897004,59776,3007,,,,,,,,,,1.049,17541.628,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2708959692,5696,3010,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2709060461,65792,3015,,,,,,,,,,1.049,15937.307,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2709132909,5472,3018,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2709229677,68288,3023,,,,,,,,,,1.049,15354.298,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2709306798,5632,3026,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2709402798,70368,3031,,,,,,,,,,1.049,14901.314,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2709476814,5536,3034,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2709580143,71776,3039,,,,,,,,,,1.049,14608.761,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2709657007,5792,3042,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2709766639,68545,3047,,,,,,,,,,1.049,15296.627,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2709841840,5472,3050,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2709952016,69888,3055,,,,,,,,,,1.049,15003.025,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2710025681,5696,3058,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2710125617,72960,3063,,,,,,,,,,1.049,14371.783,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2710202801,5632,3066,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2710316914,71104,3071,,,,,,,,,,1.049,14746.124,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2710394450,5632,3074,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2710489875,65696,3079,,,,,,,,,,1.049,15960.375,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2710559411,5504,3082,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2710644051,113665,3118,,,,,,,,,,1.049,9224.323,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2710763444,5408,3121,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2710786388,113504,3126,,,,,,,,,,1.049,9237.955,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2710910516,5505,3129,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2710919765,97696,3134,,,,,,,,,,1.049,10732.175,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711022101,5472,3137,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711054965,81600,3142,,,,,,,,,,1.049,12849.250,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711140405,5696,3145,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711191253,65665,3150,,,,,,,,,,1.049,15967.715,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711266870,5504,3153,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711333814,57952,3158,,,,,,,,,,1.049,18093.179,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711395798,5600,3161,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711480055,58752,3166,,,,,,,,,,1.049,17846.764,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711544311,5568,3169,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711639800,84704,3174,,,,,,,,,,1.049,12378.440,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711729688,5600,3177,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711806104,83232,3182,,,,,,,,,,1.049,12597.592,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2711898649,5440,3185,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2711969113,79808,3190,,,,,,,,,,1.049,13138.657,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2712058425,5568,3193,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2712141689,100737,3198,,,,,,,,,,1.049,10408.165,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2712251994,5568,3201,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2712318458,97665,3206,,,,,,,,,,1.049,10736.370,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2712420891,5600,3209,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2712492763,84896,3214,,,,,,,,,,1.049,12351.177,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2712583675,5888,3217,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2712682460,105248,3222,,,,,,,,,,1.049,9962.521,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2712796732,5664,3225,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2712855420,82177,3230,,,,,,,,,,1.049,12759.073,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2712947325,5600,3233,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2712997789,47744,3269,,,,,,,,,,1.049,21962.424,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2713048029,5600,3272,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2713123486,702978,3345,,,,,,,,,,33.554,47714.402,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2717537360,195809,4783,,,,,,,,,,67.109,342724.968,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2717768305,85567,4792,,,,,,,,,,4.194,49014.637,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2717853873,86816,4799,,,,,,,,,,4.194,48309.993,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2717876241,1194502,4947,,,,,,,,,,4.194,3510.632,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2717940690,88191,4806,,,,,,,,,,4.194,47559.213,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2718028882,86911,4813,,,,,,,,,,4.194,48259.662,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2718115794,86529,4820,,,,,,,,,,4.194,48469.377,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2718202355,86527,4827,,,,,,,,,,4.194,48473.571,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2718288883,86688,4834,,,,,,,,,,4.194,48381.297,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2718375699,86209,4841,,,,,,,,,,4.194,48649.732,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2720105179,1184197,4956,,,,,,,,,,4.194,3539.993,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2722468549,1337125,4965,,,,,,,,,,4.194,3133.145,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2724874127,1218597,4974,,,,,,,,,,4.194,3439.329,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2727180856,1178629,4983,,,,,,,,,,4.194,3556.770,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2729383682,1138340,4992,,,,,,,,,,4.194,3682.599,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2731536107,1144933,5001,,,,,,,,,,4.194,3661.627,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2733698836,1141733,5010,,,,,,,,,,4.194,3670.016,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2735939133,88257,5024,,,,,,,,,,1.049,11880.366,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736072158,5856,5027,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2736185310,85536,5032,,,,,,,,,,1.049,12257.853,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736277567,5920,5035,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2736321311,83296,5040,,,,,,,,,,1.049,12588.155,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736414239,5536,5043,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2736464671,61088,5048,,,,,,,,,,1.049,17164.141,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736531008,5440,5051,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2736608288,60544,5056,,,,,,,,,,1.049,17318.281,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736678432,5440,5059,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2736753537,57152,5064,,,,,,,,,,1.049,18346.934,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736814145,5504,5067,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2736911169,63392,5072,,,,,,,,,,1.049,16540.238,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2736980673,5632,5075,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737062402,63328,5080,,,,,,,,,,1.049,16557.015,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2737132162,5600,5083,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737203682,63649,5088,,,,,,,,,,1.049,16474.178,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2737276483,5568,5091,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737356835,65473,5096,,,,,,,,,,1.049,16014.901,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2737428004,5535,5099,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737508708,66080,5104,,,,,,,,,,1.049,15868.101,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2737581604,5568,5107,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737666340,68929,5112,,,,,,,,,,1.049,15211.692,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2737739013,5472,5115,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737831013,70432,5120,,,,,,,,,,1.049,14887.682,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2737911365,5600,5123,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2737984678,70912,5128,,,,,,,,,,1.049,14785.970,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2738062886,5632,5131,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2738151879,74432,5136,,,,,,,,,,1.049,14087.619,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2738236071,5536,5139,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2738305287,70112,5144,,,,,,,,,,1.049,14954.791,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2738380327,5568,5147,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2738442376,69344,5183,,,,,,,,,,1.049,15120.466,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2738519624,5280,5186,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2738555240,86048,5191,,,,,,,,,,1.049,12185.502,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2738651689,5632,5194,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2738670601,106944,5199,,,,,,,,,,1.049,9804.186,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2738787913,5472,5202,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2738946538,90976,5207,,,,,,,,,,1.049,11524.899,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739041322,5536,5210,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739066346,100609,5215,,,,,,,,,,1.049,10421.797,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739170859,5504,5218,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739187403,76288,5223,,,,,,,,,,1.049,13744.734,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739269291,5504,5226,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739316267,73793,5231,,,,,,,,,,1.049,14209.253,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739393164,5568,5234,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739458028,73248,5239,,,,,,,,,,1.049,14315.160,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739537452,5793,5242,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739601837,67008,5247,,,,,,,,,,1.049,15647.900,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739671597,5472,5250,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739747917,61920,5255,,,,,,,,,,1.049,16933.454,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739816493,5664,5258,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2739902926,71904,5263,,,,,,,,,,1.049,14582.546,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2739978446,5536,5266,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2740051150,72801,5271,,,,,,,,,,1.049,14403.240,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2740129007,5664,5274,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2740199791,82624,5279,,,,,,,,,,1.049,12690.915,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2740292303,5408,5282,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2740354352,100000,5287,,,,,,,,,,1.049,10485.760,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2740464176,5568,5290,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2740485776,72224,5295,,,,,,,,,,1.049,14517.535,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2740563569,5504,5298,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2740594961,45984,5334,,,,,,,,,,1.049,22802.334,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2740649009,5344,5337,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2740712849,710275,5442,,,,,,,,,,33.554,47211.086,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2745096771,94145,7044,,,,,,,,,,67.109,712763.245,Device,,NVIDIA RTX A6000 (0),1,,7,[CUDA memset]
+2745294788,197505,7050,,,,,,,,,,67.109,339772.178,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2745528453,85568,7059,,,,,,,,,,4.194,49014.637,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2745614053,86657,7066,,,,,,,,,,4.194,48398.074,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2745632934,1368165,7232,,,,,,,,,,4.194,3061.842,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2745700774,87553,7073,,,,,,,,,,4.194,47903.146,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2745788359,86624,7080,,,,,,,,,,4.194,48419.045,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2745875047,86335,7087,,,,,,,,,,4.194,48578.429,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2745961383,86145,7094,,,,,,,,,,4.194,48687.481,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2746047592,86207,7101,,,,,,,,,,4.194,48649.732,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2746133800,86144,7108,,,,,,,,,,4.194,48687.481,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2748140464,1278118,7241,,,,,,,,,,4.194,3279.946,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2750668923,1201445,7250,,,,,,,,,,4.194,3489.661,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2752951364,1214438,7259,,,,,,,,,,4.194,3451.912,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2755245390,1200005,7268,,,,,,,,,,4.194,3493.855,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2757516536,1187973,7277,,,,,,,,,,4.194,3527.410,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2759819489,1330118,7286,,,,,,,,,,4.194,3149.922,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2762227404,1220132,7295,,,,,,,,,,4.194,3435.135,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2764618837,71041,7309,,,,,,,,,,1.049,14759.756,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2764739926,5920,7312,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2764847254,88960,7317,,,,,,,,,,1.049,11787.043,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2764944023,5888,7320,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2764978199,93344,7325,,,,,,,,,,1.049,11233.395,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765080247,5472,7328,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765120600,85088,7333,,,,,,,,,,1.049,12322.865,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765215384,5568,7336,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765262136,81056,7341,,,,,,,,,,1.049,12936.282,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765347480,5440,7344,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765398328,85473,7349,,,,,,,,,,1.049,12267.291,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765489337,5696,7352,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765546073,76448,7357,,,,,,,,,,1.049,13715.374,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765629082,5600,7360,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765698458,64096,7365,,,,,,,,,,1.049,16358.834,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765768378,5600,7368,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765836379,77408,7373,,,,,,,,,,1.049,13545.505,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2765921947,5792,7376,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2765972795,85088,7381,,,,,,,,,,1.049,12322.865,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766066331,5440,7384,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766108060,84832,7389,,,,,,,,,,1.049,12360.614,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766200508,5664,7392,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766248924,79520,7397,,,,,,,,,,1.049,13185.843,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766334140,5664,7400,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766384412,82849,7405,,,,,,,,,,1.049,12656.312,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766475933,5632,7408,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766509757,57729,7413,,,,,,,,,,1.049,18163.433,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766573374,5632,7416,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766650462,63936,7421,,,,,,,,,,1.049,16399.729,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766721790,5696,7424,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766812767,71392,7429,,,,,,,,,,1.049,14687.404,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2766887263,5696,7432,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2766969215,73633,7468,,,,,,,,,,1.049,14239.662,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767046303,5376,7471,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767090912,76928,7476,,,,,,,,,,1.049,13630.439,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767175328,5472,7479,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767220128,76449,7484,,,,,,,,,,1.049,13715.374,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767302369,5567,7487,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767352481,84736,7492,,,,,,,,,,1.049,12374.245,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767445377,5856,7495,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767478561,79873,7500,,,,,,,,,,1.049,13127.123,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767562530,5632,7503,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767591874,65920,7508,,,,,,,,,,1.049,15905.849,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767662754,5664,7511,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767700002,80160,7516,,,,,,,,,,1.049,13080.986,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767785634,5729,7519,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767813411,84288,7524,,,,,,,,,,1.049,12440.306,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2767900451,5696,7527,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2767922627,67616,7532,,,,,,,,,,1.049,15507.390,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768000739,5665,7535,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768043107,55713,7540,,,,,,,,,,1.049,18820.891,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768102788,5632,7543,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768168804,51073,7548,,,,,,,,,,1.049,20530.070,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768229029,5727,7551,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768298276,49345,7556,,,,,,,,,,1.049,21249.393,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768356549,5696,7559,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768427334,51008,7564,,,,,,,,,,1.049,20556.284,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768487078,5632,7567,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768552710,54144,7572,,,,,,,,,,1.049,19366.150,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768610502,5696,7575,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768644838,86273,7580,,,,,,,,,,1.049,12154.044,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768735495,5504,7583,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2768797991,60384,7619,,,,,,,,,,1.049,17364.419,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2768863399,5440,7622,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2769066408,703139,7731,,,,,,,,,,33.554,47714.402,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2772700055,196513,9362,,,,,,,,,,67.109,341449.900,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2772927256,85600,9371,,,,,,,,,,4.194,48997.859,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773012952,86720,9378,,,,,,,,,,4.194,48364.519,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773024505,1199845,9551,,,,,,,,,,4.194,3493.855,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2773099673,87775,9385,,,,,,,,,,4.194,47781.511,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773187449,86944,9392,,,,,,,,,,4.194,48238.690,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773274394,86847,9399,,,,,,,,,,4.194,48293.216,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773361242,86496,9406,,,,,,,,,,4.194,48490.349,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773447930,86496,9413,,,,,,,,,,4.194,48490.349,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2773534427,86336,9420,,,,,,,,,,4.194,48578.429,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2775281090,1185797,9560,,,,,,,,,,4.194,3535.798,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2777534155,1163717,9569,,,,,,,,,,4.194,3602.907,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2779712852,1201830,9578,,,,,,,,,,4.194,3489.661,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2781978974,1266821,9587,,,,,,,,,,4.194,3309.306,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2784450025,1148132,9596,,,,,,,,,,4.194,3649.044,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2786591281,1130533,9605,,,,,,,,,,4.194,3707.765,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2788734011,1147428,9614,,,,,,,,,,4.194,3653.239,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2791262821,96896,9628,,,,,,,,,,1.049,10821.304,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2791389829,5920,9631,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2791471270,75104,9636,,,,,,,,,,1.049,13960.741,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2791557094,5856,9639,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2791811271,49760,9644,,,,,,,,,,1.049,21072.183,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2791870247,5473,9647,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2791932232,50400,9652,,,,,,,,,,1.049,20804.796,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2791990536,5568,9655,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792053000,51968,9660,,,,,,,,,,1.049,20176.699,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792112904,5408,9663,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792166921,58080,9668,,,,,,,,,,1.049,18053.333,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792234793,5696,9671,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792271433,83489,9676,,,,,,,,,,1.049,12558.795,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792360746,5504,9679,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792377481,96161,9684,,,,,,,,,,1.049,10904.142,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792477258,5600,9687,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792486474,84384,9692,,,,,,,,,,1.049,12425.626,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792579274,5696,9695,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792589738,69441,9700,,,,,,,,,,1.049,15099.494,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792666955,5536,9703,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792681675,64640,9708,,,,,,,,,,1.049,16221.471,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792754987,5600,9711,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792804747,60673,9716,,,,,,,,,,1.049,17281.581,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2792874316,5472,9719,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2792927436,75520,9724,,,,,,,,,,1.049,13884.195,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793007916,5632,9727,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793048588,83361,9732,,,,,,,,,,1.049,12578.718,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793139981,5440,9735,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793176493,85152,9740,,,,,,,,,,1.049,12313.428,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793268013,5568,9743,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793318862,79520,9748,,,,,,,,,,1.049,13185.843,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793402638,5600,9751,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793481806,53089,9787,,,,,,,,,,1.049,19750.978,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793539855,5344,9790,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793602863,59360,9795,,,,,,,,,,1.049,17664.311,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793666319,5696,9798,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793723087,76833,9803,,,,,,,,,,1.049,13647.217,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793802512,5536,9806,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793839952,77536,9811,,,,,,,,,,1.049,13523.485,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2793924048,5568,9814,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2793940496,67105,9819,,,,,,,,,,1.049,15625.880,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794016688,5376,9822,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794037712,59233,9827,,,,,,,,,,1.049,17702.060,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794106641,5664,9830,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794134801,76769,9835,,,,,,,,,,1.049,13658.751,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794218577,5568,9838,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794234833,90945,9843,,,,,,,,,,1.049,11529.093,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794333970,5856,9846,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794348178,84000,9851,,,,,,,,,,1.049,12482.249,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794437426,5472,9854,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794447794,51584,9859,,,,,,,,,,1.049,20326.646,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794505490,5697,9862,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794561939,51520,9867,,,,,,,,,,1.049,20351.812,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794622739,5760,9870,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794685139,51553,9875,,,,,,,,,,1.049,20339.229,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794744083,5536,9878,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794808852,55744,9883,,,,,,,,,,1.049,18810.405,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794872628,5408,9886,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2794905460,74817,9891,,,,,,,,,,1.049,14014.218,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2794987285,5632,9894,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2795011796,86561,9899,,,,,,,,,,1.049,12113.150,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2795108117,5344,9902,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2795126869,86272,9938,,,,,,,,,,1.049,12154.044,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2795217685,5376,9941,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2795577079,711683,10118,,,,,,,,,,33.554,47143.977,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799042085,196577,11729,,,,,,,,,,67.109,341382.791,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2799271719,85567,11738,,,,,,,,,,4.194,49014.637,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799357287,86751,11745,,,,,,,,,,4.194,48347.742,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799369127,1214021,11862,,,,,,,,,,4.194,3451.912,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2799444039,91104,11752,,,,,,,,,,4.194,46036.681,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799535144,86847,11759,,,,,,,,,,4.194,48293.216,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799621992,86271,11766,,,,,,,,,,4.194,48616.178,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799708264,86177,11773,,,,,,,,,,4.194,48670.704,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799794537,86175,11780,,,,,,,,,,4.194,48670.704,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2799880713,86496,11787,,,,,,,,,,4.194,48490.349,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2801667888,1191749,11871,,,,,,,,,,4.194,3519.021,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2803950330,1220453,11880,,,,,,,,,,4.194,3435.135,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2806411813,1528454,11889,,,,,,,,,,4.194,2743.075,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2809330705,1413638,11898,,,,,,,,,,4.194,2965.373,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2811814779,1177093,11907,,,,,,,,,,4.194,3560.964,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2814079716,1214470,11916,,,,,,,,,,4.194,3451.912,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2816351726,1180613,11925,,,,,,,,,,4.194,3552.575,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2818679064,78496,11939,,,,,,,,,,1.049,13357.810,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2818788888,6048,11942,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2818873977,89504,11947,,,,,,,,,,1.049,11714.691,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2818969721,5920,11950,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2818979769,91713,11955,,,,,,,,,,1.049,11432.624,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819076825,5408,11958,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819094361,92641,11963,,,,,,,,,,1.049,11318.329,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819192698,5536,11966,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819207770,76960,11971,,,,,,,,,,1.049,13624.148,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819288378,5440,11974,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819316891,66688,11979,,,,,,,,,,1.049,15723.397,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819393275,5728,11982,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819426363,62720,11987,,,,,,,,,,1.049,16717.447,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819496731,5600,11990,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819536828,57600,11995,,,,,,,,,,1.049,18204.328,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819597148,5600,11998,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819638012,59200,12003,,,,,,,,,,1.049,17711.497,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819701660,5536,12006,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819733884,79104,12011,,,,,,,,,,1.049,13255.049,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819818364,5505,12014,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819839453,89728,12019,,,,,,,,,,1.049,11685.331,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2819933277,5664,12022,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2819949565,69600,12027,,,,,,,,,,1.049,15064.891,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820025821,5440,12030,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820071965,58177,12035,,,,,,,,,,1.049,18022.924,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820134814,5568,12038,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820189854,50464,12043,,,,,,,,,,1.049,20778.582,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820244382,5601,12046,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820316063,53280,12051,,,,,,,,,,1.049,19679.674,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820378495,5696,12054,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820470303,54273,12059,,,,,,,,,,1.049,19320.013,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820533119,5728,12062,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820617408,81472,12098,,,,,,,,,,1.049,12870.222,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820707744,5313,12101,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820722369,51840,12106,,,,,,,,,,1.049,20227.031,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820781953,5312,12109,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820857473,50112,12114,,,,,,,,,,1.049,20924.334,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2820916193,5536,12117,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2820969122,53856,12122,,,,,,,,,,1.049,19469.959,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821027202,5792,12125,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821069666,68000,12130,,,,,,,,,,1.049,15419.310,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821145474,5664,12133,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821164098,90976,12138,,,,,,,,,,1.049,11524.899,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821265122,5601,12141,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821280835,89536,12146,,,,,,,,,,1.049,11710.497,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821374723,5664,12149,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821390403,97377,12154,,,,,,,,,,1.049,10767.827,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821493636,5632,12157,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821505092,81824,12162,,,,,,,,,,1.049,12814.647,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821590916,5472,12165,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821603396,59296,12170,,,,,,,,,,1.049,17683.186,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821667236,5760,12173,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821686244,62593,12178,,,,,,,,,,1.049,16752.050,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821758853,5504,12181,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821813701,51616,12186,,,,,,,,,,1.049,20314.063,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2821873029,5728,12189,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2821918021,75329,12194,,,,,,,,,,1.049,13919.846,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2822002566,5632,12197,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2822025510,86528,12202,,,,,,,,,,1.049,12117.344,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2822118310,5664,12205,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2822130726,90849,12210,,,,,,,,,,1.049,11541.676,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2822231943,5440,12213,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2822251623,80736,12249,,,,,,,,,,1.049,12987.662,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2822334855,5696,12252,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2822580424,710243,12408,,,,,,,,,,33.554,47211.086,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826122551,196449,14040,,,,,,,,,,67.109,341584.118,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2826446744,83616,14049,,,,,,,,,,4.194,50159.682,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826530424,86849,14056,,,,,,,,,,4.194,48293.216,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826540313,1183013,14228,,,,,,,,,,4.194,3544.187,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2826617305,87712,14063,,,,,,,,,,4.194,47815.066,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826705018,87008,14070,,,,,,,,,,4.194,48205.136,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826792058,86400,14077,,,,,,,,,,4.194,48544.874,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826878586,86528,14084,,,,,,,,,,4.194,48469.377,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2826965115,86623,14091,,,,,,,,,,4.194,48419.045,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2827051739,86624,14098,,,,,,,,,,4.194,48419.045,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2828769026,1167717,14237,,,,,,,,,,4.194,3590.324,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2830989899,1252742,14246,,,,,,,,,,4.194,3347.055,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2833466518,1197253,14255,,,,,,,,,,4.194,3502.244,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2835732415,1162693,14264,,,,,,,,,,4.194,3607.101,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2837910408,1121509,14273,,,,,,,,,,4.194,3737.125,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2840041202,1128516,14282,,,,,,,,,,4.194,3716.153,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2842182042,1119045,14291,,,,,,,,,,4.194,3745.513,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2845841162,53824,14305,,,,,,,,,,1.049,19481.494,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2845927498,5984,14308,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2845987530,53217,14313,,,,,,,,,,1.049,19702.743,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846045675,5983,14316,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846071403,56864,14321,,,,,,,,,,1.049,18439.209,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846137355,5472,14324,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846156619,54144,14329,,,,,,,,,,1.049,19366.150,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846218219,5568,14332,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846240427,50689,14337,,,,,,,,,,1.049,20686.307,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846300140,5376,14340,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846322315,51745,14345,,,,,,,,,,1.049,20263.731,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846379596,5472,14348,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846401932,54432,14353,,,,,,,,,,1.049,19263.390,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846459084,5504,14356,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846474220,50688,14361,,,,,,,,,,1.049,20686.307,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846527468,5568,14364,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846542541,50400,14369,,,,,,,,,,1.049,20804.796,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846602253,5600,14372,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846612685,49152,14377,,,,,,,,,,1.049,21333.279,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846666733,5568,14380,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846690253,52256,14385,,,,,,,,,,1.049,20065.550,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846748685,5793,14388,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846784013,45825,14393,,,,,,,,,,1.049,22882.025,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846838766,5472,14396,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846877998,53376,14401,,,,,,,,,,1.049,19645.071,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2846940142,5568,14404,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2846963311,50688,14409,,,,,,,,,,1.049,20686.307,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847024111,5696,14412,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847057775,50880,14417,,,,,,,,,,1.049,20608.713,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847112175,5952,14420,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847165615,45152,14425,,,,,,,,,,1.049,23222.813,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847220720,5760,14428,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847276848,54528,14464,,,,,,,,,,1.049,19229.835,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847340016,5408,14467,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847361200,51200,14472,,,,,,,,,,1.049,20479.738,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847418352,5664,14475,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847451952,52384,14480,,,,,,,,,,1.049,20016.267,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847511536,5665,14483,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847532913,52992,14488,,,,,,,,,,1.049,19786.629,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847589073,5600,14491,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847606161,53184,14496,,,,,,,,,,1.049,19715.326,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847664657,5728,14499,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847675697,52449,14504,,,,,,,,,,1.049,19992.150,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847737842,5632,14507,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847747026,47136,14512,,,,,,,,,,1.049,22245.540,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847803378,5568,14515,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847826386,49984,14520,,,,,,,,,,1.049,20977.811,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847880178,5952,14523,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847901074,47649,14528,,,,,,,,,,1.049,22005.416,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2847957011,5471,14531,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2847979698,50113,14536,,,,,,,,,,1.049,20923.286,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848036339,5632,14539,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2848059219,47328,14544,,,,,,,,,,1.049,22155.362,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848115731,5760,14547,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2848142131,51904,14552,,,,,,,,,,1.049,20201.865,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848203764,5664,14555,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2848218132,47488,14560,,,,,,,,,,1.049,22079.865,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848275444,5632,14563,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2848287860,49632,14568,,,,,,,,,,1.049,21126.709,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848344660,5472,14571,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2848360692,42880,14576,,,,,,,,,,1.049,24452.792,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848410613,5536,14579,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2848448788,42944,14615,,,,,,,,,,1.049,24417.141,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2848494069,5408,14618,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2850026587,703011,14708,,,,,,,,,,33.554,47714.402,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2853793419,197665,16343,,,,,,,,,,67.109,339503.743,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2854035756,85503,16352,,,,,,,,,,4.194,49052.385,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854121260,86561,16359,,,,,,,,,,4.194,48452.600,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854131532,1165413,16532,,,,,,,,,,4.194,3598.713,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2854207917,87487,16366,,,,,,,,,,4.194,47940.895,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854295405,86591,16373,,,,,,,,,,4.194,48435.823,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854381997,86209,16380,,,,,,,,,,4.194,48649.732,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854468270,86239,16387,,,,,,,,,,4.194,48632.955,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854554510,86528,16394,,,,,,,,,,4.194,48469.377,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2854641102,86401,16401,,,,,,,,,,4.194,48540.680,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2856367190,1154821,16541,,,,,,,,,,4.194,3628.073,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2858586527,1176837,16550,,,,,,,,,,4.194,3560.964,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2860823720,1200485,16559,,,,,,,,,,4.194,3489.661,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2863042770,1166693,16568,,,,,,,,,,4.194,3594.519,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2865236059,1161541,16577,,,,,,,,,,4.194,3607.101,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2867554564,1428071,16586,,,,,,,,,,4.194,2936.013,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2870183280,2235305,16595,,,,,,,,,,4.194,1874.854,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2873748574,47873,16609,,,,,,,,,,1.049,21902.655,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2873834591,5920,16612,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2873916735,47520,16617,,,,,,,,,,1.049,22065.185,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2873969823,5984,16620,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874004096,60672,16625,,,,,,,,,,1.049,17282.630,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874074304,5568,16628,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874092544,49696,16633,,,,,,,,,,1.049,21099.446,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874149504,5440,16636,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874179808,46912,16641,,,,,,,,,,1.049,22351.446,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874237249,5504,16644,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874264385,46112,16649,,,,,,,,,,1.049,22739.419,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874313537,5600,16652,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874345633,47968,16657,,,,,,,,,,1.049,21859.664,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874401922,5567,16660,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874420897,46721,16665,,,,,,,,,,1.049,22442.672,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874470498,5695,16668,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874495714,46592,16673,,,,,,,,,,1.049,22504.538,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874552418,5504,16676,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874569666,46976,16681,,,,,,,,,,1.049,22321.037,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874626178,5664,16684,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874647426,47040,16689,,,,,,,,,,1.049,22290.629,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874699427,5760,16692,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874733603,44192,16697,,,,,,,,,,1.049,23727.178,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874782339,5440,16700,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874838051,44544,16705,,,,,,,,,,1.049,23539.483,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874889315,5568,16708,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2874929892,45504,16713,,,,,,,,,,1.049,23043.506,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2874981508,5632,16716,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875021188,47136,16721,,,,,,,,,,1.049,22245.540,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875073668,5632,16724,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875127333,40800,16729,,,,,,,,,,1.049,25699.549,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875172997,5600,16732,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875237893,48512,16768,,,,,,,,,,1.049,21614.297,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875293797,5280,16771,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875322693,46432,16776,,,,,,,,,,1.049,22582.133,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875372645,5472,16779,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875412805,46497,16784,,,,,,,,,,1.049,22550.675,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875463782,5472,16787,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875500710,45952,16792,,,,,,,,,,1.049,22818.062,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875556966,5792,16795,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875581158,47168,16800,,,,,,,,,,1.049,22229.811,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875637895,5568,16803,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875663142,46977,16808,,,,,,,,,,1.049,22321.037,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875719783,5696,16811,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875743143,45632,16816,,,,,,,,,,1.049,22978.494,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875793543,5824,16819,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875832167,44448,16824,,,,,,,,,,1.049,23590.863,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875880551,5792,16827,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875911560,45312,16832,,,,,,,,,,1.049,23141.024,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2875960424,5568,16835,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2875994088,46336,16840,,,,,,,,,,1.049,22629.319,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876050536,5536,16843,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2876077320,44544,16848,,,,,,,,,,1.049,23539.483,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876127848,5632,16851,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2876163145,45696,16856,,,,,,,,,,1.049,22945.989,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876212009,5632,16859,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2876245193,45248,16864,,,,,,,,,,1.049,23173.530,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876293737,5824,16867,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2876322153,45345,16872,,,,,,,,,,1.049,23124.247,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876376170,5536,16875,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2876401034,43456,16880,,,,,,,,,,1.049,24128.782,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876450442,5632,16883,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2876502954,42720,16919,,,,,,,,,,1.049,24545.067,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2876549738,5696,16922,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2877275341,702787,17004,,,,,,,,,,33.554,47714.402,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2881481151,196769,18371,,,,,,,,,,67.109,341047.247,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2881725760,85087,18380,,,,,,,,,,4.194,49291.461,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2881810848,87009,18387,,,,,,,,,,4.194,48205.136,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2881822208,1324934,18512,,,,,,,,,,4.194,3162.505,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2881897889,87584,18394,,,,,,,,,,4.194,47886.369,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2881985761,86784,18401,,,,,,,,,,4.194,48326.771,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2882072609,86593,18408,,,,,,,,,,4.194,48435.823,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2882159266,86431,18415,,,,,,,,,,4.194,48523.903,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2882245698,86783,18422,,,,,,,,,,4.194,48326.771,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2882332482,86561,18429,,,,,,,,,,4.194,48452.600,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2884415851,1307494,18521,,,,,,,,,,4.194,3204.448,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2886939894,1316549,18530,,,,,,,,,,4.194,3183.477,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2889456256,1340422,18539,,,,,,,,,,4.194,3128.951,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2892025867,1328550,18548,,,,,,,,,,4.194,3154.117,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2894608214,1358182,18557,,,,,,,,,,4.194,3087.008,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2897152161,1291493,18566,,,,,,,,,,4.194,3246.391,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2899646347,1331302,18575,,,,,,,,,,4.194,3149.922,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2902250230,43072,18589,,,,,,,,,,1.049,24343.740,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902340822,6048,18592,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902406775,44128,18597,,,,,,,,,,1.049,23761.781,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902456023,5920,18600,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902486583,44128,18605,,,,,,,,,,1.049,23761.781,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902535927,5472,18608,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902566487,45537,18613,,,,,,,,,,1.049,23026.729,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902622424,5472,18616,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902648248,45248,18621,,,,,,,,,,1.049,23173.530,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902699768,5472,18624,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902728184,44256,18629,,,,,,,,,,1.049,23692.575,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902776568,5632,18632,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902819449,45920,18637,,,,,,,,,,1.049,22834.840,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902868185,5440,18640,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902898808,45953,18645,,,,,,,,,,1.049,22818.062,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2902948057,5504,18648,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2902970905,45792,18653,,,,,,,,,,1.049,22897.754,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903026937,5600,18656,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903044441,45857,18661,,,,,,,,,,1.049,22865.248,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903098585,5536,18664,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903123674,45856,18669,,,,,,,,,,1.049,22866.297,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903174906,5408,18672,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903206746,44512,18677,,,,,,,,,,1.049,23556.260,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903254746,5504,18680,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903295802,45793,18685,,,,,,,,,,1.049,22897.754,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903344347,5600,18688,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903380283,45568,18693,,,,,,,,,,1.049,23011.000,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903431419,5472,18696,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903470011,46304,18701,,,,,,,,,,1.049,22645.047,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903520475,5760,18704,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903580699,40896,18709,,,,,,,,,,1.049,25639.780,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903628028,5568,18712,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903693692,48128,18748,,,,,,,,,,1.049,21786.264,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903749372,5472,18751,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903789084,45440,18756,,,,,,,,,,1.049,23076.012,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903838941,5632,18759,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903879645,46048,18764,,,,,,,,,,1.049,22770.876,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2903936221,5568,18767,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2903965757,46369,18772,,,,,,,,,,1.049,22613.590,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904021245,5600,18775,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904048477,47169,18780,,,,,,,,,,1.049,22229.811,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904098718,5568,18783,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904130078,46592,18788,,,,,,,,,,1.049,22504.538,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904186110,5632,18791,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904210494,45792,18796,,,,,,,,,,1.049,22897.754,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904261855,5536,18799,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904291422,44513,18804,,,,,,,,,,1.049,23556.260,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904339679,5760,18807,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904370815,46080,18812,,,,,,,,,,1.049,22755.148,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904419551,5536,18815,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904451935,45568,18820,,,,,,,,,,1.049,23011.000,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904500991,5760,18823,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904533888,44928,18828,,,,,,,,,,1.049,23338.156,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904584928,5568,18831,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904622176,45440,18836,,,,,,,,,,1.049,23076.012,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904671968,5632,18839,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904700256,45536,18844,,,,,,,,,,1.049,23026.729,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904748960,5536,18847,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904783681,45760,18852,,,,,,,,,,1.049,22914.531,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904833793,5536,18855,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904857889,43104,18860,,,,,,,,,,1.049,24325.915,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2904909025,5472,18863,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2904954273,42849,18899,,,,,,,,,,1.049,24470.618,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2905000194,5312,18902,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2905553092,706883,18982,,,,,,,,,,33.554,47445.967,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2909802486,196321,20382,,,,,,,,,,67.109,341785.444,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2910054199,85440,20391,,,,,,,,,,4.194,49090.134,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910139671,86752,20398,,,,,,,,,,4.194,48347.742,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910150903,1357510,20542,,,,,,,,,,4.194,3087.008,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2910226519,92576,20405,,,,,,,,,,4.194,45302.678,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910319096,86751,20412,,,,,,,,,,4.194,48347.742,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910405848,86335,20419,,,,,,,,,,4.194,48578.429,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910492184,86976,20426,,,,,,,,,,4.194,48221.913,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910579161,86655,20433,,,,,,,,,,4.194,48402.268,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2910665817,86304,20440,,,,,,,,,,4.194,48595.206,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2912888867,1302405,20551,,,,,,,,,,4.194,3217.031,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2915377325,1300614,20560,,,,,,,,,,4.194,3221.225,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2917865944,1309381,20569,,,,,,,,,,4.194,3200.254,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2920371266,1290949,20578,,,,,,,,,,4.194,3246.391,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2922696204,1183716,20587,,,,,,,,,,4.194,3539.993,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2924930293,1159813,20596,,,,,,,,,,4.194,3615.490,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2927147582,1319494,20605,,,,,,,,,,4.194,3175.088,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2929467176,135873,20619,,,,,,,,,,1.049,7716.471,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2929612168,6016,20622,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2929635977,149152,20627,,,,,,,,,,1.049,7029.654,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2929794410,5856,20630,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2929804361,78721,20635,,,,,,,,,,1.049,13320.061,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2929887050,5440,20638,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2929896522,44576,20643,,,,,,,,,,1.049,23522.705,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2929945578,5568,20646,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2929954826,45568,20651,,,,,,,,,,1.049,23011.000,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930006890,5504,20654,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930020842,87105,20659,,,,,,,,,,1.049,12037.652,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930116939,5504,20662,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930132491,144768,20667,,,,,,,,,,1.049,7242.514,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930281611,5568,20670,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930290923,45760,20675,,,,,,,,,,1.049,22914.531,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930341195,5665,20678,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930350092,45632,20683,,,,,,,,,,1.049,22978.494,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930404716,5760,20686,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930416140,46432,20691,,,,,,,,,,1.049,22582.133,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930466124,5568,20694,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930476044,50657,20699,,,,,,,,,,1.049,20698.890,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930537804,5568,20702,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930547724,44257,20707,,,,,,,,,,1.049,23692.575,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930597709,5536,20710,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930606669,41760,20715,,,,,,,,,,1.049,25109.201,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930652493,5568,20718,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930661357,209985,20723,,,,,,,,,,1.049,4993.319,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930877774,5472,20726,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930891982,41664,20731,,,,,,,,,,1.049,25166.873,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2930939214,5568,20734,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2930954766,42400,20739,,,,,,,,,,1.049,24729.616,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931000046,5664,20742,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931011598,48480,20777,,,,,,,,,,1.049,21628.977,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931067247,5440,20780,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931081423,47680,20785,,,,,,,,,,1.049,21991.784,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931136847,5504,20788,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931153647,46784,20793,,,,,,,,,,1.049,22412.263,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931209071,5504,20796,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931228751,45664,20801,,,,,,,,,,1.049,22962.766,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931284304,5472,20804,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931300496,46144,20809,,,,,,,,,,1.049,22723.690,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931356016,5568,20812,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931372016,45440,20817,,,,,,,,,,1.049,23076.012,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931422544,5536,20820,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931446545,44896,20825,,,,,,,,,,1.049,23354.933,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931499345,5600,20828,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931520336,45025,20833,,,,,,,,,,1.049,23287.824,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931567953,5504,20836,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931594801,45024,20841,,,,,,,,,,1.049,23288.873,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931643217,5536,20844,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931669361,44897,20849,,,,,,,,,,1.049,23354.933,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931724657,5408,20852,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931743089,44065,20857,,,,,,,,,,1.049,23795.335,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931790674,5664,20860,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931820402,45728,20865,,,,,,,,,,1.049,22930.260,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931876210,5504,20868,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931890194,44352,20873,,,,,,,,,,1.049,23641.194,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2931940178,5600,20876,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2931960947,43392,20881,,,,,,,,,,1.049,24164.434,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2932009843,5344,20884,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2932048979,44192,20920,,,,,,,,,,1.049,23727.178,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2932102483,5344,20923,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2932117139,42720,20928,,,,,,,,,,1.049,24545.067,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2932164467,5601,20931,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2932815798,702691,21030,,,,,,,,,,33.554,47747.957,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937109288,197889,22679,,,,,,,,,,67.109,339101.090,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2937374985,85631,22688,,,,,,,,,,4.194,48981.082,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937460617,86944,22695,,,,,,,,,,4.194,48238.690,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937472297,1325318,22841,,,,,,,,,,4.194,3162.505,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2937547562,87968,22702,,,,,,,,,,4.194,47676.654,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937635562,86880,22709,,,,,,,,,,4.194,48276.439,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937722506,86561,22716,,,,,,,,,,4.194,48452.600,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937809099,86719,22723,,,,,,,,,,4.194,48364.519,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937895819,86464,22730,,,,,,,,,,4.194,48507.126,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2937982315,86369,22737,,,,,,,,,,4.194,48561.652,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2940091764,1327718,22850,,,,,,,,,,4.194,3158.311,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2942685759,1336198,22859,,,,,,,,,,4.194,3137.339,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2945221354,1350790,22868,,,,,,,,,,4.194,3103.785,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2947809173,1336709,22877,,,,,,,,,,4.194,3137.339,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2950396704,1360230,22886,,,,,,,,,,4.194,3082.813,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2952985515,1314405,22895,,,,,,,,,,4.194,3187.671,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2955505173,1330150,22904,,,,,,,,,,4.194,3149.922,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2958150528,43296,22918,,,,,,,,,,1.049,24217.911,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958222145,5983,22921,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958290177,44256,22926,,,,,,,,,,1.049,23692.575,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958341601,5984,22929,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958364705,44000,22934,,,,,,,,,,1.049,23830.987,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958413793,5473,22937,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958443297,44897,22942,,,,,,,,,,1.049,23354.933,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958491681,5376,22945,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958521890,44512,22950,,,,,,,,,,1.049,23556.260,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958572514,5568,22953,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958599618,44544,22958,,,,,,,,,,1.049,23539.483,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958648290,5568,22961,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958679171,45888,22966,,,,,,,,,,1.049,22850.568,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958727651,5536,22969,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958758467,44128,22974,,,,,,,,,,1.049,23761.781,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958805443,5664,22977,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958841411,44960,22982,,,,,,,,,,1.049,23321.379,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958892515,5504,22985,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958916515,45088,22990,,,,,,,,,,1.049,23255.319,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2958964355,5472,22993,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2958994980,45824,22998,,,,,,,,,,1.049,22882.025,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959045572,5472,23001,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959081380,44288,23006,,,,,,,,,,1.049,23675.798,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959129572,5504,23009,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959171204,45504,23014,,,,,,,,,,1.049,23043.506,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959219332,5665,23017,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959254949,45472,23022,,,,,,,,,,1.049,23059.235,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959306181,5664,23025,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959360709,43553,23030,,,,,,,,,,1.049,24075.305,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959414725,5728,23033,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959451622,43744,23038,,,,,,,,,,1.049,23970.447,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959503846,5568,23041,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959577990,43648,23077,,,,,,,,,,1.049,24022.876,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959625190,5248,23080,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959659463,46656,23085,,,,,,,,,,1.049,22474.129,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959709639,5696,23088,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959746503,44320,23093,,,,,,,,,,1.049,23659.020,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959794663,5664,23096,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959842183,46112,23101,,,,,,,,,,1.049,22739.419,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959898087,5664,23104,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2959922024,47008,23109,,,,,,,,,,1.049,22305.309,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2959978952,5632,23112,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960002632,46016,23117,,,,,,,,,,1.049,22786.605,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960058824,5504,23120,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960082696,46113,23125,,,,,,,,,,1.049,22738.371,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960134633,5567,23128,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960158920,44865,23133,,,,,,,,,,1.049,23371.710,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960207305,5792,23136,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960235465,45696,23141,,,,,,,,,,1.049,22945.989,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960284105,5440,23144,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960315241,45024,23149,,,,,,,,,,1.049,23288.873,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960364521,5536,23152,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960394858,44928,23157,,,,,,,,,,1.049,23338.156,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960445418,5696,23160,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960475402,45280,23165,,,,,,,,,,1.049,23156.752,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960524266,5760,23168,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960550890,45249,23173,,,,,,,,,,1.049,23172.481,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960600043,5375,23176,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960624330,45569,23181,,,,,,,,,,1.049,23009.952,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960674827,5632,23184,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960699435,43168,23189,,,,,,,,,,1.049,24290.263,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960750027,5408,23192,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2960806091,42753,23228,,,,,,,,,,1.049,24526.193,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2960852940,5760,23231,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2961171277,708195,23312,,,,,,,,,,33.554,47378.858,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2965244318,195905,24688,,,,,,,,,,67.109,342523.642,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2965490751,85344,24697,,,,,,,,,,4.194,49144.660,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2965576159,86880,24704,,,,,,,,,,4.194,48276.439,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2965587007,1316870,24851,,,,,,,,,,4.194,3183.477,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2965663040,87264,24711,,,,,,,,,,4.194,48062.530,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2965750368,86688,24718,,,,,,,,,,4.194,48381.297,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2965837088,86241,24725,,,,,,,,,,4.194,48632.955,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2965923361,86431,24732,,,,,,,,,,4.194,48523.903,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2966009793,86847,24739,,,,,,,,,,4.194,48293.216,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2966096641,86209,24746,,,,,,,,,,4.194,48649.732,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2968081514,1296133,24860,,,,,,,,,,4.194,3233.808,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2970556724,1306854,24869,,,,,,,,,,4.194,3208.643,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2973047743,1297381,24878,,,,,,,,,,4.194,3229.614,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2975541289,1324774,24887,,,,,,,,,,4.194,3162.505,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2978070644,1358789,24896,,,,,,,,,,4.194,3082.813,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2980643519,1318309,24905,,,,,,,,,,4.194,3179.282,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2983185993,1370950,24914,,,,,,,,,,4.194,3057.648,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2986268054,43072,24928,,,,,,,,,,1.049,24343.740,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986336182,5920,24931,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986402422,44673,24936,,,,,,,,,,1.049,23471.325,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986452055,5792,24939,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986478775,44544,24944,,,,,,,,,,1.049,23539.483,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986527863,5536,24947,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986558615,45280,24952,,,,,,,,,,1.049,23156.752,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986607703,5568,24955,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986643000,44736,24960,,,,,,,,,,1.049,23438.819,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986694776,5472,24963,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986722424,44864,24968,,,,,,,,,,1.049,23371.710,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986771544,5536,24971,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986811096,46080,24976,,,,,,,,,,1.049,22755.148,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986860120,5536,24979,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986890009,45408,24984,,,,,,,,,,1.049,23091.741,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2986939993,5632,24987,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2986965785,45632,24992,,,,,,,,,,1.049,22978.494,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987015737,5568,24995,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987041721,45312,25000,,,,,,,,,,1.049,23141.024,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987090490,5696,25003,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987118809,46593,25008,,,,,,,,,,1.049,22504.538,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987175482,5536,25011,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987203226,44736,25016,,,,,,,,,,1.049,23438.819,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987251994,5536,25019,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987289594,45024,25024,,,,,,,,,,1.049,23288.873,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987340346,5633,25027,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987370139,45120,25032,,,,,,,,,,1.049,23239.590,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987421243,5568,25035,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987466843,43872,25040,,,,,,,,,,1.049,23900.193,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987519547,5504,25043,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987562460,42944,25048,,,,,,,,,,1.049,24417.141,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987614812,5696,25051,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987680668,44992,25087,,,,,,,,,,1.049,23305.650,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987735612,5280,25090,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987763036,44352,25095,,,,,,,,,,1.049,23641.194,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987813437,5472,25098,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987859069,45344,25103,,,,,,,,,,1.049,23124.247,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987909725,5376,25106,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2987943677,45344,25111,,,,,,,,,,1.049,23124.247,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2987992253,5824,25114,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988022941,47137,25119,,,,,,,,,,1.049,22244.491,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988079678,5536,25122,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988100861,45985,25127,,,,,,,,,,1.049,22802.334,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988149534,5728,25130,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988180734,45856,25135,,,,,,,,,,1.049,22866.297,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988232254,5728,25138,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988260286,44480,25143,,,,,,,,,,1.049,23574.086,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988308062,5760,25146,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988337983,45344,25151,,,,,,,,,,1.049,23124.247,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988386079,5536,25154,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988419103,45440,25159,,,,,,,,,,1.049,23076.012,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988468319,5760,25162,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988498655,44513,25167,,,,,,,,,,1.049,23556.260,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988549216,5632,25170,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988574719,45601,25175,,,,,,,,,,1.049,22994.223,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988623936,5760,25178,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988649600,44576,25183,,,,,,,,,,1.049,23522.705,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988698720,5632,25186,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988724288,44512,25191,,,,,,,,,,1.049,23556.260,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988773472,5664,25194,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988810177,43136,25199,,,,,,,,,,1.049,24308.089,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988860993,5536,25202,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2988911553,43008,25238,,,,,,,,,,1.049,24380.441,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+2988958785,5344,25241,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+2989209314,703363,25319,,,,,,,,,,33.554,47680.848,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2993338740,196640,26723,,,,,,,,,,67.109,341248.573,Device,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Device-to-Device]
+2993585300,85440,26732,,,,,,,,,,4.194,49090.134,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2993670741,86688,26739,,,,,,,,,,4.194,48381.297,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2993681941,1332326,26883,,,,,,,,,,4.194,3145.728,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2993757430,87520,26746,,,,,,,,,,4.194,47919.923,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2993844982,86527,26753,,,,,,,,,,4.194,48473.571,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2993931510,86304,26760,,,,,,,,,,4.194,48595.206,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2994017815,86560,26767,,,,,,,,,,4.194,48452.600,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2994104471,86336,26774,,,,,,,,,,4.194,48578.429,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2994190871,86369,26781,,,,,,,,,,4.194,48561.652,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+2996287104,1315493,26892,,,,,,,,,,4.194,3187.671,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+2998817611,1323333,26901,,,,,,,,,,4.194,3166.700,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+3001336661,1347686,26910,,,,,,,,,,4.194,3112.174,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+3003918752,1328453,26919,,,,,,,,,,4.194,3154.117,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+3006495659,1363045,26928,,,,,,,,,,4.194,3074.425,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+3009049334,1298245,26937,,,,,,,,,,4.194,3229.614,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+3011551232,1331558,26946,,,,,,,,,,4.194,3145.728,Device,Pageable,NVIDIA RTX A6000 (0),1,,15,[CUDA memcpy Device-to-Host]
+3014192875,43008,26960,,,,,,,,,,1.049,24380.441,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014273516,5952,26963,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014339692,44032,26968,,,,,,,,,,1.049,23813.161,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014390476,5952,26971,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014413324,43680,26976,,,,,,,,,,1.049,24005.050,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014461644,5504,26979,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014489420,45057,26984,,,,,,,,,,1.049,23272.096,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014537581,5536,26987,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014569548,44609,26992,,,,,,,,,,1.049,23505.928,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014620365,5408,26995,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014647629,44704,27000,,,,,,,,,,1.049,23455.597,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014696109,5632,27003,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014727885,45472,27008,,,,,,,,,,1.049,23059.235,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014776493,5472,27011,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014816365,45601,27016,,,,,,,,,,1.049,22994.223,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014864782,5600,27019,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014891726,44768,27024,,,,,,,,,,1.049,23422.042,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3014941358,5536,27027,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3014966574,45280,27032,,,,,,,,,,1.049,23156.752,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015015118,5504,27035,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015042991,46080,27040,,,,,,,,,,1.049,22755.148,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015094479,5632,27043,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015124719,44288,27048,,,,,,,,,,1.049,23675.798,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015173327,5664,27051,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015209295,45857,27056,,,,,,,,,,1.049,22865.248,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015257776,5504,27059,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015289231,45569,27064,,,,,,,,,,1.049,23009.952,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015339728,5504,27067,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015380016,44416,27072,,,,,,,,,,1.049,23607.640,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015435024,5504,27075,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015469744,42401,27080,,,,,,,,,,1.049,24729.616,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015520945,5536,27083,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015582897,44992,27119,,,,,,,,,,1.049,23305.650,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015630001,5376,27122,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015664625,45344,27127,,,,,,,,,,1.049,23124.247,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015715537,5633,27130,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015750513,44353,27135,,,,,,,,,,1.049,23641.194,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015798481,5793,27138,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015842610,45344,27143,,,,,,,,,,1.049,23124.247,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015891154,5568,27146,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3015922034,46592,27151,,,,,,,,,,1.049,22504.538,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3015977683,5632,27154,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016001010,46145,27159,,,,,,,,,,1.049,22722.642,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016057555,5600,27162,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016081075,46400,27167,,,,,,,,,,1.049,22597.861,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016133299,5632,27170,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016159123,44832,27175,,,,,,,,,,1.049,23388.488,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016207059,5792,27178,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016235700,45600,27183,,,,,,,,,,1.049,22994.223,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016284052,5472,27186,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016311892,44768,27191,,,,,,,,,,1.049,23422.042,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016361172,5568,27194,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016390004,44800,27199,,,,,,,,,,1.049,23405.265,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016441045,5728,27202,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016467540,45441,27207,,,,,,,,,,1.049,23074.963,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016516853,5760,27210,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016543637,44864,27215,,,,,,,,,,1.049,23371.710,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016592597,5568,27218,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016616853,44864,27223,,,,,,,,,,1.049,23371.710,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016666293,5440,27226,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016696406,43392,27231,,,,,,,,,,1.049,24164.434,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016747734,5472,27234,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3016802518,43008,27270,,,,,,,,,,1.049,24380.441,Pinned,Device,NVIDIA RTX A6000 (0),1,,13,[CUDA memcpy Host-to-Device]
+3016850134,5792,27273,1024,1,1,256,1,1,16,0.000,0.000,,,,,NVIDIA RTX A6000 (0),1,,13,"yaksuri_cudai_kernel_pack_SUM_float(const void *, void *, unsigned long, const yaksuri_cudai_md_s *)"
+3017137751,702755,27354,,,,,,,,,,33.554,47714.402,Device,Device,NVIDIA RTX A6000 (0),1,,14,[CUDA memcpy Peer-to-Peer]
+3020745766,37928255,28728,,,,,,,,,,67.109,1744.830,Device,Pageable,NVIDIA RTX A6000 (0),1,,7,[CUDA memcpy Device-to-Host]

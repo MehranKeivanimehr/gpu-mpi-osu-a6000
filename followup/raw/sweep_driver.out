@@ -1,0 +1,21 @@
+[2026-11-12 23:18:22 EST] phase=sweep configs=2 runs=10 seed=20261113 gpu_s_used_so_far=19.6
+[2026-11-12 23:18:22 EST] (1/10) dev_default rep2 sizes=[44, 64, 24, 48, 60, 36, 96, 32, 128, 28, 40, 56, 52]
+    -> OK rc=0 11.5s (GPU-s used now 43)
+[2026-11-12 23:18:34 EST] (2/10) host_default rep2 sizes=[64, 52, 128, 96, 40, 48, 32, 28, 60, 44, 36, 24, 56]
+    -> OK rc=0 15.9s (GPU-s used now 74)
+[2026-11-12 23:18:50 EST] (3/10) dev_default rep5 sizes=[28, 96, 40, 48, 32, 56, 128, 64, 36, 44, 24, 60, 52]
+    -> OK rc=0 11.8s (GPU-s used now 98)
+[2026-11-12 23:19:02 EST] (4/10) dev_default rep4 sizes=[44, 24, 64, 52, 28, 36, 60, 32, 128, 96, 48, 56, 40]
+    -> OK rc=0 11.8s (GPU-s used now 122)
+[2026-11-12 23:19:14 EST] (5/10) host_default rep4 sizes=[60, 36, 52, 56, 24, 28, 64, 128, 48, 40, 96, 32, 44]
+    -> OK rc=0 15.9s (GPU-s used now 154)
+[2026-11-12 23:19:30 EST] (6/10) host_default rep1 sizes=[96, 24, 60, 128, 32, 44, 40, 28, 56, 64, 48, 36, 52]
+    -> OK rc=0 15.9s (GPU-s used now 185)
+[2026-11-12 23:19:46 EST] (7/10) host_default rep3 sizes=[40, 28, 60, 36, 128, 64, 96, 52, 44, 56, 24, 32, 48]
+    -> OK rc=0 15.8s (GPU-s used now 217)
+[2026-11-12 23:20:02 EST] (8/10) host_default rep5 sizes=[44, 128, 40, 52, 48, 96, 60, 24, 32, 36, 56, 28, 64]
+    -> OK rc=0 15.9s (GPU-s used now 249)
+[2026-11-12 23:20:18 EST] (9/10) dev_default rep1 sizes=[56, 48, 128, 40, 24, 36, 44, 60, 32, 64, 52, 96, 28]
+    -> OK rc=0 11.8s (GPU-s used now 272)
+[2026-11-12 23:20:30 EST] (10/10) dev_default rep3 sizes=[52, 60, 24, 128, 96, 32, 44, 64, 56, 36, 28, 40, 48]
+    -> OK rc=0 10.8s (GPU-s used now 294)

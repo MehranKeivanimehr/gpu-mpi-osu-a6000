@@ -1,0 +1,76 @@
+== phase knobs
+-- dev_default
+    24 MiB  t=   3076.77 us [2284.89-3181.50]  busbw= 8.179 GB/s  n=5 bad=0 
+    28 MiB  t=   3647.44 us [3559.29-3685.32]  busbw= 8.050 GB/s  n=5 bad=0 
+    32 MiB  t=   4093.54 us [4011.89-4215.05]  busbw= 8.197 GB/s  n=5 bad=0 
+    36 MiB  t=  15809.33 us [14039.91-16089.96]  busbw= 2.388 GB/s  n=5 bad=0 
+    40 MiB  t=  17552.47 us [16784.92-18848.84]  busbw= 2.390 GB/s  n=5 bad=0 
+    44 MiB  t=  19284.97 us [17572.96-19729.77]  busbw= 2.392 GB/s  n=5 bad=0 
+    48 MiB  t=  20759.96 us [19551.98-22069.46]  busbw= 2.424 GB/s  n=5 bad=0 
+    52 MiB  t=  22866.13 us [20517.27-22986.13]  busbw= 2.385 GB/s  n=5 bad=0 
+    56 MiB  t=  23774.75 us [22725.44-24846.71]  busbw= 2.470 GB/s  n=5 bad=0 
+    60 MiB  t=  24941.67 us [24238.56-26408.32]  busbw= 2.522 GB/s  n=5 bad=0 
+    64 MiB  t=  28058.82 us [27817.31-28388.85]  busbw= 2.392 GB/s  n=5 bad=0 
+    96 MiB  t=  42326.93 us [40441.65-42823.56]  busbw= 2.378 GB/s  n=5 bad=0 
+   128 MiB  t=  55879.78 us [53954.37-56752.86]  busbw= 2.402 GB/s  n=5 bad=0 
+-- dev_lmem128M
+    24 MiB  t=   3098.88 us [2293.42-3126.78]  busbw= 8.121 GB/s  n=5 bad=0 
+    28 MiB  t=   3579.83 us [2560.31-3674.67]  busbw= 8.202 GB/s  n=5 bad=0 
+    32 MiB  t=   4086.90 us [3093.25-4216.14]  busbw= 8.210 GB/s  n=5 bad=0 
+    36 MiB  t=   4551.07 us [3248.68-4746.23]  busbw= 8.294 GB/s  n=5 bad=0 
+    40 MiB  t=   5022.27 us [4949.93-5058.14]  busbw= 8.351 GB/s  n=5 bad=0 
+    44 MiB  t=   5455.81 us [5403.28-5537.48]  busbw= 8.457 GB/s  n=5 bad=0 
+    48 MiB  t=   5876.59 us [4409.69-6065.35]  busbw= 8.565 GB/s  n=5 bad=0 
+    52 MiB  t=   6399.08 us [4775.64-6635.36]  busbw= 8.521 GB/s  n=5 bad=0 
+    56 MiB  t=   6965.47 us [6705.22-7012.90]  busbw= 8.430 GB/s  n=5 bad=0 
+    60 MiB  t=   7346.08 us [5594.04-7536.68]  busbw= 8.564 GB/s  n=5 bad=0 
+    64 MiB  t=   7741.44 us [5843.25-8075.17]  busbw= 8.669 GB/s  n=5 bad=0 
+    96 MiB  t=  11280.97 us [8999.16-11670.58]  busbw= 8.923 GB/s  n=5 bad=0 
+   128 MiB  t=  15026.16 us [11611.98-15466.84]  busbw= 8.932 GB/s  n=5 bad=0 
+-- dev_lmem16M
+    24 MiB  t=   3048.32 us [2225.40-3132.47]  busbw= 8.256 GB/s  n=5 bad=0 
+    28 MiB  t=   3600.98 us [2667.24-3658.80]  busbw= 8.153 GB/s  n=5 bad=0 
+    32 MiB  t=  13552.92 us [12892.00-14212.59]  busbw= 2.476 GB/s  n=5 bad=0 
+    36 MiB  t=  15236.55 us [14052.16-16707.86]  busbw= 2.478 GB/s  n=5 bad=0 
+    40 MiB  t=  16974.38 us [16785.90-18042.16]  busbw= 2.471 GB/s  n=5 bad=0 
+    44 MiB  t=  18573.49 us [18036.77-19414.39]  busbw= 2.484 GB/s  n=5 bad=0 
+    48 MiB  t=  21231.25 us [20054.94-21617.40]  busbw= 2.371 GB/s  n=5 bad=0 
+    52 MiB  t=  21697.18 us [20790.86-23027.95]  busbw= 2.513 GB/s  n=5 bad=0 
+    56 MiB  t=  23601.26 us [22680.05-24511.76]  busbw= 2.488 GB/s  n=5 bad=0 
+    60 MiB  t=  25404.54 us [24499.05-26292.20]  busbw= 2.477 GB/s  n=5 bad=0 
+    64 MiB  t=  26897.07 us [26080.05-28428.91]  busbw= 2.495 GB/s  n=5 bad=0 
+    96 MiB  t=  41981.06 us [38167.69-43114.94]  busbw= 2.398 GB/s  n=5 bad=0 
+   128 MiB  t=  55380.21 us [53646.25-58160.91]  busbw= 2.424 GB/s  n=5 bad=0 
+-- dev_lmem64M
+    24 MiB  t=   3092.52 us [2303.28-3151.33]  busbw= 8.138 GB/s  n=5 bad=0 
+    28 MiB  t=   3600.16 us [2691.16-3693.11]  busbw= 8.155 GB/s  n=5 bad=0 
+    32 MiB  t=   4038.75 us [2883.37-4178.66]  busbw= 8.308 GB/s  n=5 bad=0 
+    36 MiB  t=   4589.02 us [3217.88-4674.22]  busbw= 8.226 GB/s  n=5 bad=0 
+    40 MiB  t=   5035.81 us [3721.70-5128.70]  busbw= 8.329 GB/s  n=5 bad=0 
+    44 MiB  t=   5586.98 us [3952.42-5600.15]  busbw= 8.258 GB/s  n=5 bad=0 
+    48 MiB  t=   5952.88 us [4232.54-6270.23]  busbw= 8.455 GB/s  n=5 bad=0 
+    52 MiB  t=   6395.14 us [4780.21-6645.01]  busbw= 8.526 GB/s  n=5 bad=0 
+    56 MiB  t=   7109.32 us [6883.87-7191.97]  busbw= 8.260 GB/s  n=5 bad=0 
+    60 MiB  t=   7397.88 us [5520.75-7699.17]  busbw= 8.504 GB/s  n=5 bad=0 
+    64 MiB  t=   7570.05 us [5554.67-8025.24]  busbw= 8.865 GB/s  n=5 bad=0 
+    96 MiB  t=  42013.52 us [39804.14-42514.71]  busbw= 2.396 GB/s  n=5 bad=0 
+   128 MiB  t=  54592.51 us [54386.31-59743.08]  busbw= 2.459 GB/s  n=5 bad=0 
+-- host_lmem128M
+    24 MiB  t=   8836.49 us [7706.95-9259.44]  busbw= 2.848 GB/s  n=5 bad=0 
+    28 MiB  t=   9309.29 us [9177.74-9537.28]  busbw= 3.154 GB/s  n=5 bad=0 
+    32 MiB  t=  10923.27 us [8757.55-11092.61]  busbw= 3.072 GB/s  n=5 bad=0 
+    36 MiB  t=  12240.03 us [10341.00-12398.14]  busbw= 3.084 GB/s  n=5 bad=0 
+    40 MiB  t=  12251.38 us [11673.20-13858.51]  busbw= 3.424 GB/s  n=5 bad=0 
+    44 MiB  t=  15119.77 us [13403.18-15179.07]  busbw= 3.051 GB/s  n=5 bad=0 
+    48 MiB  t=  14867.57 us [14403.48-16950.51]  busbw= 3.385 GB/s  n=5 bad=0 
+    52 MiB  t=  16113.65 us [15719.50-18171.50]  busbw= 3.384 GB/s  n=5 bad=0 
+    56 MiB  t=  19568.54 us [17359.29-19698.20]  busbw= 3.001 GB/s  n=5 bad=0 
+    60 MiB  t=  20986.32 us [18141.09-21235.69]  busbw= 2.998 GB/s  n=5 bad=0 
+    64 MiB  t=  20886.55 us [19322.08-22917.83]  busbw= 3.213 GB/s  n=5 bad=0 
+    96 MiB  t=  34629.94 us [29985.01-34961.04]  busbw= 2.907 GB/s  n=5 bad=0 
+   128 MiB  t=  45816.84 us [40394.72-47198.31]  busbw= 2.929 GB/s  n=5 bad=0 
+CLIFF dev_default: cliff between 32 and 36 MiB (ratio 0.291)
+CLIFF dev_lmem128M: no cliff (no >40% drop) (ratio )
+CLIFF dev_lmem16M: cliff between 28 and 32 MiB (ratio 0.304)
+CLIFF dev_lmem64M: cliff between 64 and 96 MiB (ratio 0.27)
+CLIFF host_lmem128M: no cliff (no >40% drop) (ratio )

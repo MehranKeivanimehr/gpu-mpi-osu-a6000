@@ -1,0 +1,41 @@
+# excerpt of ~/opt/build/mvapich-4.1/CHANGELOG (shipped in mvapich-4.1.tar.gz from https://mvapich.cse.ohio-state.edu/download/mvapich/mv2/mvapich-4.1.tar.gz), lines 1-40
+MVAPICH Changelog
+-----------------------
+This file briefly describes the changes to the MVAPICH software package.
+The logs are arranged in the "most recent first" order.
+
+MVAPICH 4.1 (09/18/2025)
+
+* Features and Enhancements (since 4.0)
+	- Based on MPICH 4.3.0
+    - Improved rndv protocol performance in point-to-point operations
+    - Improved MPIT PVAR support
+    - Updated embedded OMB to v7.5.1
+
+* Bug Fixes (since 4.0)
+    - Fixed exponential slowdown in shmem startup time
+        - Thanks to Alex for the report
+    - Fixed bug where OFI shm provider would be selected in unsupported cases
+
+MVAPICH 4.0 (03/06/2025)
+
+* Overall Features and Enhancements
+	- Based on MPICH 4.3.0
+    - Supports all features of MPI 4.1 standard
+    - Includes enhanced OFI provider for IB systems, "mverbs;ofi_ucr"
+    - Support for 
+    	* Major CPUs (x86-Intel, x86-AMD, and ARM)
+    	* Major Interconnects (IB, Slingshot, OPX, Omni-Path, ROCE, and Ethernet/ iWARP)
+    	* Basic support for major GPUs (from NVIDIA, AMD, and Intel)
+    - Optimized support for pt2pt inter-node and intra-node communication
+    - CMA support for intra-node pt2pt CPU operations
+    - Optimized algorithms for CPU-based collectives
+
+MVAPICH 3.0
+(3.0 released 02/16/2024)
+(3.0rc released 11/09/2023)
+(3.0b released 05/10/2023)
+(3.0a released 08/15/2022)
+
+* Features and Enhancements (since 2.3.7):
+    - Name changed from MVAPICH2 to MVAPICH

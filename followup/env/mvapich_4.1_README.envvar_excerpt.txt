@@ -1,0 +1,175 @@
+# Excerpt of ~/opt/build/mvapich-4.1/README.envvar (MVAPICH 4.1 source tree, the installed version's own documentation)
+
+MPIR_CVAR_ALLREDUCE_INTRA_ALGORITHM
+    Aliases: MVP_ALLREDUCE_INTRA_ALGORITHM
+             MPICH_ALLREDUCE_INTRA_ALGORITHM
+    Description: Variable to select allreduce algorithm
+        auto - Internal algorithm selection (can be overridden with
+        MPIR_CVAR_COLL_SELECTION_TUNING_JSON_FILE)
+        nb                       - Force nonblocking algorithm
+        smp                      - Force smp algorithm
+        recursive_doubling       - Force recursive doubling algorithm
+        recursive_multiplying    - Force recursive multiplying algorithm
+        reduce_scatter_allgather - Force reduce scatter allgather algorithm
+        tree                     - Force pipelined tree algorithm
+        recexch                  - Force generic transport recursive
+        exchange algorithm
+        ring                     - Force ring algorithm
+        k_reduce_scatter_allgather - Force reduce scatter allgather
+        algorithm
+        mvapich_tuned            - Use MVAPICH autotuning
+        osu_mcast                - Force osu mcast based design
+        osu_sharp                - Force osu sharp design
+    Default: MPIR_CVAR_ALLREDUCE_INTRA_ALGORITHM_auto
+
+MPIR_CVAR_DEVICE_COLLECTIVES
+    Aliases: MVP_DEVICE_COLLECTIVES
+             MPICH_DEVICE_COLLECTIVES
+    Description: Variable to select whether the device can override the
+        MPIR-level collective algorithms.
+        all     - Always prefer the device collectives
+        none    - Never pick the device collectives
+        percoll - Use the per-collective CVARs to decide
+    Default: MPIR_CVAR_DEVICE_COLLECTIVES_percoll
+
+MPIR_CVAR_ALLREDUCE_DEVICE_COLLECTIVE
+    Aliases: MVP_ALLREDUCE_DEVICE_COLLECTIVE
+             MPICH_ALLREDUCE_DEVICE_COLLECTIVE
+    Description: This CVAR is only used when MPIR_CVAR_DEVICE_COLLECTIVES
+        is set to "percoll".  If set to true, MPI_Allreduce will allow the
+        device to override the MPIR-level collective algorithms.  The
+        device might still call the MPIR-level algorithms manually.  If set
+        to false, the device-override will be disabled.
+    Default: 1
+
+MPIR_CVAR_ALLREDUCE_POSIX_INTRA_ALGORITHM
+    Aliases: MVP_ALLREDUCE_POSIX_INTRA_ALGORITHM
+             MPICH_ALLREDUCE_POSIX_INTRA_ALGORITHM
+    Description: Variable to select algorithm for intra-node allreduce
+        mpir           - Fallback to MPIR collectives
+        release_gather - Force shm optimized algo using release, gather
+        primitives
+        auto - Internal algorithm selection (can be overridden with
+        MPIR_CVAR_CH4_POSIX_COLL_SELECTION_TUNING_JSON_FILE)
+    Default: MPIR_CVAR_ALLREDUCE_POSIX_INTRA_ALGORITHM_auto
+
+MPIR_CVAR_ALLREDUCE_COMPOSITION
+    Aliases: MVP_ALLREDUCE_COMPOSITION
+             MPICH_ALLREDUCE_COMPOSITION
+    Description: Select composition (inter_node + intra_node) for Allreduce
+        0 Auto selection 1 NM + SHM with reduce + bcast 2 NM only
+        composition 3 SHM only composition 4 Multi leaders based inter node
+        + intra node composition
+    Default: 0
+
+MPIR_CVAR_ALLREDUCE_TREE_PIPELINE_CHUNK_SIZE
+    Aliases: MVP_ALLREDUCE_TREE_PIPELINE_CHUNK_SIZE
+             MPICH_ALLREDUCE_TREE_PIPELINE_CHUNK_SIZE
+    Description: Maximum chunk size (in bytes) for pipelining in tree based
+        allreduce. Default value is 0, that is, no pipelining by default
+    Default: 0
+
+MPIR_CVAR_ENABLE_GPU
+    Aliases: MVP_ENABLE_GPU
+             MPICH_ENABLE_GPU
+    Description: Control MPICH GPU support. If set to 0, all GPU support is
+        disabled and we do not query the buffer type internally because we
+        assume no GPU buffer is use.
+    Default: 1
+
+MPIR_CVAR_ENABLE_YAKSA_REDUCTION
+    Aliases: MVP_ENABLE_YAKSA_REDUCTION
+             MPICH_ENABLE_YAKSA_REDUCTION
+    Description: This cvar enables yaksa based reduction for local reduce.
+    Default: 1
+
+MPIR_CVAR_YAKSA_REDUCTION_THRESHOLD
+    Aliases: MVP_YAKSA_REDUCTION_THRESHOLD
+             MPICH_YAKSA_REDUCTION_THRESHOLD
+    Description: This cvar disables yaksa based reduction for messages
+        above the threshold. The default is no limit.
+    Default: -1
+
+MPIR_CVAR_GPU_DOUBLE_SUPPORT
+    Aliases: MVP_GPU_DOUBLE_SUPPORT
+             MPICH_GPU_DOUBLE_SUPPORT
+    Description: This CVAR indicates that double type is not supported on
+        the GPU.
+    Default: 0
+
+MPIR_CVAR_ENABLE_GPU_REGISTER
+    Aliases: MVP_ENABLE_GPU_REGISTER
+             MPICH_ENABLE_GPU_REGISTER
+    Description: Control whether to actually register buffers with the GPU
+        runtime in MPIR_gpu_register_host. This could lower the latency of
+        certain GPU communication at the cost of some amount of GPU memory
+        consumed by the MPI library. By default, registration is enabled.
+    Default: 1
+
+MPIR_CVAR_GPU_HAS_WAIT_KERNEL
+    Aliases: MVP_GPU_HAS_WAIT_KERNEL
+             MPICH_GPU_HAS_WAIT_KERNEL
+    Description: If set to 1, avoid allocate allocating GPU registered host
+        buffers for temporary buffers. When stream workq and GPU wait
+        kernels are in use, access APIs for GPU registered memory may cause
+        deadlock.
+    Default: 0
+
+MPIR_CVAR_CH4_GPU_COLL_SWAP_BUFFER_SZ
+    Aliases: MVP_CH4_GPU_COLL_SWAP_BUFFER_SZ
+             MPICH_CH4_GPU_COLL_SWAP_BUFFER_SZ
+    Description: Specifies the buffer size (in bytes) for GPU collectives
+        data transfer.
+    Default: 1048576
+
+MPIR_CVAR_CH4_GPU_COLL_NUM_BUFFERS_PER_CHUNK
+    Aliases: MVP_CH4_GPU_COLL_NUM_BUFFERS_PER_CHUNK
+             MPICH_CH4_GPU_COLL_NUM_BUFFERS_PER_CHUNK
+    Description: Specifies the number of buffers for GPU collectives data
+        transfer in each block/chunk of the pool.
+    Default: 1
+
+MPIR_CVAR_CH4_GPU_COLL_MAX_NUM_BUFFERS
+    Aliases: MVP_CH4_GPU_COLL_MAX_NUM_BUFFERS
+             MPICH_CH4_GPU_COLL_MAX_NUM_BUFFERS
+    Description: Specifies the total number of buffers for GPU collectives
+        data transfer.
+    Default: 256
+
+MPIR_CVAR_CH4_IPC_GPU_P2P_THRESHOLD
+    Aliases: MVP_CH4_IPC_GPU_P2P_THRESHOLD
+             MPICH_CH4_IPC_GPU_P2P_THRESHOLD
+    Description: If a send message size is greater than or equal to
+        MPIR_CVAR_CH4_IPC_GPU_P2P_THRESHOLD (in bytes), then enable
+        GPU-based single copy protocol for intranode communication. The
+        environment variable is valid only when then GPU IPC shmmod is
+        enabled.
+    Default: 1048576
+
+MPIR_CVAR_LMEM_POOL_SIZE
+    Aliases: MVP_LMEM_POOL_SIZE
+             MPICH_LMEM_POOL_SIZE
+    Description: Sets the amount of space allocated at init time to be used
+        by internal functions for local temp buffers.
+    Default: 32 * 1024 * 1024
+
+MPIR_CVAR_MALLOC_ENABLE_MMAP
+    Aliases: MVP_MALLOC_ENABLE_MMAP
+             MPICH_MALLOC_ENABLE_MMAP
+    Description: Set to 0 to disable the use of MMAP by the standard memory
+        allocator. Doing so provides cache performance improvements for
+        most cases. Setting to 1 will return to the system default
+        behaviour.
+    Default: 0
+
+MPIR_CVAR_MALLOC_HEAP_STEP
+    Aliases: MVP_MALLOC_HEAP_STEP
+             MPICH_MALLOC_HEAP_STEP
+    Description: Sets the size by which the malloc program heap is expanded
+        by the memory allocator when new memory is required by the program.
+        A higher value will generally provide better cache performance, but
+        will result in a higher memory footprint. The program heap exists
+        on a per-processes basis. Setting this value to zero will use the
+        system default.
+    Default: 32 * 1024 * 1024
+

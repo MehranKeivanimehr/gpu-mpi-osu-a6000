@@ -1,0 +1,34 @@
+# config_id: host_glibc_mmapmax0
+# rep: 4
+# order: 16/20 seed=20261113
+# start: 2026-11-12 23:42:14 EST
+# gpus: [2, 3]
+# size_order_mib: [28, 128, 32, 36, 64]
+# cmd: GLIBC_TUNABLES=glibc.malloc.mmap_max=0 GPU_LIST=2,3 LD_LIBRARY_PATH=~/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_TLS=self,sm,cuda UCX_WARN_UNUSED_ENV_VARS=n ~/opt/mvapich-4.1-cuda/bin/mpiexec -n 2 ~/mpi-osu-a6000/scripts/gpu_bind.sh ~/mpi-osu-a6000/followup/build/allreduce_sizes -m host -s 28,128,32,36,64 -w 5 -n 20
+# nvidia-smi pre-run (index, util%, mem MiB):
+#   0, 97, 11704
+#   1, 100, 12464
+#   2, 0, 1
+#   3, 0, 1
+#   4, 35, 1
+#   5, 0, 1
+#   6, 0, 1
+#   7, 0, 1
+RANKINFO rank=0 nranks=2 host=node cuda_visible_devices=2 gpu_busid=<pci:gpu2> mem=host
+CONFIG mpi_library="MVAPICH Version:        4.1" warmup=5 iters=20 stride=997 sizes_mib=28,128,32,36,64 datatype=MPI_FLOAT op=MPI_SUM
+RANKINFO rank=1 nranks=2 host=node cuda_visible_devices=3 gpu_busid=<pci:gpu3> mem=host
+RESULT size_mib=28 bytes=29360128 mem=host iters=20 median_us=14392.28 min_us=13486.07 max_us=16991.67 mean_us=14342.04 busbw_GBps_at_median=2.040 n_checked=30896 n_bad=0
+ITERS size_mib=28 t_us=15073.41,13846.27,13720.70,13959.01,16991.67,14661.00,14409.36,14562.13,14464.50,14340.03,14375.20,14538.82,14414.26,14345.19,14510.00,14415.35,13612.80,13486.07,13522.97,13592.09
+RESULT size_mib=128 bytes=134217728 mem=host iters=20 median_us=105147.43 min_us=101028.14 max_us=111579.78 mean_us=106109.34 busbw_GBps_at_median=1.276 n_checked=82048 n_bad=0
+ITERS size_mib=128 t_us=109755.53,108627.76,110761.27,111278.19,104036.28,101124.07,111579.78,103914.65,105195.81,109255.00,107381.87,103757.78,106494.69,104115.19,103919.38,104151.84,105099.05,105982.86,101028.14,104727.67
+RESULT size_mib=32 bytes=33554432 mem=host iters=20 median_us=16330.11 min_us=15489.32 max_us=19288.21 mean_us=16317.97 busbw_GBps_at_median=2.055 n_checked=32464 n_bad=0
+ITERS size_mib=32 t_us=17718.61,16405.49,16089.46,15599.04,15494.84,15564.13,15540.34,15535.83,15489.32,16678.04,16657.78,16418.81,15985.24,15546.52,19288.21,16584.15,16412.42,16618.87,16477.57,16254.73
+RESULT size_mib=36 bytes=37748736 mem=host iters=20 median_us=29624.23 min_us=27027.88 max_us=33680.17 mean_us=29156.09 busbw_GBps_at_median=1.274 n_checked=34032 n_bad=0
+ITERS size_mib=36 t_us=28345.87,30714.30,33680.17,30130.75,29575.27,29952.15,30196.07,30033.56,27832.07,27238.89,27607.87,27158.70,28476.44,31135.81,29673.19,29881.05,30247.74,27078.31,27027.88,27135.61
+RESULT size_mib=64 bytes=67108864 mem=host iters=20 median_us=53371.74 min_us=49049.19 max_us=55388.03 mean_us=52799.07 busbw_GBps_at_median=1.257 n_checked=48992 n_bad=0
+ITERS size_mib=64 t_us=52470.36,49804.51,55388.03,53282.73,50961.67,53460.74,49675.03,51506.49,53776.87,51284.09,49049.19,55178.82,51587.84,53226.00,54670.44,54712.93,53837.20,54455.72,53987.51,53665.16
+
+# end: 2026-11-12 23:42:24 EST
+# exit: 0
+# wall_s: 9.89
+# status: OK

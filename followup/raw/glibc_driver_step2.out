@@ -1,0 +1,41 @@
+[2026-11-12 23:43:12 EST] phase=glibc configs=6 runs=30 seed=20261113 gpu_s_used_so_far=2313.4
+[2026-11-12 23:43:12 EST] (1/30) dev_glibc_mmapmax0_trim1G rep5 sizes=[64, 28, 36, 128, 32]
+    -> OK rc=0 5.0s (GPU-s used now 2323)
+[2026-11-12 23:43:18 EST] (2/30) dev_glibc_mmapmax0_trim1G rep3 sizes=[36, 128, 32, 28, 64]
+    -> OK rc=0 4.9s (GPU-s used now 2333)
+  skip existing dev_glibc_mmapmax0_toppad32M__rep4.log
+  skip existing host_glibc_mmapmax0__rep4.log
+[2026-11-12 23:43:23 EST] (5/30) dev_glibc_mmapmax0_trim1G rep2 sizes=[28, 32, 36, 64, 128]
+    -> OK rc=0 4.9s (GPU-s used now 2343)
+  skip existing dev_glibc_mmapmax0__rep2.log
+[2026-11-12 23:43:28 EST] (7/30) host_glibc_mmapmax0_trim1G rep5 sizes=[64, 28, 32, 36, 128]
+    -> OK rc=0 7.8s (GPU-s used now 2359)
+  skip existing dev_glibc_mmapmax0_toppad32M__rep1.log
+  skip existing dev_glibc_mmapmax0__rep3.log
+[2026-11-12 23:43:36 EST] (10/30) host_glibc_mmapmax0_trim1G rep1 sizes=[36, 28, 128, 32, 64]
+    -> OK rc=0 8.9s (GPU-s used now 2376)
+[2026-11-12 23:43:45 EST] (11/30) dev_glibc_mmapmax0_trim1G rep4 sizes=[128, 28, 32, 36, 64]
+    -> OK rc=0 4.8s (GPU-s used now 2386)
+  skip existing host_glibc_mmapmax0__rep5.log
+  skip existing dev_glibc_mmapmax0__rep5.log
+  skip existing host_glibc_mmapmax0__rep1.log
+  skip existing dev_glibc_mmapmax0__rep4.log
+  skip existing host_glibc_mmapmax0__rep3.log
+  skip existing dev_glibc_mmapmax0_toppad32M__rep3.log
+  skip existing dev_default__rep2.log
+  skip existing dev_default__rep4.log
+[2026-11-12 23:43:50 EST] (20/30) host_glibc_mmapmax0_trim1G rep3 sizes=[28, 32, 64, 36, 128]
+    -> OK rc=0 7.9s (GPU-s used now 2402)
+  skip existing host_glibc_mmapmax0__rep2.log
+  skip existing dev_default__rep3.log
+  skip existing dev_glibc_mmapmax0_toppad32M__rep5.log
+[2026-11-12 23:43:58 EST] (24/30) host_glibc_mmapmax0_trim1G rep4 sizes=[28, 128, 32, 36, 64]
+    -> OK rc=0 7.9s (GPU-s used now 2418)
+[2026-11-12 23:44:06 EST] (25/30) dev_glibc_mmapmax0_trim1G rep1 sizes=[36, 128, 64, 28, 32]
+    -> OK rc=0 4.9s (GPU-s used now 2427)
+  skip existing dev_glibc_mmapmax0_toppad32M__rep2.log
+  skip existing dev_default__rep5.log
+[2026-11-12 23:44:11 EST] (28/30) host_glibc_mmapmax0_trim1G rep2 sizes=[128, 64, 32, 36, 28]
+    -> OK rc=0 7.9s (GPU-s used now 2443)
+  skip existing dev_default__rep1.log
+  skip existing dev_glibc_mmapmax0__rep1.log

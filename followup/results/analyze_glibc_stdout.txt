@@ -1,0 +1,43 @@
+== phase glibc
+-- dev_default
+    28 MiB  t=   3604.73 us [3454.51-3650.95]  busbw= 8.145 GB/s  n=5 bad=0 
+    32 MiB  t=   4188.70 us [4031.71-4286.35]  busbw= 8.011 GB/s  n=5 bad=0 
+    36 MiB  t=  16031.46 us [15201.33-16511.40]  busbw= 2.355 GB/s  n=5 bad=0 
+    64 MiB  t=  28075.07 us [27980.71-28273.34]  busbw= 2.390 GB/s  n=5 bad=0 
+   128 MiB  t=  56096.62 us [54247.03-56540.88]  busbw= 2.393 GB/s  n=5 bad=0 
+-- dev_glibc_mmapmax0
+    28 MiB  t=   3619.89 us [3565.49-3700.93]  busbw= 8.111 GB/s  n=5 bad=0 
+    32 MiB  t=   4140.03 us [4082.91-4227.94]  busbw= 8.105 GB/s  n=5 bad=0 
+    36 MiB  t=   4638.15 us [4451.48-15402.46]  busbw= 8.139 GB/s  n=5 bad=0 
+    64 MiB  t=  25857.02 us [7655.86-27862.47]  busbw= 2.595 GB/s  n=5 bad=0 
+   128 MiB  t=  53608.23 us [15137.82-56508.48]  busbw= 2.504 GB/s  n=5 bad=0 
+-- dev_glibc_mmapmax0_toppad32M
+    28 MiB  t=   3652.10 us [3605.56-3724.53]  busbw= 8.039 GB/s  n=5 bad=0 
+    32 MiB  t=   4197.13 us [4067.20-4266.36]  busbw= 7.995 GB/s  n=5 bad=0 
+    36 MiB  t=   4803.33 us [3829.47-7466.78]  busbw= 7.859 GB/s  n=5 bad=0 
+    64 MiB  t=  25143.96 us [8169.67-27718.22]  busbw= 2.669 GB/s  n=5 bad=0 
+   128 MiB  t=  55255.04 us [36525.42-55650.46]  busbw= 2.429 GB/s  n=5 bad=0 
+-- dev_glibc_mmapmax0_trim1G
+    28 MiB  t=   3587.02 us [2762.62-3630.93]  busbw= 8.185 GB/s  n=5 bad=0 
+    32 MiB  t=   4082.30 us [3004.39-4156.82]  busbw= 8.219 GB/s  n=5 bad=0 
+    36 MiB  t=   4562.34 us [3413.53-4768.49]  busbw= 8.274 GB/s  n=5 bad=0 
+    64 MiB  t=   7938.88 us [5625.18-8034.40]  busbw= 8.453 GB/s  n=5 bad=0 
+   128 MiB  t=  15206.72 us [14731.45-15562.66]  busbw= 8.826 GB/s  n=5 bad=0 
+-- host_glibc_mmapmax0
+    28 MiB  t=  14270.57 us [13847.90-14392.28]  busbw= 2.057 GB/s  n=5 bad=0 
+    32 MiB  t=  16285.17 us [15923.43-16529.96]  busbw= 2.060 GB/s  n=5 bad=0 
+    36 MiB  t=  29071.45 us [18880.07-30145.26]  busbw= 1.298 GB/s  n=5 bad=0 
+    64 MiB  t=  53371.74 us [33759.98-54574.67]  busbw= 1.257 GB/s  n=5 bad=0 
+   128 MiB  t= 105147.43 us [104154.53-107417.76]  busbw= 1.276 GB/s  n=5 bad=0 
+-- host_glibc_mmapmax0_trim1G
+    28 MiB  t=  14413.28 us [13829.43-14988.37]  busbw= 2.037 GB/s  n=5 bad=0 
+    32 MiB  t=  16645.23 us [15917.25-16849.25]  busbw= 2.016 GB/s  n=5 bad=0 
+    36 MiB  t=  18817.68 us [18588.43-19534.56]  busbw= 2.006 GB/s  n=5 bad=0 
+    64 MiB  t=  33923.61 us [33677.41-35512.31]  busbw= 1.978 GB/s  n=5 bad=0 
+   128 MiB  t=  68283.23 us [68045.49-72107.58]  busbw= 1.966 GB/s  n=5 bad=0 
+CLIFF dev_default: cliff between 32 and 36 MiB (ratio 0.294)
+CLIFF dev_glibc_mmapmax0: cliff between 36 and 64 MiB (ratio 0.319)
+CLIFF dev_glibc_mmapmax0_toppad32M: cliff between 36 and 64 MiB (ratio 0.34)
+CLIFF dev_glibc_mmapmax0_trim1G: no cliff (no >40% drop) (ratio )
+CLIFF host_glibc_mmapmax0: no cliff (no >40% drop) (ratio )
+CLIFF host_glibc_mmapmax0_trim1G: no cliff (no >40% drop) (ratio )
