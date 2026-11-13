@@ -1,0 +1,24 @@
+## id
+uid=<removed>
+## sysctl kernel.dmesg_restrict
+1
+## dmesg (first 5 lines / error)
+dmesg: read kernel buffer failed: Operation not permitted
+dmesg exit=1
+## journalctl -k --no-pager (since 2026-11-12 02:00, Xid/NVRM/AMD-Vi/IOMMU/AER lines)
+Hint: You are currently not seeing messages from other users and the system.
+      Users in groups 'adm', 'systemd-journal' can see all messages.
+      Pass -q to turn off this notice.
+## journalctl grep
+## /var/log/kern.log
+-rw-r----- 1 syslog adm  209570 Nov 12 03:20 /var/log/kern.log
+-rw-r----- 1 syslog adm    8677 Nov  7 11:45 /var/log/kern.log.1
+-rw-r----- 1 syslog adm    1167 Oct 30 01:05 /var/log/kern.log.2.gz
+-rw-r----- 1 syslog adm    1049 Oct 24 21:30 /var/log/kern.log.3.gz
+-rw-r----- 1 syslog adm    2938 Oct 16 19:00 /var/log/kern.log.4.gz
+-rw-r----- 1 syslog adm 2331552 Nov 12 23:06 /var/log/syslog
+-rw-r----- 1 syslog adm 2649893 Nov  8 00:00 /var/log/syslog.1
+-rw-r----- 1 syslog adm  199860 Nov  1 00:00 /var/log/syslog.2.gz
+-rw-r----- 1 syslog adm  191519 Oct 25 00:00 /var/log/syslog.3.gz
+-rw-r----- 1 syslog adm  240740 Oct 18 00:00 /var/log/syslog.4.gz
+grep: /var/log/kern.log: Permission denied

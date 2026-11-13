@@ -1,0 +1,2 @@
+gcc -L/usr/local/cuda-12.4/lib64 -Wl,-rpath,/usr/local/cuda-12.4/lib64 -L/usr/local/cuda-12.4/lib64/stubs -I~/opt/mvapich-4.1-cuda/include -L~/opt/mvapich-4.1-cuda/lib -Wl,-rpath -Wl,~/opt/mvapich-4.1-cuda/lib -Wl,--enable-new-dtags -lmpi
+exit=0

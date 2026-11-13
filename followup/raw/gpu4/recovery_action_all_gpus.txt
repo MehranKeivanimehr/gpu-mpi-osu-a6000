@@ -1,0 +1,8 @@
+GPU 0:     GPU Recovery Action                                : None
+GPU 1:     GPU Recovery Action                                : None
+GPU 2:     GPU Recovery Action                                : None
+GPU 3:     GPU Recovery Action                                : None
+GPU 4:     GPU Recovery Action                                : Reset
+GPU 5:     GPU Recovery Action                                : None
+GPU 6:     GPU Recovery Action                                : None
+GPU 7:     GPU Recovery Action                                : None

@@ -1,0 +1,5 @@
+[2026-11-12 23:17:28 EST] phase=smoke configs=2 runs=2 seed=20261113 gpu_s_used_so_far=0.0
+[2026-11-12 23:17:28 EST] (1/2) smoke_host rep1 sizes=[32, 64]
+    -> OK rc=0 4.9s (GPU-s used now 10)
+[2026-11-12 23:17:34 EST] (2/2) smoke_dev rep1 sizes=[64, 32]
+    -> OK rc=0 4.9s (GPU-s used now 20)

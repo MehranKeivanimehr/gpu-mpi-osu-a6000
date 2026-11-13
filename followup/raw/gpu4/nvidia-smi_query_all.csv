@@ -1,0 +1,9 @@
+timestamp, index, pci.bus_id, pstate, fan.speed [%], power.draw [W], utilization.gpu [%], memory.used [MiB], temperature.gpu, clocks.current.sm [MHz], clocks.current.memory [MHz]
+2026/11/12 23:05:34.420, 0, <pci:gpu0>, P2, 40 %, 281.13 W, 100 %, 11704 MiB, 69, 1755 MHz, 7601 MHz
+2026/11/12 23:05:34.443, 1, <pci:gpu1>, P2, 39 %, 256.95 W, 100 %, 12464 MiB, 67, 1890 MHz, 7601 MHz
+2026/11/12 23:05:34.460, 2, <pci:gpu2>, P5, 30 %, 24.88 W, 0 %, 1 MiB, 25, 210 MHz, 810 MHz
+2026/11/12 23:05:34.477, 3, <pci:gpu3>, P5, 30 %, 23.48 W, 0 %, 1 MiB, 23, 210 MHz, 810 MHz
+2026/11/12 23:05:34.493, 4, <pci:gpu4>, P2, [System is not in ready state], 97.69 W, 35 %, 1 MiB, 28, 1965 MHz, 7601 MHz
+2026/11/12 23:05:34.507, 5, <pci:gpu5>, P5, 30 %, 21.87 W, 0 %, 1 MiB, 24, 510 MHz, 810 MHz
+2026/11/12 23:05:34.527, 6, <pci:gpu6>, P5, 30 %, 25.96 W, 0 %, 1 MiB, 24, 1080 MHz, 810 MHz
+2026/11/12 23:05:34.546, 7, <pci:gpu7>, P5, 30 %, 21.61 W, 0 %, 1 MiB, 25, 705 MHz, 810 MHz
