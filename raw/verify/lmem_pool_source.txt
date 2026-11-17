@@ -1,0 +1,85 @@
+# Read-only look at the MVAPICH 4.1 source tarball (sha256 25a53d3725b669e2c648158fb7c9fc5b1388953f3a2f949748586c447d0e43ee)
+# and the MPICH 4.3.0 source on GitHub, 2026-11-17 18:10 EST.
+
+## mvapich-4.1/maint/version.m4
+17:m4_define([MPICH_VERSION_m4],[4.3.0])dnl
+20:m4_define([MVAPICH_VERSION_m4],[4.1])dnl
+
+## where MPIR_CVAR_LMEM_POOL_SIZE is defined (grep -rn over *.c and *.h)
+src/include/mpir_mvp_lmem.h:21:    - name        : MPIR_CVAR_LMEM_POOL_SIZE
+src/include/mpir_mvp_lmem.h:52:    ((uintptr_t)(mvp_lmem_pool + MPIR_CVAR_LMEM_POOL_SIZE))
+src/include/mpir_mvp_lmem.h:66:                MPL_aligned_alloc(ALIGN, MPIR_CVAR_LMEM_POOL_SIZE,             \
+
+## mvapich-4.1/src/include/mpir_mvp_lmem.h, lines 1-10 (file header) and 17-31 (CVAR definition)
+/*
+ * Copyright (c) 2001-2025, The Ohio State University. All rights reserved.
+ *
+ * This file is part of the MVAPICH software package developed by the team
+ * members of The Ohio State University's Network-Based Computing Laboratory
+ * (NBCL), headed by Professor Dhabaleswar K. (DK) Panda.
+ *
+ * For detailed copyright and licensing information, please refer to the
+ * copyright file COPYRIGHT in the top level MVAPICH directory.
+ */
+/*
+=== BEGIN_MPI_T_CVAR_INFO_BLOCK ===
+
+cvars:
+    - name        : MPIR_CVAR_LMEM_POOL_SIZE
+      category    : MEMORY
+      type        : int
+      default     : 32 * 1024 * 1024
+      class       : none
+      verbosity   : MPI_T_VERBOSITY_USER_BASIC
+      scope       : MPI_T_SCOPE_ALL_EQ
+      description : >-
+        Sets the amount of space allocated at init time to be used by internal
+        functions for local temp buffers.
+
+
+## mvapich-4.1/src/include/mpir_mvp_lmem.h, lines 109-125 (MPIR_MVP_LALLOC without alloca)
+        }                                                                      \
+    }
+#else
+#define MPIR_MVP_LALLOC(_ptr, _type, _nbytes, _class)                          \
+    {                                                                          \
+        size_t _alloc_bytes = (size_t)_nbytes;                                 \
+        if (ALIGNDIFF(_alloc_bytes)) {                                         \
+            _alloc_bytes += (ALIGN - ALIGNDIFF(_alloc_bytes));                 \
+        }                                                                      \
+        if (MPIR_IS_THREADED || !MVP_VALID_MEM_POOL ||                         \
+            mvp_lmem_free_head + _alloc_bytes > MPIR_MVP_LMEM_MAX) {           \
+            _ptr = (_type)MPL_aligned_alloc(ALIGN, _alloc_bytes, _class);      \
+        } else {                                                               \
+            MPIR_Assert(mvp_lmem_pool);                                        \
+            _ptr = (_type)mvp_lmem_free_head;                                  \
+            mvp_lmem_free_head += _alloc_bytes;                                \
+            mvp_my_lmem_size += _alloc_bytes;                                  \
+
+## mvapich-4.1/src/include/mpir_mem.h, lines 116-118
+#define MPIR_CHKLMEM_MALLOC_ORSTMT(pointer_,type_,nbytes_,rc_,name_,class_,stmt_) \
+    {                                                                   \
+        MPIR_MVP_LALLOC(pointer_, type_, nbytes_, class_);              \
+
+## MPICH v4.3.0 src/include/mpir_mem.h, lines 113-115
+## https://raw.githubusercontent.com/pmodels/mpich/v4.3.0/src/include/mpir_mem.h (HTTP 200)
+#define MPIR_CHKLMEM_MALLOC_ORSTMT(pointer_,type_,nbytes_,rc_,name_,class_,stmt_) \
+    {                                                                   \
+        pointer_ = (type_)MPL_malloc(nbytes_,class_);                   \
+
+## MPICH v4.3.0 src/include/mpir_mvp_lmem.h
+## https://raw.githubusercontent.com/pmodels/mpich/v4.3.0/src/include/mpir_mvp_lmem.h -> HTTP 404
+
+## allreduce temporary buffer: mvapich-4.1/src/mpi/coll/allreduce/allreduce_intra_reduce_scatter_allgather.c, line 62
+    MPIR_CHKLMEM_MALLOC(tmp_buf, void *, count * (MPL_MAX(extent, true_extent)), mpi_errno,
+
+## diff of that file against MPICH v4.3.0 (trailing whitespace ignored)
+## https://raw.githubusercontent.com/pmodels/mpich/v4.3.0/src/mpi/coll/allreduce/allreduce_intra_reduce_scatter_allgather.c
+no differences
+
+## mallopt() of MPIR_CVAR_MALLOC_* in the 4.1 source
+src/mpid/ch4/netmod/ofi/ofi_init.c:546:    - name        : MPIR_CVAR_MALLOC_ENABLE_MMAP
+src/mpid/ch4/netmod/ofi/ofi_init.c:558:    - name        : MPIR_CVAR_MALLOC_HEAP_STEP
+src/mpid/ch4/netmod/ofi/ofi_init.c:727:    if (!MPIR_CVAR_MALLOC_ENABLE_MMAP) {
+src/mpid/ch4/netmod/ofi/ofi_init.c:730:    if (MPIR_CVAR_MALLOC_HEAP_STEP > 0) {
+src/mpid/ch4/netmod/ofi/ofi_init.c:731:        mallopt(M_TOP_PAD, MPIR_CVAR_MALLOC_HEAP_STEP);

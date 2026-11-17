@@ -1,0 +1,92 @@
+# External pages opened to check the citations in README.md and docs/ (fetched with curl, HTTP 200, 2026-11-17 17:46 EST).
+# For each page: the URL, then the lines of the page text that carry the cited section heading or sentence.
+
+## https://docs.nvidia.com/cuda/cuda-programming-guide/03-advanced/multi-gpu-systems.html
+79:# 3.4. Programming Systems with Multiple GPUs#
+250:### 3.4.2.5. Host IOMMU Hardware, PCI Access Control Services, and VMs#
+251:On Linux specifically, CUDA and the display driver do not support IOMMU-enabled bare-metal PCIe peer-to-peer memory transfer.
+253:The IOMMU must be disabled when running Linux on a bare metal system to prevent silent device memory corruption.
+
+## https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/gpu_troubleshooting.html
+640:### Linux bare-metal IOMMU and PCIe peer-to-peer
+    machines. On Linux bare-metal systems, however, CUDA and the NVIDIA driver stack
+    do not support IOMMU-enabled PCIe peer-to-peer memory transfer. [The CUDA
+    Programming Guide](https://docs.nvidia.com/cuda/cuda-programming-guide/03-advanced/multi-gpu-systems.html#host-iommu-hardware-pci-access-control-services-and-vms)
+    As described in the peer-to-peer GPU memory access check, a positive nvidia-smi topo -p2p p
+    result is useful, but it is not a complete system sanity check for this issue. On
+    Linux bare-metal PCIe systems, also check the active kernel IOMMU mode.
+    On affected bare-metal systems, avoid translated IOMMU mode for GPU PCIe P2P.
+
+## https://docs.nvidia.com/cuda/gpudirect-rdma/index.html
+24:3.4. Supported Systems
+212:3.4. Supported Systems
+226:IOMMUs
+This makes it incompatible with IOMMUs performing any form of translation other than 1:1
+
+## https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-kernel-iommu_groups
+43:		DMA       All the DMA transactions from the device in this group
+44-		          are translated by the iommu.
+45:		DMA-FQ    As above, but using batched invalidation to lazily
+46-		          remove translations after use. This may offer reduced
+--
+48:		identity  All the DMA transactions from the device in this group
+49-		          are not translated by the iommu. Maximum performance
+
+## https://man7.org/linux/man-pages/man3/mallopt.3.html
+121: M_MMAP_THRESHOLD
+4*1024*1024*sizeof(long) on 64-bit systems
+deallocated space is not placed on the free list for reuse
+the kernel must perform the expensive task of zeroing out memory allocated via mmap(2)
+
+## https://sourceware.org/glibc/manual/2.39/html_node/Memory-Allocation-Tunables.html
+24:Tunable: glibc.malloc.top_pad ¶
+55:Tunable: glibc.malloc.trim_threshold ¶
+65:Tunable: glibc.malloc.mmap_max ¶
+
+## https://mvapich-docs.readthedocs.io/en/open-v4.1/cvar.html
+2: MVAPICH Environment Variables — MVAPICH 4.1 documentation
+3661: ### MPIR_CVAR_LMEM_POOL_SIZE
+3662: Aliases:
+3663: - MVP_LMEM_POOL_SIZE
+3664: MPICH_LMEM_POOL_SIZE
+3665: Description:
+3666: - Sets the amount of space allocated at init time to be used
+3667: by internal functions for local temp buffers.
+3668: Default: 32 * 1024 * 1024
+1675: ### MPIR_CVAR_ALLREDUCE_INTRA_ALGORITHM
+1676: Aliases:
+1677: - MVP_ALLREDUCE_INTRA_ALGORITHM
+1678: MPICH_ALLREDUCE_INTRA_ALGORITHM
+1679: Description:
+1680: - Variable to select allreduce algorithm
+1681: auto - Internal algorithm selection (can be overridden with
+1682: MPIR_CVAR_COLL_SELECTION_TUNING_JSON_FILE)
+1683: nb - - - Force nonblocking algorithm
+1684: smp - - - Force smp algorithm
+1685: recursive_doubling - Force recursive doubling algorithm
+1686: recursive_multiplying - Force recursive multiplying algorithm
+1687: reduce_scatter_allgather - Force reduce scatter allgather algorithm
+1688: tree - - - Force pipelined tree algorithm
+1689: recexch - - - Force generic transport recursive
+1690: exchange algorithm
+1691: ring - - - Force ring algorithm
+1692: k_reduce_scatter_allgather - Force reduce scatter allgather
+1693: algorithm
+1694: mvapich_tuned - - Use MVAPICH autotuning
+1695: osu_mcast - - - Force osu mcast based design
+1696: osu_sharp - - - Force osu sharp design
+1697: Default: MPIR_CVAR_ALLREDUCE_INTRA_ALGORITHM_auto
+
+## https://mvapich.cse.ohio-state.edu/static/media/mvapich/MVP-4.1-CHANGELOG.txt
+17:MVAPICH 4.1 (09/18/2025)
+20:    - Based on MPICH 4.3.0
+30:MVAPICH 4.0 (03/06/2025)
+33:	- Based on MPICH 4.3.0
+39:    	* Basic support for major GPUs (from NVIDIA, AMD, and Intel)
+
+## https://raw.githubusercontent.com/NVIDIA/nccl-tests/master/doc/PERFORMANCE.md
+63: `B = S/t * (2*(n-1)/n) = algbw * (2*(n-1)/n)`
+79: `B = S/t * (n-1)/n = algbw * (n-1)/n`
+97: `B = S/t * (n-1)/n = algbw * (n-1)/n`
+116: `B = S/t`
+132: `B = S/t`

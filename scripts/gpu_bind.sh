@@ -22,7 +22,7 @@ if [ "$LR" -ge "${#G[@]}" ]; then
 fi
 GPU="${G[$LR]}"
 
-# nvidia-smi prints <pci:gpu2>; sysfs names the device <pci:gpu2>
+# nvidia-smi prints an 8-digit PCI domain and upper-case hex; sysfs uses a 4-digit domain and lower case
 BUS=$(nvidia-smi --query-gpu=pci.bus_id --format=csv,noheader -i "$GPU" | tr 'A-F' 'a-f')
 BUS="${BUS#0000}"
 NODE=$(cat "/sys/bus/pci/devices/$BUS/numa_node")

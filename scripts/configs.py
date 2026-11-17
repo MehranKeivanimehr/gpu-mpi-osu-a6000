@@ -168,7 +168,7 @@ def phase_coll():
 def phase_nccl():
     c = []
     for sn, g in SETS.items():
-        lvl = None if sn == "g2_nv23" else "NVL"   # cross-pair set -> NVLink-only P2P (PCIe P2P proven unsafe)
+        lvl = None if sn == "g2_nv23" else "NVL"   # cross-pair set: NVLink-only P2P, because PCIe P2P corrupted data here
         for b in NCCL:
             c.append(nccl_cfg(b, sn, g, p2p_level=lvl))
     return c
