@@ -1,19 +1,13 @@
-"""Benchmark configurations for campaign.py.
+"""Benchmark configurations for campaign.py (MVAPICH 4.1 + OMB 7.5.3, nccl-tests 2.21.1 + NCCL 2.21.5).
 
-Stack: MVAPICH 4.1 (ch4:ucx, CUDA, gforker launcher) + OMB 7.5.3; nccl-tests 2.21.1 + NCCL 2.21.5.
-GPU paths (from env/nvidia-smi_topo.txt): NV pair = NV4 bridge; NODE = same socket, different PCIe
-host bridge; SYS = across the two EPYC sockets. GPUs 0,1 were busy (another user) and GPU 7 is
-held by an older claim, so the sets below use GPUs 2-6 only.
-
-SAFETY: PCIe peer-to-peer between non-NVLink GPUs returned corrupt data and wedged
-GPU 4. Therefore: GPU 4 is never used, and P2P-capable transports (MVAPICH default IPC path 'mv', UCX
-cuda_ipc 'ucxipc', NCCL without NCCL_P2P_LEVEL=NVL) are only allowed on a single NVLink pair. check_safe()
-enforces this for every config before campaign.py launches anything.
+GPU sets use GPUs 2 to 6 only (see raw/env/nvidia-smi_topo.txt for the links). On this machine PCIe peer-to-peer
+between non-NVLink GPUs returned corrupt data, so check_safe() refuses GPU 4 and allows P2P-capable modes
+(mv, ucxipc, NCCL without NCCL_P2P_LEVEL=NVL) only on a single NVLink pair.
 """
 import os
 
 H = os.path.expanduser("~")
-REPO = f"{H}/mpi-osu-a6000"
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MV = f"{H}/opt/mvapich-4.1-cuda"
 MPIEXEC = f"{MV}/bin/mpiexec"            # gforker launcher (no TCP listener)
 OMB = f"{H}/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi"
@@ -30,36 +24,27 @@ NV_PAIRS = [{0, 1}, {2, 3}, {4, 5}, {6, 7}]
 BROKEN_GPUS = {4}
 SETS = {
     "g2_nv23": [2, 3],          # one NVLink pair
-    # 4 GPUs: NVLink pair 2-3 plus GPUs 5,6 (not NVLink-bridged to each other; 5's partner is the stuck GPU 4,
-    # 6's partner is GPU 7, which is claimed). Only host-staged MPI / NVL-limited NCCL may run here.
-    "g4_nv23_5_6": [2, 3, 5, 6],
+    "g4_nv23_5_6": [2, 3, 5, 6],  # NVLink pair 2-3 plus 5 and 6, which are not bridged to each other
 }
 
-# UCX: never enable the tcp transport (it opens a listening socket on the NIC). 'sm' = posix/sysv/cma,
-# 'cuda' = cuda_copy + cuda_ipc (+gdr_copy, not built here).
-# LD_LIBRARY_PATH: MPL dlopen()s the unversioned "libcuda.so"; ~/opt/cuda-driver-link holds a symlink to the
-# driver's libcuda.so.1 (no root-owned -dev symlink exists on this machine).
+# MPL dlopen()s the unversioned libcuda.so; ~/opt/cuda-driver-link holds a symlink to the driver's libcuda.so.1
 LIBPATH = f"{H}/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64"
 BASE_ENV = {
     "LD_LIBRARY_PATH": LIBPATH,
-    "UCX_TLS": "self,sm,cuda",
+    "UCX_TLS": "self,sm,cuda",              # never tcp: it would open a listening socket
     "UCX_WARN_UNUSED_ENV_VARS": "n",
 }
-# Transport modes for OMB runs
 MODES = {
-    # MVAPICH default intra-node path: CH4 shared memory + GPU IPC shmmod
-    "mv": {},
-    # Force all intra-node traffic through the ch4:ucx netmod so UCX transport choice applies
+    "mv": {},                               # MVAPICH default intra-node path (CH4 shared memory + GPU IPC)
+    # NOLOCAL sends intra-node traffic through the ch4:ucx netmod, so UCX_TLS decides the transport
     "ucxipc": {"MPIR_CVAR_NOLOCAL": "1", "UCX_TLS": "self,sm,cuda_copy,cuda_ipc"},
     "ucxnoipc": {"MPIR_CVAR_NOLOCAL": "1", "UCX_TLS": "self,sm,cuda_copy"},
 }
 
 RANGES = {
-    # name -> (min:max, extra args) ; L range uses fewer iterations so 1 GiB stays affordable
     "S": ("1:4194304", []),
-    "L": ("8388608:1073741824", ["-i", "10", "-x", "3"]),
-    # validation sweep: whole range, few iterations (every iteration's result is checked with -c)
-    "V": ("1:1073741824", ["-i", "3", "-x", "1"]),
+    "L": ("8388608:1073741824", ["-i", "10", "-x", "3"]),   # fewer iterations so 1 GiB stays affordable
+    "V": ("1:1073741824", ["-i", "3", "-x", "1"]),          # validation sweep, checked with -c
 }
 P2P = {"osu_latency": "pt2pt/osu_latency", "osu_bw": "pt2pt/osu_bw",
        "osu_bibw": "pt2pt/osu_bibw"}
@@ -105,8 +90,7 @@ def omb_cfg(phase, bench, path_name, gpus, rng, mode="mv", validate=False, extra
 def nccl_cfg(bench, set_name, gpus, p2p_level=None, check=True, iters=20, warm=5, tag=""):
     extra = {"GPU_BIND_MODE": "all", "NCCL_DEBUG": "INFO", "NCCL_DEBUG_SUBSYS": "INIT,TUNING",
              "NCCL_SOCKET_IFNAME": "lo", "LD_LIBRARY_PATH": f"{NCCL_HOME}/lib:{MV}/lib:{LIBPATH}",
-             # MPI only bootstraps nccl-tests (host buffers): keep MVAPICH from initialising CUDA/yaksa on every visible GPU
-             "MPIR_CVAR_ENABLE_GPU": "0"}
+             "MPIR_CVAR_ENABLE_GPU": "0"}     # MPI only bootstraps nccl-tests
     if p2p_level:
         extra["NCCL_P2P_LEVEL"] = p2p_level
     args = ["-b", "8", "-e", "1G", "-f", "2", "-g", "1", "-n", str(iters), "-w", str(warm),
@@ -132,7 +116,6 @@ def check_safe(c):
     return None
 
 
-# ---------------------------------------------------------------- phases
 def phase_smoke():
     return [omb_cfg("smoke", "osu_latency", "nv23", [2, 3], "S", validate=False)]
 

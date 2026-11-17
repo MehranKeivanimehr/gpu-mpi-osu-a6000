@@ -1,6 +1,6 @@
 #!/bin/bash
-# Build UCX 1.22.0 with CUDA into $HOME/opt (user space, no root).
-# No verbs/rdmacm/knem/xpmem/gdrcopy on this machine (no headers / kernel modules; gdrcopy needs a root-installed kernel module).
+# Build UCX 1.22.0 with CUDA into $HOME/opt, without root.
+# verbs, rdmacm, knem, xpmem and gdrcopy are off: no headers or kernel modules on this machine.
 set -euo pipefail
 VER=1.22.0
 CUDA=/usr/local/cuda-12.4

@@ -1,8 +1,9 @@
 #!/bin/bash
-# Narrow down which GPU path / message size / transport hangs in MVAPICH 4.1 device-buffer pt2pt.
-# Each case runs under `timeout 40`; output -> raw/diag/<case>.log
+# WARNING: these cases put device-buffer traffic on PCIe peer-to-peer between non-NVLink GPUs, which corrupted data
+# on this machine (see docs/p2p_corruption.md). Do not run them on a shared machine.
+# Usage: diag_hang.sh run <name> <gpus> <mode> <bench> <size> [extra OMB args]; output in raw/diag/<name>.log
 set -u
-REPO=$HOME/mpi-osu-a6000; cd $REPO; source scripts/log.sh
+REPO="$(cd "$(dirname "$0")/.." && pwd)"; cd "$REPO"; source scripts/log.sh
 export LD_LIBRARY_PATH=$HOME/opt/cuda-driver-link:/usr/local/cuda-12.4/lib64 UCX_WARN_UNUSED_ENV_VARS=n
 MPX=$HOME/opt/mvapich-4.1-cuda/bin/mpiexec
 OMBD=$HOME/opt/omb-7.5.3-mvapich-4.1/libexec/osu-micro-benchmarks/mpi/pt2pt

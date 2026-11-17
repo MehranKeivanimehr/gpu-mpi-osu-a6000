@@ -1,6 +1,8 @@
 #!/bin/bash
-# Run src/p2p_probe on GPU pairs given as "a,b" args. Only those two GPUs are made visible.
-cd $HOME/mpi-osu-a6000; source scripts/log.sh; mkdir -p raw/p2p_probe
+# WARNING: with the IOMMU translating GPU DMA, this probe corrupted data and left a GPU needing a reset when run
+# across non-NVLink GPUs (see docs/p2p_corruption.md). Do not run it on a shared machine.
+# Usage: run_p2p_probe.sh 2,3 [a,b ...]   (only the two GPUs of each pair are visible to the probe)
+cd "$(dirname "$0")/.."; source scripts/log.sh; mkdir -p raw/p2p_probe
 for pr in "$@"; do
   for part in dma ipc; do
     f=raw/p2p_probe/probe_${pr/,/_}_${part}.log

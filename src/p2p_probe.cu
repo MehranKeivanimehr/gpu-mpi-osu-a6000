@@ -1,12 +1,11 @@
-// p2p_probe.cu -- direct CUDA probe of the GPU<->GPU paths, independent of MPI/UCX/NCCL.
+// WARNING: on a machine where the IOMMU translates GPU DMA, enabling peer access between GPUs that are not
+// NVLink partners corrupted every copied word and left a GPU that needed a reset. Do not run this probe on a
+// shared machine, and do not run it across non-NVLink GPUs unless the IOMMU is off or in passthrough mode.
 //
-// Usage: p2p_probe <gpuA> <gpuB>
-//   Part 1 (one process, both GPUs visible): cudaDeviceCanAccessPeer, cudaDeviceEnablePeerAccess time,
-//          cudaMemcpyPeer A->B at several sizes (timed with events, contents checked), and a kernel on
-//          B that reads A's buffer directly over P2P (contents checked).
-//   Part 2 (two processes, like MPI ranks): process A allocates + exports a cudaIpcMemHandle; process B
-//          times cudaIpcOpenMemHandle and a copy out of the mapped buffer, checks contents.
-// Every step prints elapsed time; the caller wraps the run in `timeout`.
+// Direct CUDA check of one GPU pair, without MPI, UCX or NCCL.
+// Usage: p2p_probe <gpuA> <gpuB> [ipc]
+// Without "ipc": peer copies A->B and a kernel on B that reads A, both with contents checked.
+// With "ipc": two processes share a buffer through cudaIpcMemHandle, and the importer checks a copy of it.
 #include <cuda_runtime.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -96,8 +95,7 @@ static void part1(int a, int b) {
 }
 
 static int part2(int a, int b) {
-  // fork before any CUDA call in the children; the parent already used CUDA in part1, so part2 runs
-  // from a fresh process (main re-execs itself with "ipc" argument).
+  // the IPC part runs in a fresh process (started with the "ipc" argument) so the children fork before any CUDA call
   int fds[2], back[2];
   if (pipe(fds) || pipe(back)) return 1;
   const size_t bytes = 64 << 20, n = bytes / sizeof(unsigned);

@@ -1,6 +1,6 @@
 #!/bin/bash
-# Every 15 s, record any TCP/UDP listening socket owned by a benchmark process (evidence for "nothing listens on the network").
-out=$HOME/mpi-osu-a6000/raw/verify/listen_during_campaign.txt
+# Every 15 s while campaign.py runs, record any TCP/UDP listening socket owned by a benchmark process.
+out="$(cd "$(dirname "$0")/.." && pwd)/raw/verify/listen_during_campaign.txt"
 echo "# started $(date '+%F %T %Z'); format: timestamp | ss -ltnup lines for osu_/nccl-tests/mpiexec/numactl processes (empty = none)" >> $out
 while pgrep -f "[c]ampaign.py" >/dev/null || [ "${1:-}" = "--once" ]; do
   l=$(ss -ltnup 2>/dev/null | grep -E 'osu_|_perf"|mpiexec|numactl')

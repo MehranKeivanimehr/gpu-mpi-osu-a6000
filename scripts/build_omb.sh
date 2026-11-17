@@ -1,8 +1,8 @@
 #!/bin/bash
 # Build OSU Micro-Benchmarks 7.5.3 with CUDA against a given MPI.
 # Usage: build_omb.sh <tag> <mpi_prefix>     e.g. build_omb.sh ompi-5.0.11 $HOME/opt/openmpi-5.0.11-ucx-cuda
-# With MVAPICH set OMB_EXTRA_LIBS=-lcudart (its mpicc does not add libcudart to the link line itself).
-# libcuda.so (unversioned) only exists in $CUDA/lib64/stubs here -> link against the stub; runtime uses the driver libcuda.so.1.
+# With MVAPICH set OMB_EXTRA_LIBS=-lcudart; its mpicc does not add libcudart to the link line.
+# The unversioned libcuda.so exists only in $CUDA/lib64/stubs, so the build links against the stub.
 set -euo pipefail
 VER=7.5.3
 TAG=$1; MPI=$2

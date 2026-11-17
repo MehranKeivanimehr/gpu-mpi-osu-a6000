@@ -1,0 +1,40 @@
+== raw/allreduce/nsys/trace_dev_32MiB_rank0_cuda_gpu_trace.csv
+kind,name,src,dst,count,total_MB,median_op_MB,median_op_us,median_GBps
+copy,[CUDA memcpy Device-to-Device],Device,Device,13,436.202,33.554,98.8,339.45
+copy,[CUDA memcpy Device-to-Host],Device,Pageable,53,251.642,4.194,302.3,13.87
+copy,[CUDA memcpy Host-to-Device],Pageable,Device,1,33.554,33.554,2285.9,14.68
+copy,[CUDA memcpy Host-to-Device],Pinned,Device,208,218.192,1.049,72.9,14.38
+copy,[CUDA memcpy Peer-to-Peer],Device,Device,65,436.189,4.194,87.5,48.38
+copy,[CUDA memcpy Unified Host-to-Device],Unknown,Unknown,2,0.065,0.033,2.9,8.98
+copy,[CUDA memset],Device,,2,67.108,33.554,47.3,709.71
+kernel,yaksuri_cudai_kernel_pack_SUM_float,,,208,0.000,0.000,5.5,0.00
+== raw/allreduce/nsys/trace_dev_64MiB_rank0_cuda_gpu_trace.csv
+kind,name,src,dst,count,total_MB,median_op_MB,median_op_us,median_GBps
+copy,[CUDA memcpy Device-to-Device],Device,Device,13,872.417,67.109,196.6,341.33
+copy,[CUDA memcpy Device-to-Host],Device,Pageable,105,503.285,4.194,1303.9,3.22
+copy,[CUDA memcpy Host-to-Device],Pageable,Device,1,67.109,67.109,4467.5,15.02
+copy,[CUDA memcpy Host-to-Device],Pinned,Device,416,436.384,1.049,49.4,21.23
+copy,[CUDA memcpy Peer-to-Peer],Device,Device,117,872.378,4.194,86.6,48.45
+copy,[CUDA memcpy Unified Host-to-Device],Unknown,Unknown,2,0.065,0.033,3.7,6.67
+copy,[CUDA memset],Device,,2,134.218,67.109,94.6,709.70
+kernel,yaksuri_cudai_kernel_pack_SUM_float,,,416,0.000,0.000,5.5,0.00
+== raw/allreduce/nsys/trace_dev_32MiB_rank1_cuda_gpu_trace.csv
+kind,name,src,dst,count,total_MB,median_op_MB,median_op_us,median_GBps
+copy,[CUDA memcpy Device-to-Device],Device,Device,13,436.202,33.554,99.1,338.46
+copy,[CUDA memcpy Device-to-Host],Device,Pageable,53,251.642,4.194,295.0,14.22
+copy,[CUDA memcpy Host-to-Device],Pageable,Device,1,33.554,33.554,2288.5,14.66
+copy,[CUDA memcpy Host-to-Device],Pinned,Device,208,218.192,1.049,76.2,13.76
+copy,[CUDA memcpy Peer-to-Peer],Device,Device,65,436.189,4.194,87.9,48.34
+copy,[CUDA memcpy Unified Host-to-Device],Unknown,Unknown,2,0.065,0.033,2.8,9.12
+copy,[CUDA memset],Device,,2,67.108,33.554,47.3,708.98
+kernel,yaksuri_cudai_kernel_pack_SUM_float,,,208,0.000,0.000,5.5,0.00
+== raw/allreduce/nsys/trace_dev_64MiB_rank1_cuda_gpu_trace.csv
+kind,name,src,dst,count,total_MB,median_op_MB,median_op_us,median_GBps
+copy,[CUDA memcpy Device-to-Device],Device,Device,13,872.417,67.109,196.6,341.39
+copy,[CUDA memcpy Device-to-Host],Device,Pageable,105,503.285,4.194,1309.4,3.20
+copy,[CUDA memcpy Host-to-Device],Pageable,Device,1,67.109,67.109,5176.2,12.96
+copy,[CUDA memcpy Host-to-Device],Pinned,Device,416,436.384,1.049,50.0,20.96
+copy,[CUDA memcpy Peer-to-Peer],Device,Device,117,872.378,4.194,86.6,48.45
+copy,[CUDA memcpy Unified Host-to-Device],Unknown,Unknown,2,0.065,0.033,2.7,9.50
+copy,[CUDA memset],Device,,2,134.218,67.109,94.5,709.95
+kernel,yaksuri_cudai_kernel_pack_SUM_float,,,416,0.000,0.000,5.6,0.00

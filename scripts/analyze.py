@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
-"""Parse raw/ logs -> results/ CSVs, plots and markdown tables.
+"""Parse raw/ logs into the CSVs and markdown tables in data/.
 
-Every number written to results/ is computed from raw/ logs; nothing is typed in by hand.
-Run with:  ~/miniconda3/bin/python scripts/analyze.py
+Usage: analyze.py [--out DIR]
 """
 import glob, json, os, re, sys
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-
-REPO = os.path.expanduser("~/mpi-osu-a6000")
-RAW, RES = f"{REPO}/raw", f"{REPO}/results"
-os.makedirs(f"{RES}/plots", exist_ok=True)
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW = f"{REPO}/raw"
+RES = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else f"{REPO}/data"
+os.makedirs(RES, exist_ok=True)
 
 KiB, MiB, GiB = 1024, 1024 ** 2, 1024 ** 3
 
 
-# ------------------------------------------------------------------ parsing
 def read_header(path):
     h = {}
     with open(path) as f:
@@ -154,7 +149,6 @@ def load_nccl_phase(phase):
     return pd.DataFrame(out), pd.DataFrame(infos)
 
 
-# ------------------------------------------------------------------ helpers
 def agg(df, keys, col):
     g = df.groupby(keys)[col]
     a = g.agg(median="median", vmin="min", vmax="max", nreps="count",
@@ -182,7 +176,6 @@ def omb_S(kind, size, n):
     return size * n if kind == "allgather" else size
 
 
-# ------------------------------------------------------------------ piecewise alpha-beta fit
 def fit_segment(x, y):
     """Weighted LS fit y = a + b x with weights 1/y^2 (relative error). Returns a, b, se_a, se_b, rel_rms."""
     w = 1.0 / np.maximum(y, 1e-12) ** 2
@@ -251,10 +244,8 @@ def human(n):
     return f"{n} B"
 
 
-# ------------------------------------------------------------------ main
 def main():
     report = {}
-    # ---------- validation
     val = load_omb_phase("validate")
     if len(val):
         v = val.groupby(["bench", "path", "mode", "rep"]).agg(
@@ -273,7 +264,6 @@ def main():
     if st:
         pd.concat(st).to_csv(f"{RES}/validation_runs_index.csv", index=False)
 
-    # ---------- point-to-point (main + ucx contrast)
     p2p = pd.concat([d for d in (load_omb_phase("p2p"), load_omb_phase("ucx")) if len(d)], ignore_index=True) \
         if any(os.path.isdir(f"{RAW}/{x}") for x in ("p2p", "ucx")) else pd.DataFrame()
     if len(p2p):
@@ -282,7 +272,6 @@ def main():
         pa = agg(p2p, ["bench", "path", "mode", "n", "size"], "value")
         pa.to_csv(f"{RES}/p2p_summary.csv", index=False)
         report["p2p"] = pa
-        plot_p2p(pa)
         # alpha-beta fits on osu_latency medians
         fits = []
         for (path, mode), g in pa[pa.bench == "osu_latency"].groupby(["path", "mode"]):
@@ -292,11 +281,7 @@ def main():
                 fits.append(s)
         pd.DataFrame(fits).to_csv(f"{RES}/fits_p2p_latency.csv", index=False)
         report["fits_p2p"] = pd.DataFrame(fits)
-        plot_fits(pa[pa.bench == "osu_latency"].assign(curve=lambda d: "osu_latency " + d.path + " " + d["mode"]),
-                  "size", "median", pd.DataFrame(fits), "fit_osu_latency.png",
-                  "osu_latency medians with piecewise t = α + n·β fits (dashed); vertical lines = fitted breakpoints")
 
-    # ---------- collectives MPI
     coll = load_omb_phase("coll")
     if len(coll):
         assert not coll["abnormal_exit"].any(), "a collective measurement log has an aborted rank"
@@ -312,7 +297,6 @@ def main():
         cm.to_csv(f"{RES}/coll_mpi_summary.csv", index=False)
         report["coll_mpi"] = cm
 
-    # ---------- NCCL
     nccl, ninfo = load_nccl_phase("nccl") if os.path.isdir(f"{RAW}/nccl") else (pd.DataFrame(), pd.DataFrame())
     if len(ninfo):
         ninfo.to_csv(f"{RES}/nccl_run_info.csv", index=False)
@@ -344,7 +328,6 @@ def main():
         report["nccl_proto"] = nccl_proto
 
     if "coll_mpi" in report and "coll_nccl" in report:
-        plot_coll(report["coll_mpi"], report["coll_nccl"])
         compare_table(report["coll_mpi"], report["coll_nccl"])
         cfits = []
         for name, df, tcol in (("MVAPICH", report["coll_mpi"], "t_median"), ("NCCL", report["coll_nccl"], "t_median")):
@@ -354,10 +337,6 @@ def main():
                     s.update({"curve": f"{name} {keys[0]} {keys[1]}"})
                     cfits.append(s)
         pd.DataFrame(cfits).to_csv(f"{RES}/fits_collectives.csv", index=False)
-        both = pd.concat([report["coll_mpi"].assign(curve=lambda d: "MVAPICH " + d.kind + " " + d.path),
-                          report["coll_nccl"].assign(curve=lambda d: "NCCL " + d.kind + " " + d.path)])
-        plot_fits(both[both.kind == "allreduce"], "S", "t_median", pd.DataFrame(cfits), "fit_allreduce.png",
-                  "allreduce time medians with piecewise α–β fits (dashed)")
 
     ucx_protocols()
     gpu_time()
@@ -399,78 +378,6 @@ def nccl_protocols():
                         "size_from": x["from"], "size_to": x["to"]} for x in seg])
     sg.to_csv(f"{RES}/nccl_algo_proto_segments.csv", index=False)
     return sg
-
-
-def plot_fits(data, xcol, ycol, fits, fname, title):
-    fig, ax = plt.subplots(figsize=(8, 5))
-    for i, (curve, g) in enumerate(data.groupby("curve")):
-        g = g.sort_values(xcol)
-        col = f"C{i % 10}"
-        ax.plot(g[xcol], g[ycol], "o", ms=3, color=col, label=curve)
-        for _, f in fits[fits.curve == curve].iterrows():
-            xs = np.geomspace(max(f.n_from, 1), f.n_to, 50)
-            ax.plot(xs, f.alpha_us + f.beta_us_per_byte * xs, "--", color=col, lw=1)
-            if f.n_from > g[xcol].min():
-                ax.axvline(f.n_from, color=col, lw=0.5, alpha=0.5)
-    ax.set_xscale("log", base=2)
-    ax.set_yscale("log")
-    ax.set_xlabel("bytes")
-    ax.set_ylabel("time (us)")
-    ax.set_title(title, fontsize=9)
-    ax.grid(True, which="both", alpha=0.3)
-    ax.legend(fontsize=7)
-    fig.tight_layout()
-    fig.savefig(f"{RES}/plots/{fname}", dpi=130)
-    plt.close(fig)
-
-
-def plot_p2p(pa):
-    for bench, ylab in (("osu_latency", "one-way latency (us)"), ("osu_bw", "bandwidth (MB/s, 1 MB = 1e6 B)"),
-                        ("osu_bibw", "bi-directional bandwidth (MB/s)")):
-        d = pa[pa.bench == bench]
-        if not len(d):
-            continue
-        fig, ax = plt.subplots(figsize=(7.5, 4.6))
-        for (path, mode), g in d.groupby(["path", "mode"]):
-            g = g.sort_values("size")
-            ax.plot(g["size"], g["median"], marker="o", ms=3, label=f"{path} / {mode}")
-            ax.fill_between(g["size"], g["vmin"], g["vmax"], alpha=0.2)
-        ax.set_xscale("log", base=2)
-        ax.set_yscale("log")
-        ax.set_xlabel("message size (bytes)")
-        ax.set_ylabel(ylab)
-        ax.set_title(f"{bench}, device buffers D->D, MVAPICH 4.1 (median; band = min..max of 5 runs)", fontsize=9)
-        ax.grid(True, which="both", alpha=0.3)
-        ax.legend(fontsize=8)
-        fig.tight_layout()
-        fig.savefig(f"{RES}/plots/{bench}.png", dpi=130)
-        plt.close(fig)
-
-
-def plot_coll(cm, nm):
-    for kind in ("allreduce", "allgather", "reduce_scatter"):
-        fig, axs = plt.subplots(1, 2, figsize=(12, 4.6))
-        for df, lib, ls in ((cm, "MVAPICH", "-"), (nm, "NCCL", "--")):
-            d = df[df.kind == kind]
-            for path, g in d.groupby("path"):
-                g = g.sort_values("S")
-                mode = g["mode"].iloc[0] if "mode" in g else g["p2p_level"].iloc[0]
-                lab = f"{lib} {path} ({mode})" if lib == "MVAPICH" else f"{lib} {path} (P2P_LEVEL={g['p2p_level'].iloc[0]})"
-                axs[0].plot(g["S"], g["t_median"], ls, marker="o", ms=3, label=lab)
-                axs[0].fill_between(g["S"], g["t_vmin"], g["t_vmax"], alpha=0.15)
-                axs[1].plot(g["S"], g["busbw_median"], ls, marker="o", ms=3, label=lab)
-                axs[1].fill_between(g["S"], g["busbw_vmin"], g["busbw_vmax"], alpha=0.15)
-        for ax, yl in zip(axs, ("time per op (us)", "bus bandwidth (GB/s, nccl-tests convention)")):
-            ax.set_xscale("log", base=2)
-            ax.set_yscale("log")
-            ax.set_xlabel("S (bytes, nccl-tests size convention)")
-            ax.set_ylabel(yl)
-            ax.grid(True, which="both", alpha=0.3)
-        axs[0].legend(fontsize=7)
-        fig.suptitle(f"{kind}: MVAPICH 4.1 (OMB 7.5.3) vs NCCL 2.21.5 (nccl-tests 2.21.1); median, band=min..max of 5 runs")
-        fig.tight_layout()
-        fig.savefig(f"{RES}/plots/coll_{kind}.png", dpi=130)
-        plt.close(fig)
 
 
 def compare_table(cm, nm):
@@ -548,14 +455,11 @@ def gpu_time():
         e["gpu_s"] = e.wall_s * e.ngpu
         s = pd.concat([s, e.groupby("phase").agg(runs=("wall_s", "count"), wall_s=("wall_s", "sum"),
                                                 gpu_s=("gpu_s", "sum")).reset_index()], ignore_index=True)
-    # manual run that hung (not run through campaign.py): duration from commands.log timestamps
-    cl = open(f"{REPO}/commands.log").read()
-    t0 = re.search(r"\[([\d-]+ [\d:]+) EST\][^\n]*gpu_mapping_check_osu_bw_sys34", cl)
-    t1 = re.search(r"\[([\d-]+ [\d:]+) EST\][^\n]*kill 199065", cl)
-    if t0 and t1:
-        d = (pd.Timestamp(t1.group(1)) - pd.Timestamp(t0.group(1))).total_seconds()
-        s = pd.concat([s, pd.DataFrame([{"phase": "manual hung osu_bw GPUs 3+4 (from commands.log)", "runs": 1,
-                                         "wall_s": d, "gpu_s": 2 * d}])], ignore_index=True)
+    # a manual run that hung, outside campaign.py; its start and kill times are in raw/manual_runs.csv
+    for _, m in pd.read_csv(f"{RAW}/manual_runs.csv").iterrows():
+        d = (pd.Timestamp(m.end) - pd.Timestamp(m.start)).total_seconds()
+        s = pd.concat([s, pd.DataFrame([{"phase": f"{m.run} (from commands.log)", "runs": 1,
+                                         "wall_s": d, "gpu_s": m.n_gpus * d}])], ignore_index=True)
     tot = pd.DataFrame([{"phase": "TOTAL (logged runs)", "runs": s.runs.sum(), "wall_s": s.wall_s.sum(),
                          "gpu_s": s.gpu_s.sum()}])
     s = pd.concat([s, tot], ignore_index=True)

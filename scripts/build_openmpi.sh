@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build Open MPI 5.0.11 with UCX (CUDA-enabled) + CUDA accelerator support, per docs.open-mpi.org v5.0.x CUDA page.
+# Build Open MPI 5.0.11 with CUDA and UCX. I built it but did not use it (see docs/method.md).
 set -euo pipefail
 VER=5.0.11
 CUDA=/usr/local/cuda-12.4

@@ -1,1 +1,0 @@
-analysis done; results in ~/mpi-osu-a6000/results

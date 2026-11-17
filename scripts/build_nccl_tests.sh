@@ -1,6 +1,5 @@
 #!/bin/bash
-# Build nccl-tests 2.21.1 (MPI=1) against MVAPICH 4.1 and NCCL 2.21.5 (the PyTorch 2.6.0+cu124 wheel's lib,
-# exposed with symlinks under ~/opt/nccl-2.21.5-pipwheel). sm_86 only.
+# Build nccl-tests 2.21.1 (MPI=1) against MVAPICH 4.1 and NCCL 2.21.5 from the nvidia-nccl-cu12 wheel (see docs/build.md).
 set -euo pipefail
 VER=2.21.1
 CUDA=/usr/local/cuda-12.4

@@ -1,24 +1,16 @@
 #!/usr/bin/env python3
-"""Run a randomized benchmark campaign.
-
-Each config is run REPS times; the full (config, rep) list is shuffled with a
-fixed seed so configurations interleave in time. Before every run the target
-GPUs are checked with nvidia-smi and the run waits (bounded) until they are
-idle. Every launched command is appended to commands.log; every run writes its
-own log under raw/<phase>/ with a header block (lines starting with '#').
+"""Run one benchmark phase from configs.py in shuffled (config, rep) order, waiting for idle GPUs before each run.
 
 Usage: campaign.py <phase> [--reps 5] [--seed N] [--only substr] [--dry]
-Phases are defined in scripts/configs.py.
+Each run writes raw/<phase>/<config>__rep<k>.log with a header block (lines starting with '#').
 """
 import argparse, csv, datetime as dt, glob, os, random, shlex, subprocess, sys, time
 
-REPO = os.path.expanduser("~/mpi-osu-a6000")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO, "scripts"))
 import configs  # noqa: E402
 
-IDLE_UTIL_MAX = 5      # % GPU util allowed on a target GPU before launch
-IDLE_MEM_MAX = 200     # MiB used allowed on a target GPU before launch
-WAIT_MAX_S = 900       # give up on a run after waiting this long for idle GPUs
+IDLE_UTIL_MAX, IDLE_MEM_MAX, WAIT_MAX_S = 5, 200, 900     # % util, MiB, seconds
 GPU_TIME_CSV = os.path.join(REPO, "raw", "gpu_time.csv")
 
 

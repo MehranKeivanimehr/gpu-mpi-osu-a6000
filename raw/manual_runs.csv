@@ -1,0 +1,2 @@
+run,start,end,n_gpus,source
+manual hung osu_bw GPUs 3+4,2026-11-12 03:00:01,2026-11-12 03:05:01,2,"launch and kill lines of the command log (in git history, file commands.log, lines 104 and 106)"
